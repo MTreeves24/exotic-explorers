@@ -11,10 +11,9 @@ body {
   font-size: 0.8em;
   background: rgba(111, 111, 111, 0);
   padding: 0.6em 0.6em;
-  width: 50%;
-  border: 0.1em solid #FFFFFF;
+  border: 0.1em solid #ffffff;
   text-decoration: none;
-  color: #FFFFFF;
+  color: #ffffff;
   text-align: center;
   transition: all 0.2s; }
   .see-more:hover {
@@ -72,7 +71,9 @@ body {
   top: 0em;
   right: 0em;
   cursor: pointer;
-  background: url("cool-background.png") no-repeat top; }
+  background: url("cool-background.png") no-repeat top;
+  border-radius: 6%;
+  z-index: 2; }
 
 .hamburger,
 .hamburger::before,
@@ -114,11 +115,11 @@ body {
   align-items: center; }
   .hero img {
     width: 100%;
-    max-width: 400px; }
+    max-width: 320px; }
   .hero h1 {
     font-family: century-gothic-regular;
     font-weight: 100;
-    font-size: 1.5em;
+    font-size: 1.3em;
     text-align: center; }
 
 .about {
@@ -134,13 +135,16 @@ body {
     color: white;
     max-width: 800px;
     text-align: center;
-    padding: 0px 20px; }
-    .about .about-text button {
-      margin-bottom: 3%; }
+    padding: 0px 20px 60px 20px; }
+    .about .about-text h4 {
+      padding-bottom: 20px; }
+    .about .about-text a {
+      font-size: 1em;
+      padding: 20px 60px; }
   .about img {
     margin: 1em;
     border: 0.5em solid white;
-    width: 100%;
+    width: 80%;
     max-width: 20em;
     border-radius: 50%; }
 
@@ -168,7 +172,7 @@ body {
   border: 1px solid white;
   margin: 0.2em;
   height: 250px;
-  min-width: 150px;
+  min-width: 110px;
   width: 100%;
   box-shadow: inset 0 0 0 5px rgba(255, 255, 255, 0.1);
   color: white;
@@ -186,34 +190,42 @@ body {
   .panel h1 {
     align-items: stretch;
     padding-top: 20px;
-    font-size: 0.8em; }
+    font-size: 0.9em; }
+  .panel .see-more-mobile {
+    position: absolute;
+    bottom: 10%; }
   .panel .service-desc {
-    width: 100%;
+    visibility: hidden;
+    width: 98%;
     display: flex;
     flex-direction: column;
     font-size: 0.6em;
     background: #ff8b00;
-    background: linear-gradient(177deg, #ff8c1a, rgba(255, 139, 0, 0.5) 35%, rgba(255, 190, 0, 0.5) 100%); }
-    .panel .service-desc button {
-      margin-top: 4%; }
+    background: linear-gradient(177deg, #ff8c1a, rgba(255, 139, 0, 0.5) 35%, rgba(255, 190, 0, 0.5) 100%);
+    border: 1px solid white; }
+    .panel .service-desc a {
+      width: 50%;
+      margin-top: 4%;
+      padding-top: 3%;
+      text-shadow: none; }
 
 .panel1 {
-  background-image: url(https://res.cloudinary.com/mtreeves24/image/upload/v1591306277/Exotic%20Explorers/Tito_1.webp); }
+  background-image: url("https://res.cloudinary.com/mtreeves24/image/upload/v1591306277/Exotic%20Explorers/Tito_1.webp"); }
 
 .panel2 {
-  background-image: url(https://res.cloudinary.com/mtreeves24/image/upload/v1591306275/Exotic%20Explorers/thumbnail_Image-4.webp); }
+  background-image: url("https://res.cloudinary.com/mtreeves24/image/upload/v1591306275/Exotic%20Explorers/thumbnail_Image-4.webp"); }
 
 .panel3 {
-  background-image: url(https://res.cloudinary.com/mtreeves24/image/upload/c_scale,w_741/v1591306278/Exotic%20Explorers/tiddlywink_web.webp); }
+  background-image: url("https://res.cloudinary.com/mtreeves24/image/upload/c_scale,w_741/v1591306278/Exotic%20Explorers/tiddlywink_web.webp"); }
 
 .panel4 {
-  background-image: url(https://res.cloudinary.com/mtreeves24/image/upload/c_scale,w_1019/v1591306277/Exotic%20Explorers/zebra_leg.webp); }
+  background-image: url("https://res.cloudinary.com/mtreeves24/image/upload/c_scale,w_1019/v1591306277/Exotic%20Explorers/zebra_leg.webp"); }
 
 .panel5 {
-  background-image: url(https://res.cloudinary.com/mtreeves24/image/upload/v1591306261/Exotic%20Explorers/barn_owl_web.webp); }
+  background-image: url("https://res.cloudinary.com/mtreeves24/image/upload/v1591306261/Exotic%20Explorers/barn_owl_web.webp"); }
 
 .panel6 {
-  background-image: url(https://res.cloudinary.com/mtreeves24/image/upload/v1591306276/Exotic%20Explorers/thumbnail_IMG_1128.webp); }
+  background-image: url("https://res.cloudinary.com/mtreeves24/image/upload/v1591306276/Exotic%20Explorers/thumbnail_IMG_1128.webp"); }
 
 .panel > * {
   margin: 0;
@@ -244,6 +256,7 @@ body {
   100% {
     top: 49%; } }
 .bouncing-finger {
+  visibility: hidden;
   animation: bouncing 1s infinite ease-in-out;
   top: 50%;
   height: 50px;
@@ -286,7 +299,12 @@ body {
     .services .panel h1 {
       font-size: 2rem;
       align-items: stretch; }
+    .services .panel .bouncing-finger {
+      visibility: visible; }
+    .services .panel .see-more-mobile {
+      visibility: hidden; }
     .services .panel .service-desc {
+      visibility: visible;
       padding: 0px 5px;
       font-size: 1.2em; } }
 @media only screen and (min-width: 1200px) {
