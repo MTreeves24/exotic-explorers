@@ -1,6 +1,6 @@
 html {
   box-sizing: border-box;
-  font-family: Helvetica, sans-serif;
+  font-family: "Arial", sans-serif;
   font-size: 20px;
   font-weight: 200;
 }
@@ -9,8 +9,17 @@ body {
   margin: 0;
 }
 
-$color-green: hsl(100, 92%, 35%);
-$color-orange: hsl(30, 100%, 55%);
+$color-green: rgba(57, 172, 0, 1);
+$color-orange: rgba(255, 140, 26, 1);
+
+//EE LOGO COLOURS
+//GREEN
+//rgb(57, 172, 0)
+//#39ac00
+
+//ORANGE
+//rgb(255, 140, 26)
+//#ff8c1a
 
 //GENERIC BUTTON STYLING//
 .see-more {
@@ -27,6 +36,13 @@ $color-orange: hsl(30, 100%, 55%);
     background-color: #fff;
   }
 }
+//GENERIC TITLE STYLING
+.title {
+  text-align: center;
+  font-size: max(3vw, 35px);
+  color: white;
+  text-shadow: 0 0 4px rgba(0, 0, 0, 0.72), 0 0 14px rgba(0, 0, 0, 0.45);
+}
 
 .grid-container {
   display: grid;
@@ -34,23 +50,15 @@ $color-orange: hsl(30, 100%, 55%);
     "nav"
     "hero"
     "about"
-    "services";
+    "services"
+    "gallery"
+    "hexagons";
 }
 
 //********************NAV START********************//
 .nav {
   grid-area: nav;
-  background: rgb(255, 139, 0);
-  background: linear-gradient(
-    177deg,
-    $color-orange,
-    rgba(255, 139, 0, 0.7497199563419117) 35%,
-    rgba(255, 190, 0, 0.6208684157256652) 100%
-  );
-  margin: 0;
-  padding: 0;
   width: 100%;
-  background: rgba(100, 100, 150, 0);
   font-size: 16px;
   position: fixed;
   z-index: 1;
@@ -62,9 +70,7 @@ $color-orange: hsl(30, 100%, 55%);
   }
   ul.opening {
     display: block;
-    padding-top: 0em;
-    height: 30px;
-    width: 100%;
+    // height: 30px;
     text-align: center;
     font-size: 50px;
     font-weight: 700;
@@ -77,12 +83,13 @@ $color-orange: hsl(30, 100%, 55%);
   }
   a {
     color: #eee;
-    font-weight: bold;
+    // font-weight: bold;
     display: block;
     padding: 10px;
     text-decoration: none;
     // background: rgba(20, 20, 20, 0.9);
-    background: url("cool-background.png") no-repeat top;
+    background: url("images/triangles-darkgreen.svg") no-repeat top;
+    background-size: 100%;
     opacity: 0.95;
   }
   a:hover,
@@ -98,8 +105,8 @@ $color-orange: hsl(30, 100%, 55%);
   top: 0em;
   right: 0em;
   cursor: pointer;
-  background: url("cool-background.png") no-repeat top;
-  border-radius: 6%;
+  background: url("images/triangles-darkgreen.svg") no-repeat top;
+  border-radius: 0% 0% 0% 10%;
   z-index: 2;
 }
 
@@ -149,8 +156,8 @@ $color-orange: hsl(30, 100%, 55%);
     max-width: 320px;
   }
   h1 {
-    font-family: century-gothic-regular;
     font-weight: 100;
+    color: #222;
     font-size: 1.3em;
     text-align: center;
   }
@@ -160,8 +167,8 @@ $color-orange: hsl(30, 100%, 55%);
   grid-area: about;
   // background: rgb(0,168,29);
   // background: linear-gradient(177deg, $color-green, rgba(0,210,36,0.7049020291710435) 35%, rgba(110,255,125,0.24271715522146353) 100%);
-  background: url("cool-background.png") no-repeat;
-  background-size: cover;
+  background: url("images/triangles-darkgreen.svg") no-repeat;
+  background-position: top;
   border-bottom: 0.5em solid white;
   display: flex;
   flex-wrap: wrap;
@@ -182,40 +189,25 @@ $color-orange: hsl(30, 100%, 55%);
   }
   img {
     margin: 1em;
-    border: 0.5em solid white;
+    border: 0.5rem solid white;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
     width: 80%;
     max-width: 20em;
     border-radius: 50%;
   }
 }
 
-// .services{
-//   grid-area: services;
-//   position: relative;
-//   margin-top: -4%;
-//   text-shadow: 1px 1px 1px #333;
-// }
-
-// *, *:before, *:after {
-//   box-sizing: inherit;
-// }
-
 .services {
   grid-area: services;
-  background: rgba(255, 139, 0, 0.5);
-  background: linear-gradient(
-    177deg,
-    $color-orange,
-    rgba(255, 139, 0, 0.7497199563419117) 35%,
-    rgba(255, 190, 0, 0.8) 100%
-  );
+  background: url("images/triangles-orange.svg");
+  background-size: 100%;
   text-align: center;
   color: white;
   text-shadow: 1px 1px black;
   min-height: 40vh;
   padding: 0vw 1vw;
-  h1 {
-    font-size: max(3vw, 35px);
+  border-bottom: 0.5rem solid white;
+  .title {
     margin: 20px;
   }
 }
@@ -223,6 +215,7 @@ $color-orange: hsl(30, 100%, 55%);
   overflow: hidden;
   display: flex;
   flex-wrap: wrap;
+  margin-bottom: 5%;
 }
 .panel {
   position: relative;
@@ -230,8 +223,7 @@ $color-orange: hsl(30, 100%, 55%);
   border: 1px solid white;
   margin: 0.2em;
   height: 250px;
-  min-width: 110px;
-  width: 100%;
+  min-width: 25%;
   box-shadow: inset 0 0 0 5px rgba(255, 255, 255, 0.1);
   color: white;
   text-align: center;
@@ -273,7 +265,6 @@ $color-orange: hsl(30, 100%, 55%);
       width: 50%;
       margin-top: 4%;
       padding-top: 3%;
-      text-shadow: none;
     }
   }
 }
@@ -322,8 +313,9 @@ $color-orange: hsl(30, 100%, 55%);
 // }
 .panel.open {
   transition: all 0.5s ease-in-out;
-  flex: 5;
+  flex: 10;
 }
+
 @keyframes bouncing {
   0% {
     top: 49%;
@@ -346,6 +338,108 @@ $color-orange: hsl(30, 100%, 55%);
   position: absolute;
 }
 
+.gallery {
+  grid-area: gallery;
+  background: url(images/triangles-darkgreen.svg) no-repeat;
+  background-size: 3000px;
+  border-bottom: 0.5rem solid white;
+}
+
+.my-gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin: 5% 2%;
+  margin-bottom: 10%;
+  justify-content: space-around;
+
+  .gallery-item {
+    margin: 0;
+    padding: 0;
+
+    overflow: hidden;
+    box-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4);
+    img {
+      height: 100%;
+      width: 100%;
+      transition: transform 400ms ease-out;
+      &:hover {
+        scale: 1.01;
+        transform: scale(1.15);
+      }
+    }
+
+    figcaption {
+      display: none;
+    }
+  }
+}
+
+.hexagons {
+  grid-area: hexagons;
+  background: url("images/triangles-orange.svg");
+}
+.hexagon-wrapper {
+  margin: auto;
+  display: flex;
+  text-align: initial;
+  width: 200px;
+  height: 200px;
+  cursor: pointer;
+}
+
+.hexagon {
+  position: relative;
+  width: 46%;
+  height: 80%;
+  margin: auto;
+  color: white;
+  background: linear-gradient(-180deg, white, #fda3b2);
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  transition: 0.5s;
+}
+
+.hexagon i {
+  z-index: 1;
+  margin: auto;
+  font-size: 50px;
+  color: transparent;
+  background: linear-gradient(45deg, #a58fe9, #e37682);
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+.hexagon:before,
+.hexagon:after {
+  position: absolute;
+  content: "";
+  background: inherit;
+  height: 100%;
+  width: 100%;
+  border-radius: 0;
+  transition: 0.5s;
+  transform-origin: center;
+}
+.hexagon:before {
+  transform: rotateZ(60deg);
+}
+.hexagon:after {
+  transform: rotateZ(-60deg);
+}
+.hexagon:hover {
+  border-radius: 50px;
+  transition: 0.5s;
+}
+.hexagon:hover:before {
+  border-radius: 50px;
+  transition: 0.5s;
+}
+.hexagon:hover:after {
+  border-radius: 50px;
+  transition: 0.5s;
+}
+
 @media screen and (min-width: 700px) {
   .menu-toggle {
     display: none;
@@ -353,7 +447,7 @@ $color-orange: hsl(30, 100%, 55%);
   .nav {
     display: block;
     border-bottom: 1px solid white;
-    background: url("cool-background.png") no-repeat;
+    background: url("images/triangles-darkgreen.svg") no-repeat;
     background-size: 100%;
     // background: url("orange-cool-background.png") no-repeat;
     padding: 2px;
@@ -383,7 +477,6 @@ $color-orange: hsl(30, 100%, 55%);
     .panel {
       min-height: 500px;
       min-width: 250px;
-      max-width: 100%;
       h1 {
         font-size: 2rem;
         align-items: stretch;
@@ -401,6 +494,12 @@ $color-orange: hsl(30, 100%, 55%);
       }
     }
   }
+  .my-gallery {
+    margin: 0 10%;
+    margin-bottom: 5%;
+    .gallery-item {
+    }
+  }
 }
 
 @media only screen and (min-width: 1200px) {
@@ -409,5 +508,8 @@ $color-orange: hsl(30, 100%, 55%);
     p {
       font-size: 2em;
     }
+  }
+  .my-gallery {
+    grid-template-columns: repeat(6, 1fr);
   }
 }

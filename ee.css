@@ -1,6 +1,6 @@
 html {
   box-sizing: border-box;
-  font-family: Helvetica, sans-serif;
+  font-family: "Arial", sans-serif;
   font-size: 20px;
   font-weight: 200; }
 
@@ -20,18 +20,19 @@ body {
     color: #000;
     background-color: #fff; }
 
+.title {
+  text-align: center;
+  font-size: max(3vw, 35px);
+  color: white;
+  text-shadow: 0 0 4px rgba(0, 0, 0, 0.72), 0 0 14px rgba(0, 0, 0, 0.45); }
+
 .grid-container {
   display: grid;
-  grid-template-areas: "nav" "hero" "about" "services"; }
+  grid-template-areas: "nav" "hero" "about" "services" "gallery" "hexagons"; }
 
 .nav {
   grid-area: nav;
-  background: #ff8b00;
-  background: linear-gradient(177deg, #ff8c1a, rgba(255, 139, 0, 0.7497199563) 35%, rgba(255, 190, 0, 0.6208684157) 100%);
-  margin: 0;
-  padding: 0;
   width: 100%;
-  background: rgba(100, 100, 150, 0);
   font-size: 16px;
   position: fixed;
   z-index: 1; }
@@ -42,9 +43,6 @@ body {
     display: none; }
   .nav ul.opening {
     display: block;
-    padding-top: 0em;
-    height: 30px;
-    width: 100%;
     text-align: center;
     font-size: 50px;
     font-weight: 700; }
@@ -54,11 +52,11 @@ body {
     border-bottom: none; }
   .nav a {
     color: #eee;
-    font-weight: bold;
     display: block;
     padding: 10px;
     text-decoration: none;
-    background: url("cool-background.png") no-repeat top;
+    background: url("images/triangles-darkgreen.svg") no-repeat top;
+    background-size: 100%;
     opacity: 0.95; }
   .nav a:hover,
   .nav nav a:focus {
@@ -71,8 +69,8 @@ body {
   top: 0em;
   right: 0em;
   cursor: pointer;
-  background: url("cool-background.png") no-repeat top;
-  border-radius: 6%;
+  background: url("images/triangles-darkgreen.svg") no-repeat top;
+  border-radius: 0% 0% 0% 10%;
   z-index: 2; }
 
 .hamburger,
@@ -117,15 +115,15 @@ body {
     width: 100%;
     max-width: 320px; }
   .hero h1 {
-    font-family: century-gothic-regular;
     font-weight: 100;
+    color: #222;
     font-size: 1.3em;
     text-align: center; }
 
 .about {
   grid-area: about;
-  background: url("cool-background.png") no-repeat;
-  background-size: cover;
+  background: url("images/triangles-darkgreen.svg") no-repeat;
+  background-position: top;
   border-bottom: 0.5em solid white;
   display: flex;
   flex-wrap: wrap;
@@ -143,28 +141,30 @@ body {
       padding: 20px 60px; }
   .about img {
     margin: 1em;
-    border: 0.5em solid white;
+    border: 0.5rem solid white;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
     width: 80%;
     max-width: 20em;
     border-radius: 50%; }
 
 .services {
   grid-area: services;
-  background: rgba(255, 139, 0, 0.5);
-  background: linear-gradient(177deg, #ff8c1a, rgba(255, 139, 0, 0.7497199563) 35%, rgba(255, 190, 0, 0.8) 100%);
+  background: url("images/triangles-orange.svg");
+  background-size: 100%;
   text-align: center;
   color: white;
   text-shadow: 1px 1px black;
   min-height: 40vh;
-  padding: 0vw 1vw; }
-  .services h1 {
-    font-size: max(3vw, 35px);
+  padding: 0vw 1vw;
+  border-bottom: 0.5rem solid white; }
+  .services .title {
     margin: 20px; }
 
 .panels {
   overflow: hidden;
   display: flex;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  margin-bottom: 5%; }
 
 .panel {
   position: relative;
@@ -172,8 +172,7 @@ body {
   border: 1px solid white;
   margin: 0.2em;
   height: 250px;
-  min-width: 110px;
-  width: 100%;
+  min-width: 25%;
   box-shadow: inset 0 0 0 5px rgba(255, 255, 255, 0.1);
   color: white;
   text-align: center;
@@ -206,8 +205,7 @@ body {
     .panel .service-desc a {
       width: 50%;
       margin-top: 4%;
-      padding-top: 3%;
-      text-shadow: none; }
+      padding-top: 3%; }
 
 .panel1 {
   background-image: url("https://res.cloudinary.com/mtreeves24/image/upload/v1591306277/Exotic%20Explorers/Tito_1.webp"); }
@@ -246,7 +244,7 @@ body {
 
 .panel.open {
   transition: all 0.5s ease-in-out;
-  flex: 5; }
+  flex: 10; }
 
 @keyframes bouncing {
   0% {
@@ -264,6 +262,95 @@ body {
   margin-left: -25px;
   position: absolute; }
 
+.gallery {
+  grid-area: gallery;
+  background: url(images/triangles-darkgreen.svg) no-repeat;
+  background-size: 3000px;
+  border-bottom: 0.5rem solid white; }
+
+.my-gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin: 5% 2%;
+  margin-bottom: 10%;
+  justify-content: space-around; }
+  .my-gallery .gallery-item {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    box-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4); }
+    .my-gallery .gallery-item img {
+      height: 100%;
+      width: 100%;
+      transition: transform 400ms ease-out; }
+      .my-gallery .gallery-item img:hover {
+        scale: 1.01;
+        transform: scale(1.15); }
+    .my-gallery .gallery-item figcaption {
+      display: none; }
+
+.hexagons {
+  grid-area: hexagons;
+  background: url("images/triangles-orange.svg"); }
+
+.hexagon-wrapper {
+  margin: auto;
+  display: flex;
+  text-align: initial;
+  width: 200px;
+  height: 200px;
+  cursor: pointer; }
+
+.hexagon {
+  position: relative;
+  width: 46%;
+  height: 80%;
+  margin: auto;
+  color: white;
+  background: linear-gradient(-180deg, white, #fda3b2);
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  transition: 0.5s; }
+
+.hexagon i {
+  z-index: 1;
+  margin: auto;
+  font-size: 50px;
+  color: transparent;
+  background: linear-gradient(45deg, #a58fe9, #e37682);
+  background-clip: text;
+  -webkit-background-clip: text; }
+
+.hexagon:before,
+.hexagon:after {
+  position: absolute;
+  content: "";
+  background: inherit;
+  height: 100%;
+  width: 100%;
+  border-radius: 0;
+  transition: 0.5s;
+  transform-origin: center; }
+
+.hexagon:before {
+  transform: rotateZ(60deg); }
+
+.hexagon:after {
+  transform: rotateZ(-60deg); }
+
+.hexagon:hover {
+  border-radius: 50px;
+  transition: 0.5s; }
+
+.hexagon:hover:before {
+  border-radius: 50px;
+  transition: 0.5s; }
+
+.hexagon:hover:after {
+  border-radius: 50px;
+  transition: 0.5s; }
+
 @media screen and (min-width: 700px) {
   .menu-toggle {
     display: none; }
@@ -271,7 +358,7 @@ body {
   .nav {
     display: block;
     border-bottom: 1px solid white;
-    background: url("cool-background.png") no-repeat;
+    background: url("images/triangles-darkgreen.svg") no-repeat;
     background-size: 100%;
     padding: 2px; }
     .nav ul {
@@ -294,8 +381,7 @@ body {
 
   .services .panel {
     min-height: 500px;
-    min-width: 250px;
-    max-width: 100%; }
+    min-width: 250px; }
     .services .panel h1 {
       font-size: 2rem;
       align-items: stretch; }
@@ -306,11 +392,18 @@ body {
     .services .panel .service-desc {
       visibility: visible;
       padding: 0px 5px;
-      font-size: 1.2em; } }
+      font-size: 1.2em; }
+
+  .my-gallery {
+    margin: 0 10%;
+    margin-bottom: 5%; } }
 @media only screen and (min-width: 1200px) {
   .panel {
     min-width: 200px; }
     .panel p {
-      font-size: 2em; } }
+      font-size: 2em; }
+
+  .my-gallery {
+    grid-template-columns: repeat(6, 1fr); } }
 
 /*# sourceMappingURL=ee.css.map */
