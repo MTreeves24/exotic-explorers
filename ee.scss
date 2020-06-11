@@ -105,7 +105,7 @@ $color-orange: rgba(255, 140, 26, 1);
   top: 0em;
   right: 0em;
   cursor: pointer;
-  background: url("images/triangles-darkgreen.svg") no-repeat top;
+  background: url("images/triangles-green-wide.svg") no-repeat center;
   border-radius: 0% 0% 0% 10%;
   z-index: 2;
 }
@@ -167,8 +167,8 @@ $color-orange: rgba(255, 140, 26, 1);
   grid-area: about;
   // background: rgb(0,168,29);
   // background: linear-gradient(177deg, $color-green, rgba(0,210,36,0.7049020291710435) 35%, rgba(110,255,125,0.24271715522146353) 100%);
-  background: url("images/triangles-darkgreen.svg") no-repeat;
-  background-position: top;
+  background: url("images/triangles-green-mobile.svg") no-repeat;
+  background-position: center;
   border-bottom: 0.5em solid white;
   display: flex;
   flex-wrap: wrap;
@@ -246,6 +246,7 @@ $color-orange: rgba(255, 140, 26, 1);
   .see-more-mobile {
     position: absolute;
     bottom: 10%;
+    width: 70px;
   }
   .service-desc {
     visibility: hidden;
@@ -340,7 +341,7 @@ $color-orange: rgba(255, 140, 26, 1);
 
 .gallery {
   grid-area: gallery;
-  background: url(images/triangles-darkgreen.svg) no-repeat;
+  background: url(images/triangles-grey.svg) no-repeat;
   background-size: 3000px;
   border-bottom: 0.5rem solid white;
 }
@@ -447,8 +448,9 @@ $color-orange: rgba(255, 140, 26, 1);
   .nav {
     display: block;
     border-bottom: 1px solid white;
-    background: url("images/triangles-darkgreen.svg") no-repeat;
+    background: url("images/triangles-green-wide.svg") no-repeat;
     background-size: 100%;
+    background-position: center;
     // background: url("orange-cool-background.png") no-repeat;
     padding: 2px;
     ul {
@@ -472,6 +474,11 @@ $color-orange: rgba(255, 140, 26, 1);
   }
   .hero {
     padding-top: 3em;
+  }
+  .about {
+    background: url("images/triangles-green-mobile.svg") no-repeat;
+    background-position: center;
+    background-size: 300%;
   }
   .services {
     .panel {

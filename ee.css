@@ -69,7 +69,7 @@ body {
   top: 0em;
   right: 0em;
   cursor: pointer;
-  background: url("images/triangles-darkgreen.svg") no-repeat top;
+  background: url("images/triangles-green-wide.svg") no-repeat center;
   border-radius: 0% 0% 0% 10%;
   z-index: 2; }
 
@@ -122,8 +122,8 @@ body {
 
 .about {
   grid-area: about;
-  background: url("images/triangles-darkgreen.svg") no-repeat;
-  background-position: top;
+  background: url("images/triangles-green-mobile.svg") no-repeat;
+  background-position: center;
   border-bottom: 0.5em solid white;
   display: flex;
   flex-wrap: wrap;
@@ -192,7 +192,8 @@ body {
     font-size: 0.9em; }
   .panel .see-more-mobile {
     position: absolute;
-    bottom: 10%; }
+    bottom: 10%;
+    width: 70px; }
   .panel .service-desc {
     visibility: hidden;
     width: 98%;
@@ -264,7 +265,7 @@ body {
 
 .gallery {
   grid-area: gallery;
-  background: url(images/triangles-darkgreen.svg) no-repeat;
+  background: url(images/triangles-grey.svg) no-repeat;
   background-size: 3000px;
   border-bottom: 0.5rem solid white; }
 
@@ -358,8 +359,9 @@ body {
   .nav {
     display: block;
     border-bottom: 1px solid white;
-    background: url("images/triangles-darkgreen.svg") no-repeat;
+    background: url("images/triangles-green-wide.svg") no-repeat;
     background-size: 100%;
+    background-position: center;
     padding: 2px; }
     .nav ul {
       display: flex;
@@ -378,6 +380,11 @@ body {
 
   .hero {
     padding-top: 3em; }
+
+  .about {
+    background: url("images/triangles-green-mobile.svg") no-repeat;
+    background-position: center;
+    background-size: 300%; }
 
   .services .panel {
     min-height: 500px;
