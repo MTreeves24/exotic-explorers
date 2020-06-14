@@ -28,7 +28,7 @@ body {
 
 .grid-container {
   display: grid;
-  grid-template-areas: "nav" "hero" "about" "services" "gallery" "hexagons"; }
+  grid-template-areas: "nav" "hero" "about" "services" "gallery" "contact" "footer" "copyright" "hexagons"; }
 
 .nav {
   grid-area: nav;
@@ -159,93 +159,80 @@ body {
   border-bottom: 0.5rem solid white; }
   .services .title {
     margin: 20px; }
-
-.panels {
-  overflow: hidden;
-  display: flex;
-  flex-wrap: wrap;
-  margin-bottom: 5%; }
-
-.panel {
-  position: relative;
-  text-shadow: 0 0 4px rgba(0, 0, 0, 0.72), 0 0 14px rgba(0, 0, 0, 0.45);
-  border: 1px solid white;
-  margin: 0.2em;
-  height: 250px;
-  min-width: 25%;
-  box-shadow: inset 0 0 0 5px rgba(255, 255, 255, 0.1);
-  color: white;
-  text-align: center;
-  align-items: center;
-  /* Safari transitionend event.propertyName === flex */
-  /* Chrome + FF transitionend event.propertyName === flex-grow */
-  transition: font-size 0.7s cubic-bezier(0.61, -0.19, 0.7, -0.11), flex 0.7s cubic-bezier(0.61, -0.19, 0.7, -0.11), background 0.2s;
-  background-size: cover;
-  background-position: center;
-  justify-content: center;
-  display: flex;
-  flex: 1;
-  flex-direction: column; }
-  .panel h1 {
-    align-items: stretch;
-    padding-top: 20px;
-    font-size: 0.9em; }
-  .panel .see-more-mobile {
-    position: absolute;
-    bottom: 10%;
-    width: 70px; }
-  .panel .service-desc {
-    visibility: hidden;
-    width: 98%;
+  .services .panels {
+    overflow: hidden;
     display: flex;
-    flex-direction: column;
-    font-size: 0.6em;
-    background: #ff8b00;
-    background: linear-gradient(177deg, #ff8c1a, rgba(255, 139, 0, 0.5) 35%, rgba(255, 190, 0, 0.5) 100%);
-    border: 1px solid white; }
-    .panel .service-desc a {
-      width: 50%;
-      margin-top: 4%;
-      padding-top: 3%; }
-
-.panel1 {
-  background-image: url("https://res.cloudinary.com/mtreeves24/image/upload/v1591306277/Exotic%20Explorers/Tito_1.webp"); }
-
-.panel2 {
-  background-image: url("https://res.cloudinary.com/mtreeves24/image/upload/v1591306275/Exotic%20Explorers/thumbnail_Image-4.webp"); }
-
-.panel3 {
-  background-image: url("https://res.cloudinary.com/mtreeves24/image/upload/c_scale,w_741/v1591306278/Exotic%20Explorers/tiddlywink_web.webp"); }
-
-.panel4 {
-  background-image: url("https://res.cloudinary.com/mtreeves24/image/upload/c_scale,w_1019/v1591306277/Exotic%20Explorers/zebra_leg.webp"); }
-
-.panel5 {
-  background-image: url("https://res.cloudinary.com/mtreeves24/image/upload/v1591306261/Exotic%20Explorers/barn_owl_web.webp"); }
-
-.panel6 {
-  background-image: url("https://res.cloudinary.com/mtreeves24/image/upload/v1591306276/Exotic%20Explorers/thumbnail_IMG_1128.webp"); }
-
-.panel > * {
-  margin: 0;
-  transition: transform 0.5s;
-  flex: 1 0 auto;
-  display: flex;
-  justify-content: center;
-  align-items: center; }
-
-.panel.open-active > *:first-child {
-  transform: translateY(0); }
-
-.panel > *:last-child {
-  transform: translatex(1900%); }
-
-.panel.open-active > *:last-child {
-  transform: translateY(0); }
-
-.panel.open {
-  transition: all 0.5s ease-in-out;
-  flex: 10; }
+    flex-wrap: wrap;
+    margin-bottom: 5%; }
+  .services .panel {
+    position: relative;
+    text-shadow: 0 0 4px rgba(0, 0, 0, 0.72), 0 0 14px rgba(0, 0, 0, 0.45);
+    border: 1px solid white;
+    margin: 0.2em;
+    height: 250px;
+    min-width: 25%;
+    box-shadow: inset 0 0 0 5px rgba(255, 255, 255, 0.1);
+    color: white;
+    text-align: center;
+    align-items: center;
+    /* Safari transitionend event.propertyName === flex */
+    /* Chrome + FF transitionend event.propertyName === flex-grow */
+    transition: font-size 0.7s cubic-bezier(0.61, -0.19, 0.7, -0.11), flex 0.7s cubic-bezier(0.61, -0.19, 0.7, -0.11), background 0.2s;
+    background-size: cover;
+    background-position: center;
+    justify-content: center;
+    display: flex;
+    flex: 1;
+    flex-direction: column; }
+    .services .panel h1 {
+      align-items: stretch;
+      padding-top: 20px;
+      font-size: 0.9em; }
+    .services .panel .see-more-mobile {
+      position: absolute;
+      bottom: 10%;
+      width: 70px; }
+    .services .panel .service-desc {
+      visibility: hidden;
+      width: 98%;
+      display: flex;
+      flex-direction: column;
+      font-size: 0.6em;
+      background: #ff8b00;
+      background: linear-gradient(177deg, #ff8c1a, rgba(255, 139, 0, 0.5) 35%, rgba(255, 190, 0, 0.5) 100%);
+      border: 1px solid white; }
+      .services .panel .service-desc a {
+        width: 50%;
+        margin-top: 4%;
+        padding-top: 3%; }
+  .services .panel1 {
+    background-image: url("https://res.cloudinary.com/mtreeves24/image/upload/v1591306277/Exotic%20Explorers/Tito_1.webp"); }
+  .services .panel2 {
+    background-image: url("https://res.cloudinary.com/mtreeves24/image/upload/v1591306275/Exotic%20Explorers/thumbnail_Image-4.webp"); }
+  .services .panel3 {
+    background-image: url("https://res.cloudinary.com/mtreeves24/image/upload/c_scale,w_741/v1591306278/Exotic%20Explorers/tiddlywink_web.webp"); }
+  .services .panel4 {
+    background-image: url("https://res.cloudinary.com/mtreeves24/image/upload/c_scale,w_1019/v1591306277/Exotic%20Explorers/zebra_leg.webp"); }
+  .services .panel5 {
+    background-image: url("https://res.cloudinary.com/mtreeves24/image/upload/v1591306261/Exotic%20Explorers/barn_owl_web.webp"); }
+  .services .panel6 {
+    background-image: url("https://res.cloudinary.com/mtreeves24/image/upload/v1591306276/Exotic%20Explorers/thumbnail_IMG_1128.webp"); }
+  .services .panel > * {
+    margin: 0;
+    transition: transform 0.5s;
+    flex: 1 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .services .panel.open-active > *:first-child {
+    transform: translateY(0); }
+  .services .panel > *:last-child {
+    transform: translatex(1900%); }
+  .services .panel.open-active > *:last-child {
+    transform: translateY(0); }
+  .services .panel.open {
+    transition: all 0.5s ease-in-out;
+    flex: 10; }
 
 @keyframes bouncing {
   0% {
@@ -265,8 +252,8 @@ body {
 
 .gallery {
   grid-area: gallery;
-  background: url(images/triangles-grey.svg) no-repeat;
-  background-size: 3000px;
+  background: url("https://res.cloudinary.com/mtreeves24/image/upload/c_fill,h_1057,q_57,w_888/v1591997326/Exotic%20Explorers/flock-of-birds-flying-above-the-mountain-during-sunset-70577.webp") no-repeat;
+  background-size: cover;
   border-bottom: 0.5rem solid white; }
 
 .my-gallery {
@@ -290,17 +277,122 @@ body {
     .my-gallery .gallery-item figcaption {
       display: none; }
 
+.contact {
+  grid-area: contact;
+  background: url("images/triangles-green-mobile.svg") no-repeat;
+  background-position: center;
+  background-size: 500%;
+  text-align: center;
+  padding: 20px 0px 30px 0px; }
+  .contact .details .ppplogo {
+    height: 100px;
+    margin: 5px;
+    border: 2px solid black; }
+  .contact .details p {
+    margin-top: 0;
+    background: none;
+    color: #222; }
+  .contact .details a {
+    text-decoration: none;
+    color: #222; }
+
+.form fieldset {
+  width: 80vw;
+  margin: 20px auto;
+  border: 2px solid #222; }
+  .form fieldset legend {
+    font-size: 40px;
+    font-weight: 500; }
+.form input {
+  height: 30px;
+  width: 250px;
+  text-align: center;
+  margin-bottom: 10px; }
+.form textarea {
+  width: 100%;
+  margin-top: 0.8em;
+  resize: none; }
+.form label {
+  font-size: 25px; }
+.form .submit {
+  width: 150px;
+  height: 40px;
+  cursor: pointer;
+  margin: 0 auto;
+  border: 2px solid white;
+  -webkit-border-radius: 40px;
+  border-radius: 40px;
+  font-weight: 700;
+  font-size: 1.6em;
+  line-height: 1;
+  color: white;
+  text-shadow: 1px 1px 1px black;
+  box-shadow: 1px 1px 1px black;
+  text-align: center;
+  -o-text-overflow: clip;
+  text-overflow: clip;
+  letter-spacing: 1px;
+  background: rgba(1, 1, 1, 0.2); }
+  .form .submit:hover {
+    transition: all 0.1s ease-in-out;
+    transform: scale(1.1); }
+  .form .submit:focus {
+    outline: 0; }
+
+.footer {
+  grid-area: footer;
+  display: grid;
+  grid-template-columns: auto 2fr;
+  color: white;
+  text-shadow: 0.5px 0.5px 1px black;
+  background: #5e5d52;
+  text-align: left;
+  padding: 20px 25px; }
+  .footer h4 {
+    display: inline-block;
+    margin: 5px;
+    border-bottom: 1px solid #222; }
+  .footer ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    border-left: 1px solid #222; }
+    .footer ul li a {
+      padding: 10px;
+      display: inline-block;
+      color: white;
+      text-decoration: none; }
+      .footer ul li a:hover {
+        background: rgba(244, 244, 244, 0.8); }
+  .footer .site {
+    margin-right: 20px;
+    max-width: 100px; }
+  .footer .services ul {
+    max-width: 300px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr; }
+
+.copyright {
+  grid-area: copyright;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #5e5d52;
+  padding: 0px 10px;
+  font-size: 12px;
+  color: white; }
+  .copyright a {
+    color: white; }
+
 .hexagons {
-  grid-area: hexagons;
-  background: url("images/triangles-orange.svg"); }
+  display: flex; }
 
 .hexagon-wrapper {
   margin: auto;
-  display: flex;
   text-align: initial;
-  width: 200px;
-  height: 200px;
-  cursor: pointer; }
+  width: 100px;
+  height: 100px; }
 
 .hexagon {
   position: relative;
@@ -308,20 +400,21 @@ body {
   height: 80%;
   margin: auto;
   color: white;
-  background: linear-gradient(-180deg, white, #fda3b2);
+  background: linear-gradient(-180deg, white, #ff8c1a);
   display: flex;
   align-content: center;
   justify-content: center;
   transition: 0.5s; }
-
-.hexagon i {
-  z-index: 1;
-  margin: auto;
-  font-size: 50px;
-  color: transparent;
-  background: linear-gradient(45deg, #a58fe9, #e37682);
-  background-clip: text;
-  -webkit-background-clip: text; }
+  .hexagon img {
+    position: absolute;
+    top: 20%;
+    left: 0;
+    z-index: 1;
+    margin: auto;
+    width: 100%;
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text; }
 
 .hexagon:before,
 .hexagon:after {
@@ -382,9 +475,8 @@ body {
     padding-top: 3em; }
 
   .about {
-    background: url("images/triangles-green-mobile.svg") no-repeat;
-    background-position: center;
-    background-size: 300%; }
+    background: url("images/triangles-green-wide.svg") no-repeat;
+    background-position: center; }
 
   .services .panel {
     min-height: 500px;
@@ -400,6 +492,10 @@ body {
       visibility: visible;
       padding: 0px 5px;
       font-size: 1.2em; }
+
+  .gallery {
+    background: url("https://res.cloudinary.com/mtreeves24/image/upload/c_scale,q_58,w_1759/v1591997326/Exotic%20Explorers/flock-of-birds-flying-above-the-mountain-during-sunset-70577.jpg") no-repeat;
+    background-size: cover; }
 
   .my-gallery {
     margin: 0 10%;
