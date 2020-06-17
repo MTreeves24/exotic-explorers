@@ -16,6 +16,29 @@ document.querySelectorAll("a").forEach((item) =>
   })
 );
 
+//////////ACTIVATE DROPDOWN ON CLICK//////////
+const dropdown = document.querySelector(".dropdown");
+const dropdownRoot = document.querySelector(".dropdown-root");
+
+dropdownRoot.addEventListener("click", function () {
+  dropdown.classList.contains("dropdown-hide")
+    ? dropdown.classList.toggle("dropdown-show")
+    : null;
+});
+
+//////////TESTIMONIAL SEE MORE BUTTON//////////
+document.querySelectorAll(".read-more-trigger").forEach((item) =>
+  item.addEventListener("click", function () {
+    if (this.textContent === "See more") {
+      this.textContent = "See less";
+    } else if (this.textContent === "See less") {
+      this.textContent = "See more";
+    }
+  })
+);
+
+//////////////////////////////GALLERY///////////////////////////////////
+
 const panels = document.querySelectorAll(".panel");
 function toggleOpen() {
   this.classList.toggle("open");

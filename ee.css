@@ -23,20 +23,21 @@ body {
 .title {
   text-align: center;
   font-size: max(3vw, 35px);
+  padding: 0px 5px;
   color: white;
   text-shadow: 0 0 4px rgba(0, 0, 0, 0.72), 0 0 14px rgba(0, 0, 0, 0.45); }
 
 .grid-container {
   display: grid;
-  grid-template-areas: "nav" "hero" "about" "services" "gallery" "contact" "footer" "copyright" "hexagons"; }
+  grid-template-areas: "nav" "hero" "about" "services" "gallery" "testimonials" "contact" "footer" "copyright" "hexagons"; }
 
 .nav {
   grid-area: nav;
   width: 100%;
   font-size: 16px;
   position: fixed;
-  z-index: 1; }
-  .nav ul {
+  z-index: 10; }
+  .nav .nav-ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
@@ -47,20 +48,48 @@ body {
     font-size: 50px;
     font-weight: 700; }
   .nav li {
-    border-bottom: 1px solid #f6f4e2; }
-  .nav li:last-child {
-    border-bottom: none; }
+    background: url("images/triangles-darkgreen.svg") no-repeat top;
+    background-size: 100%;
+    opacity: 0.95;
+    border-bottom: 1px solid #f6f4e2;
+    padding: 10px;
+    color: #eee; }
   .nav a {
     color: #eee;
     display: block;
-    padding: 10px;
-    text-decoration: none;
-    background: url("images/triangles-darkgreen.svg") no-repeat top;
-    background-size: 100%;
-    opacity: 0.95; }
+    text-decoration: none; }
   .nav a:hover,
   .nav nav a:focus {
     color: #ff8c1a; }
+
+.dropdown-root {
+  cursor: pointer; }
+  .dropdown-root:hover {
+    color: #ff8c1a; }
+
+.dropdown {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  width: 100%; }
+  .dropdown li {
+    background: url("images/triangles-darkgreen.svg") top;
+    border: 0.1px solid white;
+    background-size: 300%;
+    font-size: 0.6em;
+    height: 70px; }
+
+.dropdown-hide {
+  display: none; }
+
+.dropdown-show {
+  display: grid;
+  grid-template-columns: 1fr 1fr; }
+  .dropdown-show li {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    transition: 2s all ease-in; }
 
 /* CSS MENU TOGGLE*/
 .menu-toggle {
@@ -149,8 +178,12 @@ body {
 
 .services {
   grid-area: services;
-  background: url("images/triangles-orange.svg");
-  background-size: 100%;
+  background: #e65c00;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #f9d423, #e65c00);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #f9d423, #e65c00);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   text-align: center;
   color: white;
   text-shadow: 1px 1px black;
@@ -277,6 +310,110 @@ body {
     .my-gallery .gallery-item figcaption {
       display: none; }
 
+.testimonials {
+  grid-area: testimonials;
+  background: #e1f5c4;
+  background: -webkit-radial-gradient(#ede574, #e1f5c4);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: radial-gradient(#ede574, #e1f5c4);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  padding-bottom: 30px; }
+  .testimonials .testimonial-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; }
+  .testimonials figure.quote {
+    font-family: "Raleway", Arial, sans-serif;
+    flex: 1 1 10%;
+    position: relative;
+    overflow: hidden;
+    margin: 10px 5%;
+    min-width: 220px;
+    max-width: 510px;
+    width: 100%;
+    color: #333;
+    text-align: left; }
+    .testimonials figure.quote * {
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box; }
+    .testimonials figure.quote img {
+      max-width: 100%;
+      height: 150px;
+      border-radius: 50%;
+      margin-bottom: 15px;
+      display: inline-block;
+      z-index: 1;
+      position: relative; }
+      .testimonials figure.quote img:hover, .testimonials figure.quote img:focus {
+        transition: transform 0.5s ease-in-out;
+        transform: scale(1.1); }
+    .testimonials figure.quote blockquote {
+      margin: 0;
+      display: block;
+      border-radius: 8px;
+      position: relative;
+      background-color: #fafafa;
+      padding: 30px 40px 65px 40px;
+      font-size: 0.8em;
+      font-weight: 500;
+      margin: 0 0 -50px;
+      line-height: 1.6em;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.15); }
+    .testimonials figure.quote .owner {
+      margin: 0;
+      text-transform: uppercase;
+      text-align: center;
+      color: #222; }
+    .testimonials figure.quote .owner h5 {
+      opacity: 0.8;
+      margin: 0;
+      font-weight: 800; }
+    .testimonials figure.quote .owner h5 span {
+      font-weight: 400;
+      text-transform: none;
+      display: block; }
+  .testimonials figure.quote blockquote:before,
+  .testimonials figure.quote blockquote:after {
+    font-family: "FontAwesome";
+    content: "\201C";
+    position: absolute;
+    font-size: 50px;
+    opacity: 0.3;
+    font-style: normal; }
+  .testimonials figure.quote blockquote:before {
+    top: 35px;
+    left: 13px; }
+  .testimonials figure.quote blockquote:after {
+    content: "\201D";
+    right: 35px;
+    bottom: 35px; }
+  .testimonials .more-quotes {
+    display: none; }
+  .testimonials .read-more-state {
+    display: none; }
+  .testimonials .read-more-target {
+    opacity: 0;
+    max-height: 0;
+    font-size: 0;
+    transition: 0.25s ease; }
+  .testimonials .read-more-state:checked ~ .read-more-wrap .read-more-target {
+    opacity: 1;
+    font-size: inherit;
+    max-height: 999em; }
+  .testimonials .read-more-state ~ .read-more-trigger:before {
+    content: "Show more"; }
+  .testimonials .read-more-state:checked ~ .read-more-trigger:before {
+    content: "Show less"; }
+  .testimonials .read-more-trigger {
+    cursor: pointer;
+    display: inline-block;
+    padding: 0 0.5em;
+    color: #666;
+    font-size: 0.9em;
+    line-height: 2;
+    border: 1px solid #ddd;
+    border-radius: 0.25em; }
+
 .contact {
   grid-area: contact;
   background: url("images/triangles-green-mobile.svg") no-repeat;
@@ -295,6 +432,53 @@ body {
   .contact .details a {
     text-decoration: none;
     color: #222; }
+  .contact .details .hexagons {
+    display: flex;
+    margin: 0 auto;
+    width: 300px; }
+  .contact .details .hexagon-wrapper {
+    margin: auto;
+    text-align: initial;
+    width: 100px;
+    height: 100px; }
+  .contact .details .hexagon {
+    position: relative;
+    width: 46%;
+    height: 80%;
+    margin: auto;
+    background: linear-gradient(-180deg, white, #ff8c1a);
+    transition: 0.5s; }
+    .contact .details .hexagon img {
+      position: absolute;
+      top: 20%;
+      left: 0;
+      z-index: 1;
+      margin: auto;
+      width: 100%;
+      -webkit-background-clip: text; }
+  .contact .details .hexagon:before,
+  .contact .details .hexagon:after {
+    position: absolute;
+    content: "";
+    background: inherit;
+    height: 100%;
+    width: 100%;
+    border-radius: 0;
+    transition: 0.5s;
+    transform-origin: center; }
+  .contact .details .hexagon:before {
+    transform: rotateZ(60deg); }
+  .contact .details .hexagon:after {
+    transform: rotateZ(-60deg); }
+  .contact .details .hexagon:hover {
+    border-radius: 50px;
+    transition: 0.5s; }
+  .contact .details .hexagon:hover:before {
+    border-radius: 50px;
+    transition: 0.5s; }
+  .contact .details .hexagon:hover:after {
+    border-radius: 50px;
+    transition: 0.5s; }
 
 .form fieldset {
   width: 80vw;
@@ -376,74 +560,16 @@ body {
 .copyright {
   grid-area: copyright;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: flex-end;
+  align-items: end;
   background: #5e5d52;
-  padding: 0px 10px;
-  font-size: 12px;
+  padding: 5px 10px;
+  font-size: 10px;
   color: white; }
+  .copyright p {
+    margin: 0px 20px; }
   .copyright a {
     color: white; }
-
-.hexagons {
-  display: flex; }
-
-.hexagon-wrapper {
-  margin: auto;
-  text-align: initial;
-  width: 100px;
-  height: 100px; }
-
-.hexagon {
-  position: relative;
-  width: 46%;
-  height: 80%;
-  margin: auto;
-  color: white;
-  background: linear-gradient(-180deg, white, #ff8c1a);
-  display: flex;
-  align-content: center;
-  justify-content: center;
-  transition: 0.5s; }
-  .hexagon img {
-    position: absolute;
-    top: 20%;
-    left: 0;
-    z-index: 1;
-    margin: auto;
-    width: 100%;
-    color: transparent;
-    background-clip: text;
-    -webkit-background-clip: text; }
-
-.hexagon:before,
-.hexagon:after {
-  position: absolute;
-  content: "";
-  background: inherit;
-  height: 100%;
-  width: 100%;
-  border-radius: 0;
-  transition: 0.5s;
-  transform-origin: center; }
-
-.hexagon:before {
-  transform: rotateZ(60deg); }
-
-.hexagon:after {
-  transform: rotateZ(-60deg); }
-
-.hexagon:hover {
-  border-radius: 50px;
-  transition: 0.5s; }
-
-.hexagon:hover:before {
-  border-radius: 50px;
-  transition: 0.5s; }
-
-.hexagon:hover:after {
-  border-radius: 50px;
-  transition: 0.5s; }
 
 @media screen and (min-width: 700px) {
   .menu-toggle {
@@ -456,16 +582,30 @@ body {
     background-size: 100%;
     background-position: center;
     padding: 2px; }
-    .nav ul {
+    .nav .nav-ul {
       display: flex;
       justify-content: space-around; }
-      .nav ul li {
+      .nav .nav-ul li {
+        background: none;
+        color: white;
+        font-size: 1.5em;
+        text-shadow: 1px 1px black;
         border: none; }
-    .nav a {
-      background: none;
-      color: white;
-      font-size: 1.5em;
-      text-shadow: 1px 1px black; }
+    .nav .dropdown-root {
+      position: relative; }
+      .nav .dropdown-root:hover {
+        text-decoration: underline; }
+    .nav .dropdown {
+      grid-template-columns: repeat(6, 1fr);
+      position: absolute;
+      top: 100%;
+      width: 100%;
+      font-size: 0.7em;
+      font-weight: 700; }
+      .nav .dropdown li {
+        height: 40px;
+        background: url("images/triangles-green-wide.svg") center;
+        background-size: 300%; }
     .nav a:hover,
     .nav nav a:focus {
       color: white;
@@ -480,7 +620,8 @@ body {
 
   .services .panel {
     min-height: 500px;
-    min-width: 250px; }
+    width: 30vw;
+    min-width: 30%; }
     .services .panel h1 {
       font-size: 2rem;
       align-items: stretch; }
@@ -499,14 +640,25 @@ body {
 
   .my-gallery {
     margin: 0 10%;
-    margin-bottom: 5%; } }
+    margin-bottom: 5%; }
+
+  .testimonials .more-quotes {
+    display: block; } }
 @media only screen and (min-width: 1200px) {
-  .panel {
-    min-width: 200px; }
-    .panel p {
+  .services .panel {
+    min-width: 10%; }
+    .services .panel p {
       font-size: 2em; }
 
   .my-gallery {
-    grid-template-columns: repeat(6, 1fr); } }
+    grid-template-columns: repeat(6, 1fr); }
+
+  .contact {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    justify-content: center; }
+    .contact fieldset {
+      width: 85%; } }
 
 /*# sourceMappingURL=ee.css.map */
