@@ -178,12 +178,8 @@ body {
 
 .services {
   grid-area: services;
-  background: #e65c00;
-  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to left, #f9d423, #e65c00);
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to left, #f9d423, #e65c00);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: url("images/triangles-grey.svg") no-repeat;
+  background-size: cover;
   text-align: center;
   color: white;
   text-shadow: 1px 1px black;
@@ -312,11 +308,8 @@ body {
 
 .testimonials {
   grid-area: testimonials;
-  background: #e1f5c4;
-  background: -webkit-radial-gradient(#ede574, #e1f5c4);
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: radial-gradient(#ede574, #e1f5c4);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: url("images/triangles-grey.svg") no-repeat;
+  background-size: cover;
   padding-bottom: 30px; }
   .testimonials .testimonial-flex {
     display: flex;
@@ -363,7 +356,8 @@ body {
       margin: 0;
       text-transform: uppercase;
       text-align: center;
-      color: #222; }
+      color: #fff;
+      text-shadow: 0 0 4px rgba(0, 0, 0, 0.72), 0 0 14px rgba(0, 0, 0, 0.45); }
     .testimonials figure.quote .owner h5 {
       opacity: 0.8;
       margin: 0;
@@ -421,7 +415,7 @@ body {
   background-size: 500%;
   text-align: center;
   padding: 20px 0px 30px 0px; }
-  .contact .details .ppplogo {
+  .contact .details .logo {
     height: 100px;
     margin: 5px;
     border: 2px solid black; }
@@ -642,8 +636,13 @@ body {
     margin: 0 10%;
     margin-bottom: 5%; }
 
-  .testimonials .more-quotes {
-    display: block; } }
+  .testimonials {
+    background-size: cover; }
+    .testimonials figure.quote {
+      min-width: 270px;
+      margin: 20px; }
+    .testimonials .more-quotes {
+      display: block; } }
 @media only screen and (min-width: 1200px) {
   .services .panel {
     min-width: 10%; }
@@ -652,6 +651,11 @@ body {
 
   .my-gallery {
     grid-template-columns: repeat(6, 1fr); }
+
+  .testimonials {
+    padding: 0px 2%; }
+    .testimonials figure.quote {
+      min-width: 420px; }
 
   .contact {
     display: grid;
