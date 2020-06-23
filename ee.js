@@ -1,5 +1,4 @@
 // Inspiration: https://hummingbirdbakery.com/
-
 //NAVBAR//
 const ul = document.querySelector("ul");
 const hamburgerToggle = document.querySelector(".menu-toggle");

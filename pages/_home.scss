@@ -1,0 +1,460 @@
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    "hero"
+    "about"
+    "services"
+    "gallery"
+    "testimonials"
+    "contact"
+    "footer"
+    "copyright"
+    "hexagons";
+}
+
+.hero {
+  grid-area: hero;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  img {
+    width: 100%;
+    max-width: 320px;
+  }
+  h1 {
+    font-weight: 100;
+    color: #222;
+    font-size: 1.3em;
+    text-align: center;
+  }
+}
+
+.about {
+  grid-area: about;
+  // background: rgb(0,168,29);
+  // background: linear-gradient(177deg, $color-green, rgba(0,210,36,0.7049020291710435) 35%, rgba(110,255,125,0.24271715522146353) 100%);
+  background: url("images/triangles-green-mobile.svg") no-repeat;
+  background-position: center;
+  border-bottom: 0.5em solid white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  .about-text {
+    color: white;
+    max-width: 800px;
+    text-align: center;
+    padding: 0px 20px 60px 20px;
+    h4 {
+      padding-bottom: 20px;
+    }
+    a {
+      font-size: 1em;
+      padding: 20px 60px;
+    }
+  }
+  img {
+    margin: 1em;
+    border: 0.5rem solid white;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    width: 80%;
+    max-width: 20em;
+    border-radius: 50%;
+  }
+}
+
+.services {
+  grid-area: services;
+  background: url("images/triangles-grey.svg") no-repeat;
+  background-size: cover;
+  text-align: center;
+  color: white;
+  text-shadow: 1px 1px black;
+  min-height: 40vh;
+  padding: 0vw 1vw;
+  border-bottom: 0.5rem solid white;
+  .title {
+    margin: 20px;
+  }
+  .panels {
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 5%;
+  }
+  .panel {
+    position: relative;
+    text-shadow: 0 0 4px rgba(0, 0, 0, 0.72), 0 0 14px rgba(0, 0, 0, 0.45);
+    border: 1px solid white;
+    margin: 0.2em;
+    height: 250px;
+    min-width: 25%;
+    box-shadow: inset 0 0 0 5px rgba(255, 255, 255, 0.1);
+    color: white;
+    text-align: center;
+    align-items: center;
+    /* Safari transitionend event.propertyName === flex */
+    /* Chrome + FF transitionend event.propertyName === flex-grow */
+    transition: font-size 0.7s cubic-bezier(0.61, -0.19, 0.7, -0.11),
+      flex 0.7s cubic-bezier(0.61, -0.19, 0.7, -0.11), background 0.2s;
+    background-size: cover;
+    background-position: center;
+    justify-content: center;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    h1 {
+      align-items: stretch;
+      padding-top: 20px;
+      font-size: 0.9em;
+    }
+    .see-more-mobile {
+      position: absolute;
+      bottom: 10%;
+      width: 70px;
+    }
+    .service-desc {
+      visibility: hidden;
+      width: 98%;
+      display: flex;
+      flex-direction: column;
+      font-size: 0.6em;
+      background: rgb(255, 139, 0);
+      background: linear-gradient(
+        177deg,
+        $color-orange,
+        rgba(255, 139, 0, 0.5) 35%,
+        rgba(255, 190, 0, 0.5) 100%
+      );
+      border: 1px solid white;
+      a {
+        width: 50%;
+        margin-top: 4%;
+        padding-top: 3%;
+      }
+    }
+  }
+  .panel1 {
+    background-image: url("https://res.cloudinary.com/mtreeves24/image/upload/v1591306277/Exotic%20Explorers/Tito_1.webp");
+  }
+  .panel2 {
+    background-image: url("https://res.cloudinary.com/mtreeves24/image/upload/v1591306275/Exotic%20Explorers/thumbnail_Image-4.webp");
+  }
+  .panel3 {
+    background-image: url("https://res.cloudinary.com/mtreeves24/image/upload/c_scale,w_741/v1591306278/Exotic%20Explorers/tiddlywink_web.webp");
+  }
+  .panel4 {
+    background-image: url("https://res.cloudinary.com/mtreeves24/image/upload/c_scale,w_1019/v1591306277/Exotic%20Explorers/zebra_leg.webp");
+  }
+  .panel5 {
+    background-image: url("https://res.cloudinary.com/mtreeves24/image/upload/v1591306261/Exotic%20Explorers/barn_owl_web.webp");
+  }
+  .panel6 {
+    background-image: url("https://res.cloudinary.com/mtreeves24/image/upload/v1591306276/Exotic%20Explorers/thumbnail_IMG_1128.webp");
+  }
+
+  // /* Flex Items */
+  .panel > * {
+    margin: 0;
+    transition: transform 0.5s;
+    flex: 1 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  // .panel > *:first-child { transform: translateY(-100%); }
+
+  .panel.open-active > *:first-child {
+    transform: translateY(0);
+  }
+  .panel > *:last-child {
+    transform: translatex(1900%);
+  }
+  .panel.open-active > *:last-child {
+    transform: translateY(0);
+  }
+
+  // .panel p:nth-child(2) {
+  //   font-size: 4em;
+  // }
+  .panel.open {
+    transition: all 0.5s ease-in-out;
+    flex: 10;
+  }
+}
+
+@keyframes bouncing {
+  0% {
+    top: 49%;
+  }
+  70% {
+    top: 50%;
+  }
+  100% {
+    top: 49%;
+  }
+}
+
+.bouncing-finger {
+  visibility: hidden;
+  animation: bouncing 1s infinite ease-in-out;
+  top: 50%;
+  height: 50px;
+  left: 50%;
+  margin-left: -25px;
+  position: absolute;
+}
+
+.gallery {
+  grid-area: gallery;
+  background: url("https://res.cloudinary.com/mtreeves24/image/upload/c_fill,h_1057,q_57,w_888/v1591997326/Exotic%20Explorers/flock-of-birds-flying-above-the-mountain-during-sunset-70577.webp")
+    no-repeat;
+  background-size: cover;
+  border-bottom: 0.5rem solid white;
+}
+.my-gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin: 5% 2%;
+  margin-bottom: 10%;
+  justify-content: space-around;
+  .gallery-item {
+    margin: 0;
+    padding: 0;
+
+    overflow: hidden;
+    box-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4);
+    img {
+      height: 100%;
+      width: 100%;
+      transition: transform 400ms ease-out;
+      &:hover {
+        scale: 1.01;
+        transform: scale(1.15);
+      }
+    }
+    figcaption {
+      display: none;
+    }
+  }
+}
+
+//TESTIMONIALS//
+.testimonials {
+  grid-area: testimonials;
+  background: url("images/triangles-grey.svg") no-repeat;
+  background-size: cover;
+  padding-bottom: 30px;
+  border-bottom: 0.5rem solid white;
+
+  .testimonial-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  figure.quote {
+    font-family: "Raleway", Arial, sans-serif;
+    flex: 1 1 10%;
+    position: relative;
+    overflow: hidden;
+    margin: 10px 5%;
+    min-width: 220px;
+    max-width: 510px;
+    width: 100%;
+    color: #333;
+    text-align: left;
+    //   box-shadow: none !important;
+    * {
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+    }
+
+    img {
+      max-width: 100%;
+      height: 150px;
+      border-radius: 50%;
+      margin-bottom: 15px;
+      display: inline-block;
+      z-index: 1;
+      position: relative;
+      &:hover,
+      &:focus {
+        transition: transform 0.5s ease-in-out;
+        transform: scale(1.1);
+      }
+    }
+
+    blockquote {
+      margin: 0;
+      display: block;
+      border-radius: 8px;
+      position: relative;
+      background-color: #fafafa;
+      padding: 30px 40px 65px 40px;
+      font-size: 0.8em;
+      font-weight: 500;
+      margin: 0 0 -50px;
+      line-height: 1.6em;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+    }
+    .owner {
+      margin: 0;
+      text-transform: uppercase;
+      text-align: center;
+      color: #fff;
+      text-shadow: 0 0 4px rgba(0, 0, 0, 0.72), 0 0 14px rgba(0, 0, 0, 0.45);
+    }
+    .owner h5 {
+      opacity: 0.8;
+      margin: 0;
+      font-weight: 800;
+    }
+    .owner h5 span {
+      font-weight: 400;
+      text-transform: none;
+      display: block;
+    }
+  }
+  figure.quote blockquote:before,
+  figure.quote blockquote:after {
+    font-family: "FontAwesome";
+    content: "\201C";
+    position: absolute;
+    font-size: 50px;
+    opacity: 0.3;
+    font-style: normal;
+  }
+  figure.quote blockquote:before {
+    top: 35px;
+    left: 13px;
+  }
+  figure.quote blockquote:after {
+    content: "\201D";
+    right: 35px;
+    bottom: 35px;
+  }
+  .more-quotes {
+    display: none;
+  }
+
+  //TEST CODE
+  .read-more-state {
+    display: none;
+  }
+
+  .read-more-target {
+    opacity: 0;
+    max-height: 0;
+    font-size: 0;
+    transition: 0.25s ease;
+  }
+
+  .read-more-state:checked ~ .read-more-wrap .read-more-target {
+    opacity: 1;
+    font-size: inherit;
+    max-height: 999em;
+  }
+
+  .read-more-state ~ .read-more-trigger:before {
+    content: "Show more";
+  }
+
+  .read-more-state:checked ~ .read-more-trigger:before {
+    content: "Show less";
+  }
+
+  .read-more-trigger {
+    cursor: pointer;
+    display: inline-block;
+    padding: 0 0.5em;
+    color: #666;
+    font-size: 0.9em;
+    line-height: 2;
+    border: 1px solid #ddd;
+    border-radius: 0.25em;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .hero {
+    padding-top: 3em;
+  }
+  .about {
+    background: url("images/triangles-green-wide.svg") no-repeat;
+    background-position: center;
+  }
+  .services {
+    .panel {
+      min-height: 500px;
+      width: 30vw;
+      min-width: 30%;
+      h1 {
+        font-size: 2rem;
+        align-items: stretch;
+      }
+      .bouncing-finger {
+        visibility: visible;
+      }
+      .see-more-mobile {
+        visibility: hidden;
+      }
+      .service-desc {
+        visibility: visible;
+        padding: 0px 5px;
+        font-size: 1.2em;
+      }
+    }
+  }
+  .gallery {
+    background: url("https://res.cloudinary.com/mtreeves24/image/upload/c_scale,q_58,w_1759/v1591997326/Exotic%20Explorers/flock-of-birds-flying-above-the-mountain-during-sunset-70577.jpg")
+      no-repeat;
+    background-size: cover;
+  }
+  .my-gallery {
+    margin: 0 10%;
+    margin-bottom: 5%;
+    .gallery-item {
+    }
+  }
+  .testimonials {
+    background-size: cover;
+    figure.quote {
+      min-width: 270px;
+      margin: 20px;
+    }
+    .more-quotes {
+      display: block;
+    }
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .services {
+    .panel {
+      min-width: 10%;
+      p {
+        font-size: 2em;
+      }
+    }
+  }
+  .my-gallery {
+    grid-template-columns: repeat(6, 1fr);
+  }
+  .testimonials {
+    padding: 0px 2%;
+    figure.quote {
+      min-width: 420px;
+    }
+  }
+  .contact {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    justify-content: center;
+    fieldset {
+      width: 85%;
+    }
+  }
+}
