@@ -1,0 +1,642 @@
+.nav {
+  width: 100%;
+  font-size: 16px;
+  position: fixed;
+  z-index: 10; }
+  .nav .nav-ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: none; }
+  .nav ul.opening {
+    display: block;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 700; }
+  .nav li {
+    background: url("../images/triangles/triangles-darkgreen.svg") no-repeat top;
+    background-size: 100%;
+    opacity: 0.95;
+    border-bottom: 1px solid #f6f4e2;
+    padding: 10px;
+    color: #eee; }
+  .nav a {
+    color: #eee;
+    display: block;
+    text-decoration: none; }
+  .nav a:hover,
+  .nav nav a:focus {
+    color: #ff8c1a; }
+
+.dropdown-root {
+  cursor: pointer; }
+  .dropdown-root:hover {
+    color: #ff8c1a; }
+
+.dropdown {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  width: 100%; }
+  .dropdown li {
+    background: url("../images/triangles/triangles-darkgreen.svg") top;
+    border: 0.1px solid white;
+    background-size: 300%;
+    font-size: 0.6em;
+    height: 70px; }
+
+.dropdown-hide {
+  display: none; }
+
+.dropdown-show {
+  display: grid;
+  grid-template-columns: 1fr 1fr; }
+  .dropdown-show li {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    transition: 1s all ease-in; }
+
+/* CSS MENU TOGGLE*/
+.menu-toggle {
+  position: fixed;
+  padding: 1.5em;
+  top: 0em;
+  right: 0em;
+  cursor: pointer;
+  background: url("../images/triangles/triangles-green-wide.svg") no-repeat center;
+  border-radius: 0% 0% 0% 10%;
+  z-index: 2; }
+
+.hamburger,
+.hamburger::before,
+.hamburger::after {
+  content: "";
+  display: block;
+  background: #222;
+  height: 3px;
+  width: 2em;
+  border-radius: 1px;
+  -webkit-transition: all ease-in-out 350ms;
+  transition: all ease-in-out 350ms; }
+
+.hamburger::before {
+  -webkit-transform: translateY(-7px);
+  transform: translateY(-7px); }
+
+.hamburger::after {
+  -webkit-transform: translateY(4px);
+  transform: translateY(4px); }
+
+.open .hamburger {
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg); }
+
+.open .hamburger::before {
+  display: none; }
+
+.open .hamburger::after {
+  -webkit-transform: translateY(-1px) rotate(-90deg);
+  transform: translateY(-1px) rotate(-90deg); }
+
+@media screen and (min-width: 700px) {
+  .menu-toggle {
+    display: none; }
+
+  .nav {
+    display: block;
+    border-bottom: 1px solid white;
+    background: url("../images/triangles/triangles-green-wide.svg") no-repeat;
+    background-size: 100%;
+    background-position: center;
+    padding: 2px; }
+    .nav .nav-ul {
+      display: flex;
+      justify-content: space-around; }
+      .nav .nav-ul li {
+        background: none;
+        color: white;
+        font-size: 1.5em;
+        text-shadow: 1px 1px black;
+        border: none; }
+    .nav .dropdown-root {
+      position: relative; }
+      .nav .dropdown-root:hover {
+        text-decoration: underline; }
+    .nav .dropdown {
+      grid-template-columns: repeat(6, 1fr);
+      position: absolute;
+      top: 100%;
+      width: 100%;
+      font-size: 0.7em;
+      font-weight: 700; }
+      .nav .dropdown li {
+        height: 40px;
+        border: 1px solid white;
+        background: url("../images/triangles/triangles-green-wide.svg") center;
+        background-size: 300%; }
+    .nav a:hover,
+    .nav nav a:focus {
+      color: white;
+      text-decoration: underline; } }
+.contact {
+  grid-area: contact;
+  background: url("../images/triangles/triangles-green-mobile.svg") no-repeat center;
+  text-align: center;
+  padding: 20px 0px 30px 0px;
+  color: white;
+  font-weight: 700;
+  text-shadow: 0 0 4px rgba(0, 0, 0, 0.72), 0 0 14px rgba(0, 0, 0, 0.45); }
+  .contact .details .logo {
+    height: 100px;
+    margin: 6px 6px 20px 6px;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22); }
+  .contact .details p {
+    margin-top: 0;
+    background: none; }
+  .contact .details a {
+    text-decoration: none;
+    color: #222; }
+  .contact .details .hexagons {
+    display: flex;
+    margin: 0 auto;
+    width: 300px; }
+  .contact .details .hexagon-wrapper {
+    margin: auto;
+    text-align: initial;
+    width: 100px;
+    height: 100px; }
+  .contact .details .hexagon {
+    position: relative;
+    width: 46%;
+    height: 80%;
+    margin: auto;
+    background: linear-gradient(-180deg, white, #ff8c1a);
+    transition: 0.5s; }
+    .contact .details .hexagon img {
+      position: absolute;
+      top: 20%;
+      left: 0;
+      z-index: 1;
+      margin: auto;
+      width: 100%;
+      -webkit-background-clip: text; }
+  .contact .details .hexagon:before,
+  .contact .details .hexagon:after {
+    position: absolute;
+    content: "";
+    background: inherit;
+    height: 100%;
+    width: 100%;
+    border-radius: 0;
+    transition: 0.5s;
+    transform-origin: center; }
+  .contact .details .hexagon:before {
+    transform: rotateZ(60deg); }
+  .contact .details .hexagon:after {
+    transform: rotateZ(-60deg); }
+  .contact .details .hexagon:hover {
+    border-radius: 50px;
+    transition: 0.5s; }
+  .contact .details .hexagon:hover:before {
+    border-radius: 50px;
+    transition: 0.5s; }
+  .contact .details .hexagon:hover:after {
+    border-radius: 50px;
+    transition: 0.5s; }
+
+.form fieldset {
+  width: 80vw;
+  margin: 20px auto;
+  border: 2px solid white; }
+  .form fieldset legend {
+    font-size: 40px;
+    font-weight: 500; }
+.form input {
+  height: 30px;
+  width: 250px;
+  text-align: center;
+  margin-bottom: 10px; }
+.form textarea {
+  width: 100%;
+  margin-top: 0.8em;
+  resize: none; }
+.form label {
+  font-size: 25px; }
+.form .submit {
+  height: 3em;
+  font-weight: 700;
+  font-size: 1em;
+  cursor: pointer; }
+  .form .submit:focus {
+    outline: 0; }
+
+.copyright {
+  grid-area: copyright;
+  display: flex;
+  justify-content: space-around;
+  align-items: end;
+  background: #5e5d52;
+  padding: 5px 10px;
+  font-size: 10px;
+  color: white; }
+  .copyright p {
+    margin: 0px; }
+  .copyright a {
+    color: white; }
+
+@media only screen and (min-width: 700px) {
+  .contact {
+    background: url("../images/triangles/triangles-green-wide.svg") center;
+    background-size: cover; } }
+@media only screen and (min-width: 1200px) {
+  .contact {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    justify-content: center;
+    background-position: center;
+    background-size: inherit; }
+    .contact fieldset {
+      width: 85%; } }
+.hero {
+  grid-area: hero;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .hero img {
+    width: 100%;
+    max-width: 270px;
+    padding-top: 1em; }
+  .hero h1 {
+    font-weight: 100;
+    color: #222;
+    font-size: 1.2em;
+    text-align: center; }
+
+@media screen and (min-width: 700px) {
+  .hero {
+    padding-top: 3em; } }
+html {
+  box-sizing: border-box;
+  font-family: "Arial", sans-serif;
+  font-size: 20px;
+  font-weight: 200; }
+
+body {
+  margin: 0;
+  text-align: center; }
+
+.button {
+  font-size: 0.8em;
+  background: rgba(111, 111, 111, 0);
+  padding: 0.6em 0.6em;
+  border: 0.1em solid #ffffff;
+  text-decoration: none;
+  color: #ffffff;
+  text-align: center;
+  transition: all 0.2s; }
+  .button:hover {
+    color: #000;
+    background-color: #fff; }
+
+.title {
+  text-align: center;
+  font-size: max(3vw, 35px);
+  padding: 0px 5px;
+  color: white;
+  text-shadow: 0 0 4px rgba(0, 0, 0, 0.72), 0 0 14px rgba(0, 0, 0, 0.45); }
+
+@media screen and (min-width: 700px) {
+  .button-mobile {
+    visibility: hidden; } }
+.grid-container {
+  display: grid;
+  grid-template-areas: "hero" "about" "services" "gallery" "testimonials" "contact" "footer" "copyright" "hexagons"; }
+
+.about {
+  grid-area: about;
+  background: url("../images/triangles/triangles-green-mobile.svg") no-repeat center;
+  border-bottom: 0.5em solid white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center; }
+  .about .about-text {
+    color: white;
+    max-width: 800px;
+    text-align: center;
+    padding: 0px 20px 60px 20px; }
+    .about .about-text h4 {
+      padding-bottom: 20px; }
+    .about .about-text a {
+      font-size: 1em;
+      padding: 20px 60px; }
+  .about img {
+    margin: 1em;
+    border: 0.5rem solid white;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    width: 80%;
+    max-width: 20em;
+    border-radius: 50%; }
+
+.services {
+  grid-area: services;
+  background: url("../images/triangles/triangles-grey-mobile.svg") no-repeat center;
+  background-size: cover;
+  text-align: center;
+  color: white;
+  text-shadow: 1px 1px black;
+  min-height: 40vh;
+  padding: 0vw 1vw;
+  border-bottom: 0.5rem solid white; }
+  .services .title {
+    margin: 20px; }
+  .services .panels {
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 5%; }
+  .services .panel {
+    position: relative;
+    text-shadow: 0 0 4px rgba(0, 0, 0, 0.72), 0 0 14px rgba(0, 0, 0, 0.45);
+    border: 1px solid white;
+    margin: 0.2em;
+    height: 250px;
+    min-width: 25%;
+    box-shadow: inset 0 0 0 5px rgba(255, 255, 255, 0.1);
+    color: white;
+    text-align: center;
+    align-items: center;
+    /* Safari transitionend event.propertyName === flex */
+    /* Chrome + FF transitionend event.propertyName === flex-grow */
+    transition: font-size 0.7s cubic-bezier(0.61, -0.19, 0.7, -0.11), flex 0.7s cubic-bezier(0.61, -0.19, 0.7, -0.11), background 0.2s;
+    background-size: cover;
+    background-position: center;
+    justify-content: center;
+    display: flex;
+    flex: 1;
+    flex-direction: column; }
+    .services .panel h1 {
+      align-items: stretch;
+      padding-top: 20px;
+      font-size: 0.9em; }
+    .services .panel .button-mobile {
+      position: absolute;
+      bottom: 10%;
+      width: 70px; }
+    .services .panel .service-desc {
+      visibility: hidden;
+      width: 98%;
+      display: flex;
+      flex-direction: column;
+      font-size: 0.6em;
+      background: #ff8b00;
+      background: linear-gradient(177deg, #ff8c1a, rgba(255, 139, 0, 0.5) 35%, rgba(255, 190, 0, 0.5) 100%);
+      border: 1px solid white; }
+      .services .panel .service-desc a {
+        width: 50%;
+        margin-top: 4%;
+        padding-top: 3%; }
+  .services .panel1 {
+    background-image: url("https://res.cloudinary.com/mtreeves24/image/upload/c_scale,q_50,w_400/v1593293903/Exotic%20Explorers/services-photos/twyla.webp"); }
+  .services .panel2 {
+    background-image: url("https://res.cloudinary.com/mtreeves24/image/upload/c_scale,q_50,w_400/v1593294106/Exotic%20Explorers/services-photos/snake.webp"); }
+  .services .panel3 {
+    background-image: url("https://res.cloudinary.com/mtreeves24/image/upload/c_scale,q_50,w_400/v1593293923/Exotic%20Explorers/services-photos/hedgehog.webp"); }
+  .services .panel4 {
+    background-image: url("https://res.cloudinary.com/mtreeves24/image/upload/c_scale,q_50,w_400/v1593294008/Exotic%20Explorers/services-photos/tarantula.webp"); }
+  .services .panel5 {
+    background-image: url("https://res.cloudinary.com/mtreeves24/image/upload/c_scale,q_50,w_400/v1593293974/Exotic%20Explorers/services-photos/tortoise.webp"); }
+  .services .panel6 {
+    background-image: url("https://res.cloudinary.com/mtreeves24/image/upload/c_scale,q_50,w_400/v1593293960/Exotic%20Explorers/services-photos/squirrelthing.webp"); }
+  .services .panel > * {
+    margin: 0;
+    transition: transform 0.5s;
+    flex: 1 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .services .panel.open-active > *:first-child {
+    transform: translateY(0); }
+  .services .panel > *:last-child {
+    transform: translatex(1900%); }
+  .services .panel.open-active > *:last-child {
+    transform: translateY(0); }
+  .services .panel.open {
+    transition: all 0.5s ease-in-out;
+    flex: 10; }
+
+@keyframes bouncing {
+  0% {
+    top: 49%; }
+  70% {
+    top: 50%; }
+  100% {
+    top: 49%; } }
+.bouncing-finger {
+  visibility: hidden;
+  animation: bouncing 1s infinite ease-in-out;
+  top: 50%;
+  height: 50px;
+  left: 50%;
+  margin-left: -25px;
+  position: absolute; }
+
+.gallery {
+  grid-area: gallery;
+  background: url("https://res.cloudinary.com/mtreeves24/image/upload/c_fill,h_1057,q_57,w_888/v1591997326/Exotic%20Explorers/flock-of-birds-flying-above-the-mountain-during-sunset-70577.webp") no-repeat;
+  background-size: cover;
+  border-bottom: 0.5rem solid white; }
+
+.my-gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin: 5% 2%;
+  margin-bottom: 10%;
+  justify-content: space-around; }
+  .my-gallery .gallery-item {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    box-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4); }
+    .my-gallery .gallery-item img {
+      height: 100%;
+      width: 100%;
+      transition: transform 400ms ease-out; }
+      .my-gallery .gallery-item img:hover {
+        scale: 1.01;
+        transform: scale(1.15); }
+    .my-gallery .gallery-item figcaption {
+      display: none; }
+
+.testimonials {
+  grid-area: testimonials;
+  background: url("../images/triangles/triangles-grey-mobile.svg") no-repeat center;
+  background-size: cover;
+  padding-bottom: 30px;
+  border-bottom: 0.5rem solid white; }
+  .testimonials .testimonial-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; }
+  .testimonials figure.quote {
+    font-family: "Raleway", Arial, sans-serif;
+    flex: 1 1 10%;
+    position: relative;
+    overflow: hidden;
+    margin: 10px 5%;
+    min-width: 220px;
+    max-width: 510px;
+    width: 100%;
+    color: #333;
+    text-align: left; }
+    .testimonials figure.quote * {
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box; }
+    .testimonials figure.quote img {
+      max-width: 100%;
+      height: 150px;
+      border-radius: 50%;
+      margin-bottom: 15px;
+      display: inline-block;
+      z-index: 1;
+      position: relative; }
+      .testimonials figure.quote img:hover, .testimonials figure.quote img:focus {
+        transition: transform 0.5s ease-in-out;
+        transform: scale(1.1); }
+    .testimonials figure.quote blockquote {
+      margin: 0;
+      display: block;
+      border-radius: 8px;
+      position: relative;
+      background-color: #fafafa;
+      padding: 30px 40px 65px 40px;
+      font-size: 0.8em;
+      font-weight: 500;
+      margin: 0 0 -50px;
+      line-height: 1.6em;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.15); }
+    .testimonials figure.quote .owner {
+      margin: 0;
+      text-transform: uppercase;
+      text-align: center;
+      color: #fff;
+      text-shadow: 0 0 4px rgba(0, 0, 0, 0.72), 0 0 14px rgba(0, 0, 0, 0.45); }
+    .testimonials figure.quote .owner h5 {
+      opacity: 0.8;
+      margin: 0;
+      font-weight: 800; }
+    .testimonials figure.quote .owner h5 span {
+      font-weight: 400;
+      text-transform: none;
+      display: block; }
+  .testimonials figure.quote blockquote:before,
+  .testimonials figure.quote blockquote:after {
+    font-family: "FontAwesome";
+    content: "\201C";
+    position: absolute;
+    font-size: 50px;
+    opacity: 0.3;
+    font-style: normal; }
+  .testimonials figure.quote blockquote:before {
+    top: 35px;
+    left: 13px; }
+  .testimonials figure.quote blockquote:after {
+    content: "\201D";
+    right: 35px;
+    bottom: 35px; }
+  .testimonials .more-quotes {
+    display: none; }
+  .testimonials .read-more-state {
+    display: none; }
+  .testimonials .read-more-target {
+    opacity: 0;
+    max-height: 0;
+    font-size: 0;
+    transition: 0.25s ease; }
+  .testimonials .read-more-state:checked ~ .read-more-wrap .read-more-target {
+    opacity: 1;
+    font-size: inherit;
+    max-height: 999em; }
+  .testimonials .read-more-state ~ .read-more-trigger:before {
+    content: "Show more"; }
+  .testimonials .read-more-state:checked ~ .read-more-trigger:before {
+    content: "Show less"; }
+  .testimonials .read-more-trigger {
+    cursor: pointer;
+    display: inline-block;
+    padding: 0 0.5em;
+    color: #666;
+    font-size: 0.9em;
+    line-height: 2;
+    border: 1px solid #ddd;
+    border-radius: 0.25em; }
+  .testimonials h1 {
+    padding: 0 4%; }
+
+@media screen and (min-width: 700px) {
+  .about {
+    background: url("../images/triangles/triangles-green-wide.svg") no-repeat center;
+    background-size: cover; }
+
+  .services {
+    background: url("../images/triangles/triangles-grey-wide.svg") no-repeat;
+    background-size: cover; }
+    .services .panel {
+      min-height: 500px;
+      width: 30vw;
+      min-width: 30%; }
+      .services .panel h1 {
+        font-size: 2rem;
+        align-items: stretch; }
+      .services .panel .bouncing-finger {
+        visibility: visible; }
+      .services .panel .button-mobile {
+        visibility: hidden; }
+      .services .panel .service-desc {
+        visibility: visible;
+        padding: 0px 5px;
+        font-size: 1.2em; }
+
+  .gallery {
+    background: url("https://res.cloudinary.com/mtreeves24/image/upload/c_scale,q_58,w_1759/v1591997326/Exotic%20Explorers/flock-of-birds-flying-above-the-mountain-during-sunset-70577.jpg") no-repeat;
+    background-size: cover; }
+
+  .my-gallery {
+    margin: 0 10%;
+    margin-bottom: 5%; }
+
+  .testimonials {
+    background: url("../images/triangles/triangles-grey-wide.svg") no-repeat center;
+    background-size: cover; }
+    .testimonials figure.quote {
+      min-width: 270px;
+      margin: 20px; }
+    .testimonials .more-quotes {
+      display: block; } }
+@media only screen and (min-width: 1200px) {
+  .services .panel {
+    min-width: 10%; }
+    .services .panel p {
+      font-size: 2em; }
+
+  .my-gallery {
+    grid-template-columns: repeat(6, 1fr); }
+
+  .testimonials {
+    padding: 0px 2%; }
+    .testimonials figure.quote {
+      min-width: 420px; }
+
+  .contact {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    justify-content: center; }
+    .contact fieldset {
+      width: 85%; } }
+
+/*# sourceMappingURL=ee.css.map */
