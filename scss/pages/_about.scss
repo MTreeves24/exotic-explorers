@@ -18,9 +18,7 @@
   color: white;
   text-align: center;
   padding: 1% 3%;
-  border-bottom: 3px solid white;
 }
-
 .about-us {
   grid-area: about-us;
   background: url("../images/triangles/triangles-green-mobile.svg") no-repeat
@@ -30,6 +28,8 @@
 }
 
 .profile {
+  border-bottom: 3px solid white;
+
   &:nth-child(odd) {
     background: url("../images/triangles/triangles-orange-mobile.svg") no-repeat;
     background-position: center;
