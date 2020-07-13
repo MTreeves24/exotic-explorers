@@ -17,26 +17,26 @@
 .about-text {
   color: white;
   text-align: center;
-  padding: 0px 3%;
+  padding: 1% 3%;
+  border-bottom: 3px solid white;
 }
 
 .about-us {
   grid-area: about-us;
-  background: url("../images/triangles-green-mobile.svg") no-repeat;
-  background-position: center;
+  background: url("../images/triangles/triangles-green-mobile.svg") no-repeat
+    center;
   background-size: cover;
-  border-bottom: 0.5em solid white;
+  border-bottom: 3px solid white;
 }
 
 .profile {
   &:nth-child(odd) {
-    background: url("../images/triangles-orange-mobile.svg") no-repeat;
+    background: url("../images/triangles/triangles-orange-mobile.svg") no-repeat;
     background-position: center;
     background-size: cover;
   }
   &:nth-child(even) {
-    background: url("../images/triangles-green-mobile.svg") no-repeat;
-    background-position: center;
+    background: url("../images/triangles/triangles-green-mobile.svg") no-repeat center;
     background-size: cover;
   }
   img {
@@ -59,23 +59,21 @@
 
 @media screen and (min-width: 700px) {
   .about-us {
-    background: url("../images/triangles-green-wide.svg") no-repeat;
+    background: url("../images/triangles/triangles-green-wide.svg") no-repeat;
     background-position: center;
     background-size: cover;
-    img {
-    }
   }
 
   .profile {
     &:nth-child(odd) {
-      background: url("../images/triangles-orange-wide.svg") no-repeat;
+      background: url("../images/triangles/triangles-orange-wide2.svg") no-repeat;
       background-position: center;
       background-size: cover;
     }
 
     &:nth-child(even) {
-      background: url("../images/triangles-green-wide.svg") no-repeat;
-      background-position: center;
+      background: url("../images/triangles/triangles-green-wide.svg") no-repeat
+      center;
       background-size: cover;
     }
   }
@@ -94,6 +92,12 @@
   }
   .profile {
     @include img-grid();
+    &:nth-child(odd) {
+      grid-template-columns: 2fr 1fr;
+      picture{
+        order:1;
+      }
+    }
   }
   .image {
     border: 3px solid white;
