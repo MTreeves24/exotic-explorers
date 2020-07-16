@@ -18,7 +18,7 @@
     font-weight: 700;
   }
   li {
-    background: url("../images/triangles/triangles-darkgreen.svg") no-repeat top;
+    background: url("../images/triangles/triangles-darkgreen.svg") top;
     background-size: 100%;
     opacity: 0.95;
     border-bottom: 1px solid #f6f4e2;
@@ -52,7 +52,7 @@
   width: 100%;
 
   li {
-    background: url("../images/triangles/triangles-darkgreen.svg") top;
+    // background: url("../images/triangles/triangles-darkgreen.svg") top;
     border: 0.1px solid white;
     background-size: 300%;
     font-size: 0.6em;
@@ -81,8 +81,7 @@
   top: 0em;
   right: 0em;
   cursor: pointer;
-  background: url("../images/triangles/triangles-green-wide.svg") no-repeat
-    center;
+  background: url("../images/triangles/triangles-green-wide.svg") no-repeat center;
   border-radius: 0% 0% 0% 10%;
   z-index: 2;
 }
