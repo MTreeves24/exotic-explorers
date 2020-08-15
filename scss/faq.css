@@ -314,7 +314,8 @@ body {
     visibility: hidden; } }
 .faq {
   color: white;
-  display: grid; }
+  display: grid;
+  overflow: hidden; }
 
 .title {
   text-decoration: underline; }
@@ -349,17 +350,15 @@ body {
 
 .question-set-3 {
   position: relative;
-  background: url("../images/triangles/triangles-green-mobile.svg") no-repeat;
-  background-position: center;
+  background: url("../images/triangles/triangles-green-wide.svg") no-repeat;
+  background-size: cover;
   padding: 20px; }
 
 .question-set-4 {
   position: relative;
   background: url("../images/triangles/triangles-orange-mobile.svg") no-repeat;
-  background-position: center;
+  background-size: cover;
   padding: 20px; }
-  .question-set-4 .img-transparent-bg {
-    display: none; }
 
 .faq-info {
   position: relative;

@@ -1,6 +1,7 @@
 .faq {
   color: white;
   display: grid;
+  overflow: hidden;
 }
 
 .title {
@@ -27,7 +28,6 @@
 
 .question-set-1 {
   position: relative;
-
   background: url("../images/triangles/triangles-green-mobile.svg") no-repeat;
   background-position: center;
   padding: 20px;
@@ -42,19 +42,16 @@
 
 .question-set-3 {
   position: relative;
-  background: url("../images/triangles/triangles-green-mobile.svg") no-repeat;
-  background-position: center;
+  background: url("../images/triangles/triangles-green-wide.svg") no-repeat;
+  background-size: cover;
   padding: 20px;
 }
 
 .question-set-4 {
   position: relative;
   background: url("../images/triangles/triangles-orange-mobile.svg") no-repeat;
-  background-position: center;
+  background-size: cover;
   padding: 20px;
-  .img-transparent-bg {
-    display: none;
-  }
 }
 
 .faq-info {
@@ -98,9 +95,6 @@
     box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
     max-width: 800px;
     border: 5px solid white;
-  }
-
-  .areas-covered-container {
   }
 }
 
