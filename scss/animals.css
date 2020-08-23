@@ -327,6 +327,8 @@ body {
     margin: 0; }
   .gallery h1 {
     padding-top: 5%; }
+  .gallery .blank-space-maker {
+    display: none; }
 
 .my-gallery {
   display: grid;
@@ -365,11 +367,14 @@ body {
       display: none; }
 
 .birdgallery,
-.mammalgallery {
+.mammalgallery,
+.amphibiansgallery {
   background: url("../images/triangles/triangles-orange-mobile.svg") no-repeat; }
 
-.reptilegallery {
-  background: url("../images/triangles/triangles-green-mobile.svg") no-repeat center; }
+.reptilegallery,
+.invertsgallery {
+  background: url("../images/triangles/triangles-green-mobile.svg") no-repeat center;
+  background-size: cover; }
 
 @media screen and (min-width: 700px) {
   .animals {
@@ -387,18 +392,35 @@ body {
     margin-bottom: 5%; }
 
   .birdgallery,
-  .mammalgallery {
+  .mammalgallery,
+  .amphibiansgallery {
     background: url("../images/triangles/triangles-orange-wide.svg") no-repeat;
     background-size: cover; }
 
-  .reptilegallery {
+  .reptilegallery,
+  .invertsgallery {
     background: url("../images/triangles/triangles-green-wide.svg") no-repeat;
     background-size: cover; } }
 @media only screen and (min-width: 1200px) {
+  .animals {
+    padding: 0 10%; }
+
+  .gallery .blank-space-maker {
+    display: block; }
+
   .birds {
     grid-template-columns: repeat(6, 1fr); }
 
+  .reptiles {
+    grid-template-columns: repeat(6, 1fr); }
+
   .mammals {
-    grid-template-columns: repeat(4, 1fr); } }
+    grid-template-columns: repeat(6, 1fr); }
+
+  .inverts {
+    grid-template-columns: repeat(5, 1fr); }
+
+  .amphibians {
+    grid-template-columns: repeat(5, 1fr); } }
 
 /*# sourceMappingURL=animals.css.map */

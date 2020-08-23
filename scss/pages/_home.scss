@@ -163,7 +163,7 @@
   // }
   .panel.open {
     transition: all 0.5s ease-in-out;
-    flex: 2;
+    flex: 3 1;
   }
 }
 
@@ -390,11 +390,6 @@
         font-size: 1.2em;
       }
     }
-    .panel6 {
-      h1 {
-        font-size: 1.7em;
-      }
-    }
   }
   .gallery {
     background: url("https://res.cloudinary.com/mtreeves24/image/upload/c_scale,q_58,w_1759/v1591997326/Exotic%20Explorers/flock-of-birds-flying-above-the-mountain-during-sunset-70577.jpg")
@@ -422,11 +417,10 @@
   }
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1600px) {
   .services {
     .panel {
       min-width: 10%;
-
       .service-desc {
         font-size: 0.9em;
         transition: 0.2s all ease;
@@ -444,7 +438,6 @@
       justify-content: center;
       align-items: center;
     }
-    // .panel > *:first-child { transform: translateY(-100%); }
 
     .panel.open-active > *:first-child {
       transform: translateY(0);
@@ -456,12 +449,9 @@
       transform: translateY(0);
     }
 
-    // .panel p:nth-child(2) {
-    //   font-size: 4em;
-    // }
     .panel.open {
       transition: all 0.5s ease-in-out;
-      flex: 3 1;
+      flex: 1.5 1;
       .bouncing-finger {
         display: none;
       }

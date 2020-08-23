@@ -140,6 +140,7 @@
       text-decoration: underline; } }
 .contact {
   grid-area: contact;
+  position: relative;
   background: url("../images/triangles/triangles-green-mobile.svg") no-repeat center;
   text-align: center;
   padding: 20px 0px 30px 0px;
