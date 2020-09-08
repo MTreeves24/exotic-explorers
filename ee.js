@@ -105,8 +105,6 @@ panels.forEach((panel) =>
   };
 })();
 
-window.fitText(document.querySelectorAll(".fittext"), 0.9);
-
 //////////GALLERY//////////
 
 var pswpElement = document.querySelectorAll(".pswp")[0];
@@ -314,3 +312,5 @@ var initPhotoSwipeFromDOM = function (gallerySelector) {
 
 // execute above function
 initPhotoSwipeFromDOM(".my-gallery");
+
+window.fitText(document.querySelectorAll(".fittext"), 0.9);
