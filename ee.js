@@ -1,11 +1,3 @@
-//////////TEMPORARY COVID BANNER//////////
-const banner = document.querySelector("#box");
-const bannerX = document.querySelector("#boxclose");
-
-bannerX.addEventListener("click", function () {
-  banner.classList.add("boxClosed");
-});
-
 //////////NAVBAR HAMBURGER DROPDOWN//////////
 
 const ul = document.querySelector("ul");
@@ -104,9 +96,9 @@ panels.forEach((panel) =>
     return el;
   };
 })();
+window.fitText(document.querySelectorAll(".fittext"), 0.9);
 
 //////////GALLERY//////////
-
 var pswpElement = document.querySelectorAll(".pswp")[0];
 
 var initPhotoSwipeFromDOM = function (gallerySelector) {
@@ -313,4 +305,10 @@ var initPhotoSwipeFromDOM = function (gallerySelector) {
 // execute above function
 initPhotoSwipeFromDOM(".my-gallery");
 
-window.fitText(document.querySelectorAll(".fittext"), 0.9);
+//////////TEMPORARY COVID BANNER//////////
+const banner = document.querySelector("#box");
+const bannerX = document.querySelector("#boxclose");
+
+bannerX.addEventListener("click", function () {
+  banner.classList.add("boxClosed");
+});
