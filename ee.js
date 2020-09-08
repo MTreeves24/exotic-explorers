@@ -1,5 +1,13 @@
-// Inspiration: https://hummingbirdbakery.com/
-//NAVBAR//
+//////////TEMPORARY COVID BANNER//////////
+const banner = document.querySelector("#box");
+const bannerX = document.querySelector("#boxclose");
+
+bannerX.addEventListener("click", function () {
+  banner.classList.add("boxClosed");
+});
+
+//////////NAVBAR HAMBURGER DROPDOWN//////////
+
 const ul = document.querySelector("ul");
 const hamburgerToggle = document.querySelector(".menu-toggle");
 
@@ -36,7 +44,7 @@ document.querySelectorAll(".read-more-trigger").forEach((item) =>
   })
 );
 
-//////////////////////////////SERVICES PANELS///////////////////////////////////
+//////////SERVICES PANELS//////////
 
 const panels = document.querySelectorAll(".panel");
 function toggleOpen() {
@@ -52,7 +60,54 @@ panels.forEach((panel) =>
   panel.addEventListener("transitionend", toggleActive)
 );
 
-//////////////////////////////GALLERY///////////////////////////////////
+//////////FITTEXT//////////
+(function () {
+  var addEvent = function (el, type, fn) {
+    if (el.addEventListener) el.addEventListener(type, fn, false);
+    else el.attachEvent("on" + type, fn);
+  };
+  var extend = function (obj, ext) {
+    for (var key in ext) if (ext.hasOwnProperty(key)) obj[key] = ext[key];
+    return obj;
+  };
+  window.fitText = function (el, kompressor, options) {
+    var settings = extend(
+      {
+        minFontSize: -1 / 0,
+        maxFontSize: 1 / 0,
+      },
+      options
+    );
+    var fit = function (el) {
+      var compressor = kompressor || 1;
+      var resizer = function () {
+        el.style.fontSize =
+          Math.max(
+            Math.min(
+              el.clientWidth / (compressor * 10),
+              parseFloat(settings.maxFontSize)
+            ),
+            parseFloat(settings.minFontSize)
+          ) + "px";
+      };
+      // Call once to set.
+      resizer();
+      // Bind events
+      // If you have any js library which support Events, replace this part
+      // and remove addEvent function (or use original jQuery version)
+      addEvent(window, "resize", resizer);
+      addEvent(window, "orientationchange", resizer);
+    };
+    if (el.length) for (var i = 0; i < el.length; i++) fit(el[i]);
+    else fit(el);
+    // return set of elements
+    return el;
+  };
+})();
+
+window.fitText(document.querySelectorAll(".fittext"), 0.9);
+
+//////////GALLERY//////////
 
 var pswpElement = document.querySelectorAll(".pswp")[0];
 
@@ -259,50 +314,3 @@ var initPhotoSwipeFromDOM = function (gallerySelector) {
 
 // execute above function
 initPhotoSwipeFromDOM(".my-gallery");
-
-//FITTEXT within container
-(function () {
-  var addEvent = function (el, type, fn) {
-    if (el.addEventListener) el.addEventListener(type, fn, false);
-    else el.attachEvent("on" + type, fn);
-  };
-  var extend = function (obj, ext) {
-    for (var key in ext) if (ext.hasOwnProperty(key)) obj[key] = ext[key];
-    return obj;
-  };
-  window.fitText = function (el, kompressor, options) {
-    var settings = extend(
-      {
-        minFontSize: -1 / 0,
-        maxFontSize: 1 / 0,
-      },
-      options
-    );
-    var fit = function (el) {
-      var compressor = kompressor || 1;
-      var resizer = function () {
-        el.style.fontSize =
-          Math.max(
-            Math.min(
-              el.clientWidth / (compressor * 10),
-              parseFloat(settings.maxFontSize)
-            ),
-            parseFloat(settings.minFontSize)
-          ) + "px";
-      };
-      // Call once to set.
-      resizer();
-      // Bind events
-      // If you have any js library which support Events, replace this part
-      // and remove addEvent function (or use original jQuery version)
-      addEvent(window, "resize", resizer);
-      addEvent(window, "orientationchange", resizer);
-    };
-    if (el.length) for (var i = 0; i < el.length; i++) fit(el[i]);
-    else fit(el);
-    // return set of elements
-    return el;
-  };
-})();
-
-window.fitText(document.querySelectorAll(".fittext"), 0.9);

@@ -31,7 +31,6 @@
     // font-weight: bold;
     display: block;
     text-decoration: none;
-    // background: rgba(20, 20, 20, 0.9);
   }
   a:hover,
   nav a:focus {
@@ -52,7 +51,6 @@
   width: 100%;
 
   li {
-    // background: url("../images/triangles/triangles-darkgreen.svg") top;
     border: 0.1px solid white;
     background-size: 300%;
     font-size: 0.6em;
@@ -81,7 +79,8 @@
   top: 0em;
   right: 0em;
   cursor: pointer;
-  background: url("../images/triangles/triangles-green-wide.svg") no-repeat center;
+  background: url("../images/triangles/triangles-green-wide.svg") no-repeat
+    center;
   border-radius: 0% 0% 0% 10%;
   z-index: 2;
 }
