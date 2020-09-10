@@ -35,7 +35,8 @@
     background-size: cover;
   }
   &:nth-child(even) {
-    background: url("../images/triangles/triangles-green-mobile.svg") no-repeat center;
+    background: url("../images/triangles/triangles-green-mobile.svg") no-repeat
+      center;
     background-size: cover;
   }
   img {
@@ -56,6 +57,41 @@
   grid-area: hannah;
 }
 
+.volunteers {
+  background: url("../images/triangles/triangles-orange-wide2.svg") no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.about-images {
+  height: auto;
+  position: relative;
+  img {
+    width: 36%;
+  }
+}
+.about-me-center-img {
+  margin-top: 2%;
+  max-width: 250px;
+  margin-bottom: 0px;
+  border: 2px solid white;
+  border-radius: 50%;
+  box-shadow: 1px 1px 1px gray;
+  box-shadow: -1px 0px 1px black;
+}
+.about-me-left-img {
+  @extend .about-me-center-img;
+  position: absolute;
+  left: 1%;
+  top: 20%;
+}
+.about-me-right-img {
+  @extend .about-me-center-img;
+  position: absolute;
+  right: 1%;
+  top: 20%;
+}
+
 @media screen and (min-width: 700px) {
   .about-us {
     background: url("../images/triangles/triangles-green-wide.svg") no-repeat;
@@ -65,14 +101,15 @@
 
   .profile {
     &:nth-child(odd) {
-      background: url("../images/triangles/triangles-orange-wide2.svg") no-repeat;
+      background: url("../images/triangles/triangles-orange-wide2.svg")
+        no-repeat;
       background-position: center;
       background-size: cover;
     }
 
     &:nth-child(even) {
       background: url("../images/triangles/triangles-green-wide.svg") no-repeat
-      center;
+        center;
       background-size: cover;
     }
   }
@@ -93,8 +130,8 @@
     @include img-grid();
     &:nth-child(odd) {
       grid-template-columns: 2fr 1fr;
-      picture{
-        order:1;
+      picture {
+        order: 1;
       }
     }
   }
@@ -103,5 +140,26 @@
     width: 100%;
     max-width: 20rem;
     margin-top: 1em;
+  }
+  .about-images {
+    margin: 0 20%;
+    .about-me-center-img {
+      max-width: 250px;
+    }
+  }
+  .volunteer-about-text {
+    h1 {
+      margin: 2%;
+    }
+    margin: 0 10%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .about-images {
+    margin: 0 20%;
+    .about-me-center-img {
+      max-width: 350px;
+    }
   }
 }

@@ -96,7 +96,6 @@ panels.forEach((panel) =>
     return el;
   };
 })();
-window.fitText(document.querySelectorAll(".fittext"), 0.9);
 
 //////////GALLERY//////////
 var pswpElement = document.querySelectorAll(".pswp")[0];
@@ -312,3 +311,5 @@ const bannerX = document.querySelector("#boxclose");
 bannerX.addEventListener("click", function () {
   banner.classList.add("boxClosed");
 });
+
+window.fitText(document.querySelectorAll(".fittext"), 0.9);
