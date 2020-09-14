@@ -13,10 +13,11 @@
   ul.opening {
     display: block;
     text-align: center;
-    font-size: 50px;
+    font-size: 35px;
     font-weight: 700;
-    background: url("../images/triangles/triangles-darkgreen.svg") top;
-    background-size: 100%;
+    background: url("https://res.cloudinary.com/mtreeves24/image/upload/c_crop,f_auto,g_center,h_1600,q_60,w_1200/v1600105784/Exotic%20Explorers/triangles-darkgreen.svg")
+      no-repeat center;
+    background-size: 1200px;
   }
   li {
     opacity: 0.95;
@@ -43,9 +44,6 @@
   }
 }
 .dropdown {
-  * {
-    outline: 1px solid red;
-  }
   list-style-type: none;
   padding: 0;
   margin: 0;
@@ -55,7 +53,7 @@
     outline: 0.1px solid white;
     background-size: 300%;
     font-size: 0.6em;
-    height: 70px;
+    height: 40px;
   }
 }
 .dropdown-hide {
