@@ -68,7 +68,8 @@
 // }
 .covid-news {
   grid-area: covid-news;
-  background: url("https://res.cloudinary.com/mtreeves24/image/upload/c_scale,f_auto,q_60,w_500/v1600090796/Exotic%20Explorers/covid-19.jpg");
+  background: url("https://res.cloudinary.com/mtreeves24/image/upload/c_scale,f_auto,q_60,w_500/v1600090796/Exotic%20Explorers/covid-19.jpg")
+    no-repeat;
   background-color: rgba(0, 0, 0, 0.5);
   background-blend-mode: darken;
   background-size: cover;
