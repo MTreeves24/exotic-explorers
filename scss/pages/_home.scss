@@ -68,8 +68,8 @@
 // }
 .covid-news {
   grid-area: covid-news;
-  background-image: url("https://res.cloudinary.com/mtreeves24/image/upload/c_scale,f_auto,q_50,w_700/v1600090796/Exotic%20Explorers/covid-19.jpg");
-  background-color: rgba(100, 100, 100, 0.8);
+  background: url("https://res.cloudinary.com/mtreeves24/image/upload/c_scale,f_auto,q_60,w_500/v1600090796/Exotic%20Explorers/covid-19.jpg");
+  background-color: rgba(0, 0, 0, 0.5);
   background-blend-mode: darken;
   background-size: 105%;
   border-bottom: 0.5em solid white;
@@ -447,9 +447,9 @@
     background-size: cover;
   }
   .covid-news {
-    background: url("https://res.cloudinary.com/mtreeves24/image/upload/c_scale,f_auto,q_50,w_1200/v1600091696/Exotic%20Explorers/covid-19-landscape.jpg");
+    background: url("https://res.cloudinary.com/mtreeves24/image/upload/c_scale,f_auto,q_60,w_1700/v1600091696/Exotic%20Explorers/covid-19-wide.jpg");
     background-size: cover;
-    background-color: rgba(100, 100, 100, 0.8);
+    background-color: rgba(0, 0, 0, 0.5);
     background-blend-mode: darken;
   }
   .services {
@@ -505,7 +505,8 @@
 @media only screen and (min-width: 1600px) {
   .covid-news {
     background-position: 0px -250px;
-    background-color: rgba(100, 100, 100, 0.9);
+    background-size: 1800px;
+    background-color: rgba(0, 0, 0, 0.4);
   }
   .services {
     .panel {
