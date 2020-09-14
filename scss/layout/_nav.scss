@@ -15,10 +15,10 @@
     text-align: center;
     font-size: 50px;
     font-weight: 700;
-  }
-  li {
     background: url("../images/triangles/triangles-darkgreen.svg") top;
     background-size: 100%;
+  }
+  li {
     opacity: 0.95;
     border-bottom: 1px solid #f6f4e2;
     padding: 10px;
@@ -43,13 +43,16 @@
   }
 }
 .dropdown {
+  * {
+    outline: 1px solid red;
+  }
   list-style-type: none;
   padding: 0;
   margin: 0;
   width: 100%;
 
   li {
-    border: 0.1px solid white;
+    outline: 0.1px solid white;
     background-size: 300%;
     font-size: 0.6em;
     height: 70px;
