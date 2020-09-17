@@ -25,8 +25,8 @@
 }
 .my-gallery {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  margin: 5% 2%;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 5%;
   margin-bottom: 10%;
   justify-content: space-around;
   .gallery-item {
@@ -70,6 +70,7 @@
 .mammalgallery,
 .amphibiansgallery {
   background: url("../images/triangles/triangles-orange-mobile.svg") no-repeat;
+  background-size: cover;
 }
 
 .reptilegallery,
@@ -95,6 +96,7 @@
     }
   }
   .my-gallery {
+    grid-template-columns: repeat(3, 1fr);
     margin: 0 10%;
     margin-bottom: 5%;
   }

@@ -130,7 +130,7 @@
       h4 {
         display: grid;
         padding: 0px 2%;
-        height: 3.7em;
+        height: 3em;
         align-content: center;
         position: absolute;
         bottom: 0;
@@ -146,7 +146,9 @@
     }
   }
 }
-
+.extra-info {
+  padding: 0 10%;
+}
 .adoption-gallery {
   background: url("../images/triangles/triangles-orange-mobile.svg") no-repeat;
 }
@@ -175,9 +177,6 @@
     li {
       padding: 6% 2%;
     }
-  }
-  .extra-info {
-    padding: 0 10%;
   }
   .gallery {
     h1 {

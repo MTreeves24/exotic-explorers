@@ -451,7 +451,8 @@
     background-size: cover;
   }
   .covid-news {
-    background: url("https://res.cloudinary.com/mtreeves24/image/upload/c_scale,f_auto,q_60,w_1700/v1600091696/Exotic%20Explorers/covid-19-wide.jpg");
+    background: url("https://res.cloudinary.com/mtreeves24/image/upload/c_scale,f_auto,q_40,w_1700/v1600091696/Exotic%20Explorers/covid-19-wide.jpg")
+      no-repeat;
     background-size: cover;
     background-color: rgba(0, 0, 0, 0.5);
     background-blend-mode: darken;
@@ -509,7 +510,6 @@
 @media only screen and (min-width: 1600px) {
   .covid-news {
     background-position: 0px -250px;
-    background-size: 1800px;
     background-color: rgba(0, 0, 0, 0.4);
   }
   .services {

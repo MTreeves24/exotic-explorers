@@ -314,8 +314,8 @@ body {
   .button-mobile {
     visibility: hidden; } }
 .animals {
-  background: url("../images/triangles/triangles-green-wide.svg") no-repeat;
-  background-size: cover;
+  background: url("../images/triangles/triangles-green-mobile.svg") no-repeat;
+  background-position: center;
   border-bottom: 3px solid white;
   color: white; }
   .animals h1 {
@@ -323,69 +323,14 @@ body {
   .animals p {
     padding: 1% 3%; }
 
-.about-adoptions {
-  padding: 0 2%; }
-  .about-adoptions p {
-    padding: 0; }
-
-.gold {
-  height: 100%;
-  background: #d4af37;
-  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to top, #181818, #d4af37);
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to top, #181818, #d4af37);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ }
-
-.silver {
-  height: 100%;
-  background: #99a1ac;
-  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to top, #2c3e50, #99a1ac);
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to top, #2c3e50, #99a1ac);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ }
-
-.bronze {
-  height: 100%;
-  background: #6d6027;
-  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to bottom, #cbb394, #6d6027);
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to bottom, #cbb394, #6d6027);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ }
-
-.service-prices-container {
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  padding: 0; }
-  .service-prices-container .prices {
-    display: grid;
-    align-items: center;
-    border: 0.5px solid white;
-    position: relative; }
-    .service-prices-container .prices h1 {
-      margin: 0; }
-    .service-prices-container .prices ul {
-      list-style-type: none;
-      padding: 0; }
-      .service-prices-container .prices ul li {
-        padding: 1% 2%; }
-    .service-prices-container .prices .price {
-      font-weight: 700;
-      font-size: 1.5em; }
-  .service-prices-container .service-info {
-    background: url("../images/triangles/triangles-orange-wide.svg") no-repeat;
-    background-size: cover;
-    padding-top: 3%; }
-
 .gallery {
-  grid-area: gallery;
-  border-bottom: 0.1rem solid white; }
+  border-bottom: 0.5rem solid white; }
   .gallery * {
     margin: 0; }
   .gallery h1 {
     padding-top: 5%; }
+  .gallery .blank-space-maker {
+    display: none; }
 
 .my-gallery {
   display: grid;
@@ -411,7 +356,7 @@ body {
       .my-gallery .gallery-item .gallery-overlay h4 {
         display: grid;
         padding: 0px 2%;
-        height: 3em;
+        height: 3.5em;
         align-content: center;
         position: absolute;
         bottom: 0;
@@ -423,30 +368,23 @@ body {
     .my-gallery .gallery-item figcaption {
       display: none; }
 
-.extra-info {
-  padding: 0 10%; }
-
-.adoption-gallery {
+.birdgallery,
+.mammalgallery,
+.amphibiansgallery {
   background: url("../images/triangles/triangles-orange-mobile.svg") no-repeat; }
 
+.reptilegallery,
+.invertsgallery {
+  background: url("../images/triangles/triangles-green-mobile.svg") no-repeat center;
+  background-size: cover; }
+
 @media screen and (min-width: 700px) {
-  .service-prices-container {
-    grid-template-columns: repeat(3, 1fr);
-    margin: 4%; }
-    .service-prices-container .prices {
-      margin: 2%; }
-      .service-prices-container .prices .service-prices-list {
-        list-style-type: disc;
-        text-align: left;
-        padding-left: 10%; }
-    .service-prices-container .gold {
-      height: 100%; }
-    .service-prices-container .silver {
-      height: 95%; }
-    .service-prices-container .bronze {
-      height: 85%; }
-    .service-prices-container li {
-      padding: 6% 2%; }
+  .animals {
+    background: url("../images/triangles/triangles-green-wide.svg") no-repeat;
+    background-position: center;
+    background-size: cover; }
+    .animals .title {
+      padding-top: 2%; }
 
   .gallery h1 {
     padding: 2%; }
@@ -455,23 +393,36 @@ body {
     margin: 0 10%;
     margin-bottom: 5%; }
 
-  .adoption-gallery {
+  .birdgallery,
+  .mammalgallery,
+  .amphibiansgallery {
     background: url("../images/triangles/triangles-orange-wide.svg") no-repeat;
     background-size: cover; }
 
-  .my-gallery {
-    margin-bottom: 2%; } }
-@media only screen and (min-width: 900px) {
-  .about-adoptions {
+  .reptilegallery,
+  .invertsgallery {
+    background: url("../images/triangles/triangles-green-wide.svg") no-repeat;
+    background-size: cover; } }
+@media only screen and (min-width: 1200px) {
+  .animals {
     padding: 0 10%; }
+
+  .gallery .blank-space-maker {
+    display: block; }
 
   .birds {
     grid-template-columns: repeat(6, 1fr); }
 
-  .mammals {
-    grid-template-columns: repeat(7, 1fr); }
-
   .reptiles {
+    grid-template-columns: repeat(6, 1fr); }
+
+  .mammals {
+    grid-template-columns: repeat(6, 1fr); }
+
+  .inverts {
+    grid-template-columns: repeat(5, 1fr); }
+
+  .amphibians {
     grid-template-columns: repeat(5, 1fr); } }
 
-/*# sourceMappingURL=adoptions.css.map */
+/*# sourceMappingURL=:animals.css.map */
