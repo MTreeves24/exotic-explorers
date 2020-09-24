@@ -333,11 +333,10 @@ body {
   .covid-news p {
     margin-top: 0;
     color: white;
-    max-width: 1200px;
     text-align: center; }
-  .covid-news a {
-    color: white;
-    font-weight: 700; }
+    .covid-news p a {
+      color: white;
+      font-weight: 700; }
 
 .about {
   grid-area: about;
