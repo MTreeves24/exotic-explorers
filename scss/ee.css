@@ -330,7 +330,7 @@ body {
   font-size: 1em;
   color: #222; }
   .covid-news .covid-text {
-    padding: 0px 20px 20px 20px; }
+    margin: 0px 20px 20px 20px; }
   .covid-news p {
     margin-top: 0;
     color: white;

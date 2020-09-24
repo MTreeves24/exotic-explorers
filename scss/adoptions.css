@@ -24,7 +24,7 @@
     color: #eee;
     display: block;
     text-decoration: none; }
-  .nav a:hover,
+  .nav li:hover,
   .nav nav a:focus {
     color: #ff8c1a; }
 
@@ -53,8 +53,7 @@
   .dropdown-show li {
     display: grid;
     justify-content: center;
-    align-items: center;
-    transition: 1s all ease-in; }
+    align-items: center; }
 
 /* CSS MENU TOGGLE*/
 .menu-toggle {
@@ -127,7 +126,7 @@
       position: absolute;
       top: 100%;
       width: 100%;
-      font-size: 0.7em;
+      font-size: 0.8em;
       font-weight: 700; }
       .nav .dropdown li {
         height: 40px;
