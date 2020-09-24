@@ -2,7 +2,9 @@
   width: 100%;
   font-size: 16px;
   position: fixed;
-  z-index: 10; }
+  z-index: 10;
+  background: url("https://res.cloudinary.com/mtreeves24/image/upload/c_crop,f_auto,g_center,h_1600,q_60,w_1200/v1600105784/Exotic%20Explorers/triangles-darkgreen.svg") no-repeat center;
+  background-size: 1200px; }
   .nav .nav-ul {
     list-style-type: none;
     padding: 0;
@@ -11,11 +13,9 @@
   .nav ul.opening {
     display: block;
     text-align: center;
-    font-size: 50px;
+    font-size: 38px;
     font-weight: 700; }
   .nav li {
-    background: url("../images/triangles/triangles-darkgreen.svg") top;
-    background-size: 100%;
     opacity: 0.95;
     border-bottom: 1px solid #f6f4e2;
     padding: 10px;
@@ -24,7 +24,7 @@
     color: #eee;
     display: block;
     text-decoration: none; }
-  .nav a:hover,
+  .nav li:hover,
   .nav nav a:focus {
     color: #ff8c1a; }
 
@@ -39,10 +39,10 @@
   margin: 0;
   width: 100%; }
   .dropdown li {
-    border: 0.1px solid white;
+    outline: 0.1px solid white;
     background-size: 300%;
     font-size: 0.6em;
-    height: 70px; }
+    height: 40px; }
 
 .dropdown-hide {
   display: none; }
@@ -53,8 +53,7 @@
   .dropdown-show li {
     display: grid;
     justify-content: center;
-    align-items: center;
-    transition: 1s all ease-in; }
+    align-items: center; }
 
 /* CSS MENU TOGGLE*/
 .menu-toggle {
@@ -127,7 +126,7 @@
       position: absolute;
       top: 100%;
       width: 100%;
-      font-size: 0.7em;
+      font-size: 0.8em;
       font-weight: 700; }
       .nav .dropdown li {
         height: 40px;
@@ -295,9 +294,10 @@ body {
   padding: 0.6em 0.6em;
   border: 0.1em solid #ffffff;
   text-decoration: none;
-  color: #ffffff;
+  color: #fff;
   text-align: center;
-  transition: all 0.2s; }
+  transition: all 0.2s;
+  text-shadow: none; }
   .button:hover {
     color: #000;
     background-color: #fff; }
