@@ -73,7 +73,7 @@
   background-color: rgba(0, 0, 0, 0.5);
   background-blend-mode: darken;
   background-size: cover;
-  overflow: hidden;
+  // overflow: hidden;
   border-bottom: 0.5em solid white;
   display: grid;
   justify-content: center;
@@ -81,7 +81,7 @@
   font-size: 1em;
   color: #222;
   .covid-text {
-    margin: 0px 20px 20px 20px;
+    padding: 0px 20px 20px 20px;
   }
   p {
     margin-top: 0;
