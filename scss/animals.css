@@ -338,6 +338,7 @@ body {
   margin-bottom: 10%;
   justify-content: space-around; }
   .my-gallery .gallery-item {
+    height: 100%;
     margin: 0;
     padding: 0;
     position: relative;

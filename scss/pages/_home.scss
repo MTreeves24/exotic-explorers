@@ -284,9 +284,9 @@
   margin-bottom: 10%;
   justify-content: space-around;
   .gallery-item {
+    height: 100%;
     margin: 0;
     padding: 0;
-
     overflow: hidden;
     box-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4);
     img {
