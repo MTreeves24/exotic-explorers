@@ -312,6 +312,15 @@ body {
 @media screen and (min-width: 700px) {
   .button-mobile {
     visibility: hidden; } }
+iframe {
+  z-index: 300 !important; }
+
+.fb_dialog {
+  z-index: 301 !important; }
+
+.fb_dialog_advanced {
+  z-index: 301 !important; }
+
 .animals {
   background: url("../images/triangles/triangles-green-mobile.svg") no-repeat;
   background-position: center;

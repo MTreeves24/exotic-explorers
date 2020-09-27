@@ -316,10 +316,10 @@ iframe {
   z-index: 300 !important; }
 
 .fb_dialog {
-  z-index: 300 !important; }
+  z-index: 301 !important; }
 
 .fb_dialog_advanced {
-  z-index: 300 !important; }
+  z-index: 301 !important; }
 
 .grid-container {
   display: grid;
