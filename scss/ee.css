@@ -312,11 +312,8 @@ body {
 @media screen and (min-width: 700px) {
   .button-mobile {
     visibility: hidden; } }
-.fb_dialog {
-  z-index: 0 !important; }
-
-.fb_dialog_advanced {
-  z-index: 0 !important; }
+iframe {
+  z-index: 300 !important; }
 
 .grid-container {
   display: grid;

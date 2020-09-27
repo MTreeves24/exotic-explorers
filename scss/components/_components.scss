@@ -29,9 +29,13 @@
   }
 }
 
-.fb_dialog {
-  z-index: 0 !important;
+iframe {
+  z-index: 300 !important;
 }
-.fb_dialog_advanced {
-  z-index: 0 !important;
-}
+
+// .fb_dialog {
+//   z-index: 0 !important;
+// }
+// .fb_dialog_advanced {
+//   z-index: 0 !important;
+// }
