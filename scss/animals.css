@@ -422,7 +422,7 @@ body {
     grid-template-columns: repeat(6, 1fr); }
 
   .inverts {
-    grid-template-columns: repeat(5, 1fr); }
+    grid-template-columns: repeat(6, 1fr); }
 
   .amphibians {
     grid-template-columns: repeat(5, 1fr); } }
