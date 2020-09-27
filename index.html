@@ -14,6 +14,31 @@
   <script src="src/js/photoswipe-ui-default.js"></script> 
 </head>
 <body>
+  <!-- Load Facebook SDK for JavaScript -->
+  <div id="fb-root"></div>
+  <script>
+    window.fbAsyncInit = function() {
+      FB.init({
+        xfbml            : true,
+        version          : 'v8.0'
+      });
+    };
+
+    (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = 'https://connect.facebook.net/en_GB/sdk/xfbml.customerchat.js';
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));</script>
+
+  <!-- Your Chat Plugin code -->
+  <div class="fb-customerchat"
+    attribution=setup_tool
+    page_id="190638651680558"
+theme_color="#39ac00">
+  </div>
+  
     <section class="grid-container">
       <nav class="site-nav nav">
         <div class="menu-toggle">
@@ -24,7 +49,6 @@
               <a href="https://mtreeves24.github.io/exotic-explorers/about"><li>About Us</li></a>
               <a href="https://mtreeves24.github.io/exotic-explorers/animals"><li>Our Animals</li></a>
               <a href="https://mtreeves24.github.io/exotic-explorers/adoptions"><li>Animal Adoptions</li></a>
-  
               <li class="dropdown-root">Services*</li>
                 <ul class="dropdown dropdown-hide">
                   <a href="https://mtreeves24.github.io/exotic-explorers/schools" class="dropdown-item"><li>Schools</li></a>
@@ -277,7 +301,7 @@
       <blockquote class="read-more-wrap">
       These guys were absolutely fantastic for my daughters birthday, really well organised and professional and so knowledgeable and with a genuine care for their animals, they were happy to answer questions from both children and adults and share their love of these animals with us. We could choose the <span class="read-more-target">animals we met and went for reptiles and insects, and all of them - even the huge python - were so well socialised and cared for that our 4 mnth old could stroke and interact with them and my 2 yr old could hold them, she was delighted at the little frog - what a valuable and memorable experience for everyone, and the start I hope of a love for all animals that lasts a lifetime.</span><label for="post-1" class="read-more-trigger">See more</label></blockquote>
     <div class="owner">
-      <img src="https://res.cloudinary.com/mtreeves24/image/upload/c_scale,f_auto,q_65,w_350/v1597074851/Exotic%20Explorers/transparent-animals/Rey-_-Ashoka-cut.png" alt="Bentley"/>
+      <img src="https://res.cloudinary.com/mtreeves24/image/upload/c_scale,f_auto,q_65,w_350/v1601206745/Exotic%20Explorers/transparent-animals/rey-cut.png" alt="Bentley"/>
       <h5>Sarah Hodges <span> Birthday Party</span></h5>
     </div>
     </figure>
@@ -306,7 +330,7 @@
     <figure class="quote more-quotes">
       <blockquote>Professional, knowledgeable and patient handlers. Stunning and well cared for animals. Really made our Raptors & Reptiles event what it was 🦅🐍 Would recommend them to absolutely everyone</blockquote>
       <div class="owner">
-        <img src="https://res.cloudinary.com/mtreeves24/image/upload/c_scale,f_auto,q_65,w_350/v1597075848/Exotic%20Explorers/transparent-animals/Littlefoot-cut2.png" alt="Littlefoot the lizard"/>
+        <img src="https://res.cloudinary.com/mtreeves24/image/upload/c_scale,f_auto,q_65,w_350/v1601207065/Exotic%20Explorers/transparent-animals/Littlefoot1-cut.png" alt="Littlefoot the lizard"/>
         <h5>Leanne McManus-Dunkley<span> Raptors & Reptiles Event</span></h5>
       </div>
     </figure>
@@ -317,7 +341,7 @@
         <h5>Kristy Cable<span> School Visit</span></h5>
   </div>
 </figure>
-  <h1 class="title">Check out more testimonials on our facebook page <a class="title" href="https://www.facebook.com/pg/explorersmobilezoo/reviews/?ref=page_internal">here</a></h1>
+  <h1 class="title">Check out more testimonials on our facebook page <a class="title fb-link" href="https://www.facebook.com/pg/explorersmobilezoo/reviews/?ref=page_internal">here</a></h1>
 </div>
 </section> <!--testimonial div-->
 

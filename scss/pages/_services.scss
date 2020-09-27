@@ -9,7 +9,7 @@
 .intro-container {
   color: white;
   text-align: center;
-  padding: 1% 3%;
+  padding: 3%;
   .misc-services-list {
     list-style-type: none;
     padding: 0;
@@ -38,8 +38,8 @@
   background: url("../images/triangles/triangles-orange-mobile.svg") no-repeat;
   background-position: center;
   background-size: cover;
-
   .prices {
+    padding-top: 25px;
     border-bottom: 0.5px solid white;
     box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
     ul {
@@ -56,6 +56,15 @@
   h4 {
     padding: 0 2%;
   }
+}
+
+.info-green-bg {
+  background: url("../images/triangles/triangles-green-mobile.svg") no-repeat;
+  background-position: center;
+}
+
+.weddings {
+  height: 30vh;
 }
 
 .title {
@@ -156,7 +165,6 @@
       border: 0.5px solid white;
       margin: 4%;
       position: relative;
-
       h1 {
         display: grid;
         align-items: center;
@@ -188,12 +196,21 @@
   }
   .service-hero {
     background: url("../images/triangles/triangles-green-wide.svg") no-repeat;
-    background-size: 230%;
+    background-size: cover;
+    background-position: left;
+    // background-size: 230%;
+    // padding-top: 3%;
   }
   .service-info {
     background: url("../images/triangles/triangles-orange-wide.svg") no-repeat;
     background-size: cover;
-    padding-top: 3%;
+    background-position: left;
+
+    // padding-top: 3%;
+  }
+  .info-green-bg {
+    background: url("../images/triangles/triangles-green-wide.svg") no-repeat;
+    background-size: cover;
   }
 }
 

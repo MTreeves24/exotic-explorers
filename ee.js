@@ -259,13 +259,6 @@ var initPhotoSwipeFromDOM = function (gallerySelector) {
 // execute above function
 initPhotoSwipeFromDOM(".my-gallery");
 
-//////////TEMPORARY COVID BANNER//////////
-const banner = document.querySelector("#box");
-const bannerX = document.querySelector("#boxclose");
-
-bannerX.addEventListener("click", function () {
-  banner.classList.add("boxClosed");
-});
 //////////FITTEXT//////////
 (function () {
   var addEvent = function (el, type, fn) {
