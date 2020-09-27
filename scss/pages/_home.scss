@@ -514,6 +514,9 @@
   .covid-news {
     background-position: 0px -250px;
     background-color: rgba(0, 0, 0, 0.4);
+    p {
+      padding: 0 20%;
+    }
   }
   .services {
     .panel {

@@ -648,6 +648,8 @@ body {
   .covid-news {
     background-position: 0px -250px;
     background-color: rgba(0, 0, 0, 0.4); }
+    .covid-news p {
+      padding: 0 20%; }
 
   .services .panel {
     min-width: 10%; }

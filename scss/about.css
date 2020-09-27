@@ -361,12 +361,13 @@ body {
   background-position: center;
   background-size: cover;
   border-bottom: 3px solid white; }
-
-.about-images {
-  height: auto;
-  position: relative; }
-  .about-images img {
-    width: 36%; }
+  .volunteers .about-images {
+    height: auto;
+    position: relative; }
+    .volunteers .about-images img {
+      width: 36%; }
+  .volunteers h1 {
+    margin: 8%; }
 
 .about-me-center-img, .about-me-left-img, .about-me-right-img {
   margin-top: 2%;
@@ -387,6 +388,16 @@ body {
   right: 1%;
   top: 20%; }
 
+.fb_customer_chat_bubble_animated_no_badge {
+  background: none !important;
+  border-radius: 50% !important;
+  bottom: 50pt !important;
+  display: inline !important;
+  padding: 0px !important;
+  position: fixed !important;
+  right: 8pt !important;
+  top: auto !important; }
+
 @media screen and (min-width: 700px) {
   .about-us {
     background: url("../images/triangles/triangles-green-wide.svg") no-repeat;
@@ -399,7 +410,10 @@ body {
     background-size: cover; }
   .profile:nth-child(even) {
     background: url("../images/triangles/triangles-green-wide.svg") no-repeat center;
-    background-size: cover; } }
+    background-size: cover; }
+
+  .volunteers h1 {
+    margin: 3%; } }
 @media screen and (min-width: 900px) {
   .about-us {
     display: grid;
