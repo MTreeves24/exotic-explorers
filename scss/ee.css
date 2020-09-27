@@ -312,6 +312,12 @@ body {
 @media screen and (min-width: 700px) {
   .button-mobile {
     visibility: hidden; } }
+.fb_dialog {
+  z-index: 0 !important; }
+
+.fb_dialog_advanced {
+  z-index: 0 !important; }
+
 .grid-container {
   display: grid;
   grid-template-areas: "hero" "about" "covid-news" "services" "gallery" "testimonials" "contact" "footer" "copyright" "hexagons"; }
