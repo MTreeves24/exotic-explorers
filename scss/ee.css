@@ -680,6 +680,7 @@ body {
       font-size: 1.1em; }
 
   .my-gallery {
+    z-index: 5000;
     grid-template-columns: repeat(6, 1fr); }
 
   .testimonials {
