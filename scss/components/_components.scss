@@ -29,13 +29,13 @@
   }
 }
 
+//FIX FB MESSENGER ICON SO IT APPEARS BELOW GALLERY OVERLAY AND DOESN'T BLOCK CAPTIONS//
 iframe {
   z-index: 300 !important;
 }
-
-// .fb_dialog {
-//   z-index: 0 !important;
-// }
-// .fb_dialog_advanced {
-//   z-index: 0 !important;
-// }
+.fb_dialog {
+  z-index: 300 !important;
+}
+.fb_dialog_advanced {
+  z-index: 300 !important;
+}

@@ -315,6 +315,12 @@ body {
 iframe {
   z-index: 300 !important; }
 
+.fb_dialog {
+  z-index: 300 !important; }
+
+.fb_dialog_advanced {
+  z-index: 300 !important; }
+
 .grid-container {
   display: grid;
   grid-template-areas: "hero" "about" "covid-news" "services" "gallery" "testimonials" "contact" "footer" "copyright" "hexagons"; }
