@@ -335,9 +335,13 @@ iframe {
     padding: 1% 3%; }
 
 .about-adoptions {
-  padding: 0 2%; }
+  display: grid;
+  padding: 0; }
   .about-adoptions p {
-    padding: 0; }
+    padding: 0 2%; }
+  .about-adoptions img {
+    width: 100%;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22); }
 
 .gold {
   height: 100%;
@@ -443,6 +447,14 @@ iframe {
   background: url("../images/triangles/triangles-orange-mobile.svg") no-repeat; }
 
 @media screen and (min-width: 700px) {
+  .about-adoptions {
+    display: grid;
+    justify-items: center; }
+
+  .about-adoptions-img {
+    border: 3px solid white;
+    max-width: 600px; }
+
   .service-prices-container {
     grid-template-columns: repeat(3, 1fr);
     margin: 4%; }
@@ -477,6 +489,8 @@ iframe {
 @media only screen and (min-width: 900px) {
   .about-adoptions {
     padding: 0 10%; }
+    .about-adoptions .about-adoptions-img {
+      max-width: 800px; }
 
   .birds {
     grid-template-columns: repeat(6, 1fr); }
