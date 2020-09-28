@@ -344,8 +344,7 @@ iframe {
   position: absolute;
   bottom: -5%;
   left: 20%;
-  opacity: 30%;
-  visibility: visible; }
+  opacity: 0.3; }
   .img-transparent-bg img {
     width: 500px; }
 
