@@ -156,6 +156,9 @@
   .contact .details a {
     text-decoration: none;
     color: #222; }
+  .contact .details .number-email {
+    text-decoration: none;
+    color: white; }
   .contact .details .hexagons {
     display: flex;
     margin: 0 auto;
@@ -432,17 +435,17 @@ iframe {
         margin-top: 4%;
         padding-top: 3%; }
   .services .panel1 {
-    background-image: url("https://res.cloudinary.com/mtreeves24/image/upload/c_scale,q_50,w_400/v1593293903/Exotic%20Explorers/services-photos/twyla.webp"); }
+    background-image: url("https://res.cloudinary.com/mtreeves24/image/upload/c_scale,f_auto,q_60,w_400/v1593293903/Exotic%20Explorers/services-photos/twyla.jpg"); }
   .services .panel2 {
-    background-image: url("https://res.cloudinary.com/mtreeves24/image/upload/c_scale,q_50,w_400/v1593294106/Exotic%20Explorers/services-photos/snake.webp"); }
+    background-image: url("https://res.cloudinary.com/mtreeves24/image/upload/c_scale,f_auto,q_60,w_400/v1593294106/Exotic%20Explorers/services-photos/snake.jpg"); }
   .services .panel3 {
-    background-image: url("https://res.cloudinary.com/mtreeves24/image/upload/c_scale,q_50,w_400/v1593293923/Exotic%20Explorers/services-photos/hedgehog.webp"); }
+    background-image: url("https://res.cloudinary.com/mtreeves24/image/upload/c_scale,f_auto,q_60,w_400/v1593293923/Exotic%20Explorers/services-photos/hedgehog.jpg"); }
   .services .panel4 {
-    background-image: url("https://res.cloudinary.com/mtreeves24/image/upload/c_scale,q_50,w_400/v1593294008/Exotic%20Explorers/services-photos/tarantula.webp"); }
+    background-image: url("https://res.cloudinary.com/mtreeves24/image/upload/c_scale,f_auto,q_60,w_400/v1593294008/Exotic%20Explorers/services-photos/tarantula.jpg"); }
   .services .panel5 {
-    background-image: url("https://res.cloudinary.com/mtreeves24/image/upload/c_scale,q_50,w_400/v1593293974/Exotic%20Explorers/services-photos/tortoise.webp"); }
+    background-image: url("https://res.cloudinary.com/mtreeves24/image/upload/c_scale,f_auto,q_60,w_400/v1593293974/Exotic%20Explorers/services-photos/tortoise.jpg"); }
   .services .panel6 {
-    background-image: url("https://res.cloudinary.com/mtreeves24/image/upload/c_scale,q_50,w_400/v1593293960/Exotic%20Explorers/services-photos/squirrelthing.webp"); }
+    background-image: url("https://res.cloudinary.com/mtreeves24/image/upload/c_scale,f_auto,q_60,w_400/v1593293960/Exotic%20Explorers/services-photos/squirrelthing.jpg"); }
   .services .panel > * {
     margin: 0;
     transition: transform 0.5s;

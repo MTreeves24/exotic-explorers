@@ -156,6 +156,9 @@
   .contact .details a {
     text-decoration: none;
     color: #222; }
+  .contact .details .number-email {
+    text-decoration: none;
+    color: white; }
   .contact .details .hexagons {
     display: flex;
     margin: 0 auto;
@@ -420,6 +423,7 @@ iframe {
   margin-bottom: 8%;
   justify-content: space-around; }
   .my-gallery .gallery-item {
+    height: 100%;
     margin: 0;
     padding: 0;
     position: relative;

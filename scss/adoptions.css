@@ -156,6 +156,9 @@
   .contact .details a {
     text-decoration: none;
     color: #222; }
+  .contact .details .number-email {
+    text-decoration: none;
+    color: white; }
   .contact .details .hexagons {
     display: flex;
     margin: 0 auto;
@@ -371,7 +374,8 @@ iframe {
     display: grid;
     align-items: center;
     border: 0.5px solid white;
-    position: relative; }
+    position: relative;
+    padding: 0px 10px; }
     .service-prices-container .prices h1 {
       margin: 0; }
     .service-prices-container .prices ul {

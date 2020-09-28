@@ -156,6 +156,9 @@
   .contact .details a {
     text-decoration: none;
     color: #222; }
+  .contact .details .number-email {
+    text-decoration: none;
+    color: white; }
   .contact .details .hexagons {
     display: flex;
     margin: 0 auto;
@@ -341,9 +344,20 @@ iframe {
   position: absolute;
   bottom: -5%;
   left: 20%;
-  opacity: 30%; }
+  opacity: 30%;
+  visibility: visible; }
   .img-transparent-bg img {
     width: 500px; }
+
+.question-set-3 .img-transparent-bg,
+.question-set-4 .img-transparent-bg {
+  right: 0;
+  left: 20%;
+  bottom: -80px;
+  opacity: 30%; }
+  .question-set-3 .img-transparent-bg img,
+  .question-set-4 .img-transparent-bg img {
+    width: 800px; }
 
 .question-set-1 {
   position: relative;
@@ -415,6 +429,15 @@ iframe {
     left: 65%;
     opacity: 100%; }
 
+  .question-set-3 .img-transparent-bg,
+  .question-set-4 .img-transparent-bg {
+    right: 0;
+    left: 65%;
+    opacity: 100%; }
+    .question-set-3 .img-transparent-bg img,
+    .question-set-4 .img-transparent-bg img {
+      width: 800px; }
+
   .question-set-4 .img-transparent-bg {
     display: block; }
 
@@ -429,8 +452,19 @@ iframe {
     padding-right: 35%; } }
 @media screen and (min-width: 1470px) {
   .img-transparent-bg {
+    outline: 1px solid red;
     left: 75%;
     max-height: 900px; }
+
+  .question-set-3 .img-transparent-bg,
+  .question-set-4 .img-transparent-bg {
+    right: 0;
+    left: 65%;
+    bottom: -80px;
+    opacity: 100%; }
+    .question-set-3 .img-transparent-bg img,
+    .question-set-4 .img-transparent-bg img {
+      width: 800px; }
 
   .question,
   .answer,
