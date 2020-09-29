@@ -13,6 +13,7 @@
 }
 .faq-container {
   color: white;
+  text-shadow: 0 0 4px rgba(0, 0, 0, 0.72), 0 0 14px rgba(0, 0, 0, 0.45);
   text-align: center;
 }
 
@@ -20,13 +21,13 @@
   position: absolute;
   bottom: -5%;
   left: 25%;
+  pointer-events: none;
   img {
     width: 500px;
     opacity: 0.3;
   }
 }
-.question-set-3,
-.question-set-4 {
+.question-set-3 {
   .img-transparent-bg {
     right: 0;
     left: 20%;
@@ -118,8 +119,7 @@
       opacity: 1;
     }
   }
-  .question-set-3,
-  .question-set-4 {
+  .question-set-3 {
     .img-transparent-bg {
       right: 0;
       left: 65%;
@@ -148,8 +148,7 @@
     left: 75%;
     max-height: 900px;
   }
-  .question-set-3,
-  .question-set-4 {
+  .question-set-3 {
     .img-transparent-bg {
       right: 0;
       left: 65%;

@@ -557,10 +557,10 @@ a.pswp__share--download {
 }
 
 .pswp__caption__center {
-  text-align: left;
-  max-width: 420px;
+  text-align: center;
+  max-width: 720px;
   margin: 0 auto;
-  font-size: 13px;
+  font-size: 23px;
   padding: 10px;
   line-height: 20px;
   color: #ccc;
@@ -743,7 +743,7 @@ a.pswp__share--download {
 .pswp__ui--fit {
   .pswp__top-bar,
   .pswp__caption {
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.8);
   }
 }
 
