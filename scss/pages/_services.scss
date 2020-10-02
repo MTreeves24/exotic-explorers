@@ -56,6 +56,12 @@
   h4 {
     padding: 0 2%;
   }
+  a {
+    color: white;
+    &:hover {
+      color: rgb(0, 168, 14);
+    }
+  }
 }
 
 .info-green-bg {

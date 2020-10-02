@@ -319,10 +319,10 @@ iframe {
   z-index: 300 !important; }
 
 .fb_dialog {
-  z-index: 301 !important; }
+  z-index: 299 !important; }
 
 .fb_dialog_advanced {
-  z-index: 301 !important; }
+  z-index: 299 !important; }
 
 .animals {
   background: url("../images/triangles/triangles-green-mobile.svg") no-repeat;
@@ -431,12 +431,28 @@ iframe {
     grid-template-columns: repeat(6, 1fr); }
 
   .mammals {
-    grid-template-columns: repeat(6, 1fr); }
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-areas: ". one two three four ."; }
+    .mammals .ga-1 {
+      grid-area: one; }
+    .mammals .ga-2 {
+      grid-area: two; }
+    .mammals .ga-3 {
+      grid-area: three; }
+    .mammals .ga-4 {
+      grid-area: four; }
 
   .inverts {
     grid-template-columns: repeat(6, 1fr); }
 
   .amphibians {
-    grid-template-columns: repeat(5, 1fr); } }
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-areas: ". one two three ."; }
+    .amphibians .ga-1 {
+      grid-area: one; }
+    .amphibians .ga-2 {
+      grid-area: two; }
+    .amphibians .ga-3 {
+      grid-area: three; } }
 
 /*# sourceMappingURL=animals.css.map */

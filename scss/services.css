@@ -319,10 +319,10 @@ iframe {
   z-index: 300 !important; }
 
 .fb_dialog {
-  z-index: 301 !important; }
+  z-index: 299 !important; }
 
 .fb_dialog_advanced {
-  z-index: 301 !important; }
+  z-index: 299 !important; }
 
 .services {
   color: white;
@@ -373,6 +373,10 @@ iframe {
     font-size: 1.5em; }
   .service-info h4 {
     padding: 0 2%; }
+  .service-info a {
+    color: white; }
+    .service-info a:hover {
+      color: #00a80e; }
 
 .info-green-bg {
   background: url("../images/triangles/triangles-green-mobile.svg") no-repeat;

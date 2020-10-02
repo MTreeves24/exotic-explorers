@@ -132,11 +132,34 @@
   }
   .mammals {
     grid-template-columns: repeat(6, 1fr);
+    .ga-1 {
+      grid-area: one;
+    }
+    .ga-2 {
+      grid-area: two;
+    }
+    .ga-3 {
+      grid-area: three;
+    }
+    .ga-4 {
+      grid-area: four;
+    }
+    grid-template-areas: ". one two three four .";
   }
   .inverts {
     grid-template-columns: repeat(6, 1fr);
   }
   .amphibians {
     grid-template-columns: repeat(5, 1fr);
+    .ga-1 {
+      grid-area: one;
+    }
+    .ga-2 {
+      grid-area: two;
+    }
+    .ga-3 {
+      grid-area: three;
+    }
+    grid-template-areas: ". one two three .";
   }
 }

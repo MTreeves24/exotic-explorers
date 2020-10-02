@@ -319,10 +319,10 @@ iframe {
   z-index: 300 !important; }
 
 .fb_dialog {
-  z-index: 301 !important; }
+  z-index: 299 !important; }
 
 .fb_dialog_advanced {
-  z-index: 301 !important; }
+  z-index: 299 !important; }
 
 .faq {
   color: white;
@@ -348,7 +348,7 @@ iframe {
   pointer-events: none; }
   .img-transparent-bg img {
     width: 500px;
-    opacity: 0.3; }
+    opacity: 0.2; }
 
 .question-set-3 .img-transparent-bg {
   right: 0;
@@ -356,7 +356,7 @@ iframe {
   bottom: -120px; }
   .question-set-3 .img-transparent-bg img {
     width: 800px;
-    opacity: 0.3; }
+    opacity: 0.2; }
 
 .question-set-1 {
   position: relative;
