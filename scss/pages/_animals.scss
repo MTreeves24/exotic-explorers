@@ -132,6 +132,7 @@
   }
   .mammals {
     grid-template-columns: repeat(6, 1fr);
+    //LOTS OF CODE BELOW TO CENTRALISE THE IMAGES SO THERE'S AN EMPTY COLUMN EITHER SIDE. POSSIBLY AN EASIER WAY TO DO THIS AND WILL LOOK INTO IT ONE DAY!//
     .ga-1 {
       grid-area: one;
     }
@@ -144,7 +145,21 @@
     .ga-4 {
       grid-area: four;
     }
-    grid-template-areas: ". one two three four .";
+    .ga-5 {
+      grid-area: five;
+    }
+    .ga-6 {
+      grid-area: six;
+    }
+    .ga-7 {
+      grid-area: seven;
+    }
+    .ga-8 {
+      grid-area: eight;
+    }
+    grid-template-areas:
+      ". one two three four ."
+      ". five six seven eight .";
   }
   .inverts {
     grid-template-columns: repeat(6, 1fr);

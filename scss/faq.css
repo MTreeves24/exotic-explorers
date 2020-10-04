@@ -380,7 +380,8 @@ iframe {
   position: relative;
   background: url("../images/triangles/triangles-orange-mobile.svg") no-repeat;
   background-size: cover;
-  padding: 20px; }
+  padding: 20px;
+  border-bottom: 5px solid white; }
 
 .faq-info {
   position: relative;

@@ -2,7 +2,7 @@
 window.fbAsyncInit = function () {
   FB.init({
     xfbml: true,
-    version: "v8.0",
+    version: "v7.0",
   });
 };
 (function (d, s, id) {

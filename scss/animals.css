@@ -432,7 +432,7 @@ iframe {
 
   .mammals {
     grid-template-columns: repeat(6, 1fr);
-    grid-template-areas: ". one two three four ."; }
+    grid-template-areas: ". one two three four ." ". five six seven eight ."; }
     .mammals .ga-1 {
       grid-area: one; }
     .mammals .ga-2 {
@@ -441,6 +441,14 @@ iframe {
       grid-area: three; }
     .mammals .ga-4 {
       grid-area: four; }
+    .mammals .ga-5 {
+      grid-area: five; }
+    .mammals .ga-6 {
+      grid-area: six; }
+    .mammals .ga-7 {
+      grid-area: seven; }
+    .mammals .ga-8 {
+      grid-area: eight; }
 
   .inverts {
     grid-template-columns: repeat(6, 1fr); }
