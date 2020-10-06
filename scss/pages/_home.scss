@@ -44,8 +44,8 @@
   grid-area: about;
   // background: rgb(0,168,29);
   // background: linear-gradient(177deg, $color-green, rgba(0,210,36,0.7049020291710435) 35%, rgba(110,255,125,0.24271715522146353) 100%);
-  background: url("../images/triangles/triangles-green-mobile.svg") no-repeat
-    center;
+  background: url("https://res.cloudinary.com/mtreeves24/image/upload/f_auto,q_60/v1601992915/Exotic%20Explorers/triangles/triangles-green-mobile.svg")
+    no-repeat center;
   border-bottom: 0.5em solid white;
   display: flex;
   flex-wrap: wrap;
@@ -76,8 +76,8 @@
 
 .services {
   grid-area: services;
-  background: url("../images/triangles/triangles-grey-mobile.svg") no-repeat
-    center;
+  background: url("https://res.cloudinary.com/mtreeves24/image/upload/f_auto,q_50/v1601992918/Exotic%20Explorers/triangles/triangles-grey-mobile.svg")
+    no-repeat center;
   background-size: cover;
   text-align: center;
   color: white;
@@ -254,8 +254,8 @@
 //TESTIMONIALS//
 .testimonials {
   grid-area: testimonials;
-  background: url("../images/triangles/triangles-grey-mobile.svg") no-repeat
-    center;
+  background: url("https://res.cloudinary.com/mtreeves24/image/upload/f_auto,q_70/v1601992918/Exotic%20Explorers/triangles/triangles-grey-mobile.svg")
+    no-repeat center;
   background-size: cover;
   padding-bottom: 30px;
   border-bottom: 0.5rem solid white;
@@ -397,8 +397,8 @@
 
 @media screen and (min-width: 700px) {
   .about {
-    background: url("../images/triangles/triangles-green-wide.svg") no-repeat
-      center;
+    background: url("https://res.cloudinary.com/mtreeves24/image/upload/q_60/v1601992915/Exotic%20Explorers/triangles/triangles-green-wide.svg")
+      no-repeat center;
     background-size: cover;
   }
   .covid-news {
@@ -409,7 +409,8 @@
     background-blend-mode: darken;
   }
   .services {
-    background: url("../images/triangles/triangles-grey-wide.svg") no-repeat;
+    background: url("https://res.cloudinary.com/mtreeves24/image/upload/f_auto,q_70/v1601992918/Exotic%20Explorers/triangles/triangles-grey-wide.svg")
+      no-repeat;
     background-size: cover;
     .panel {
       min-height: 500px;
@@ -444,8 +445,8 @@
     }
   }
   .testimonials {
-    background: url("../images/triangles/triangles-grey-wide.svg") no-repeat
-      center;
+    background: url("https://res.cloudinary.com/mtreeves24/image/upload/f_auto,q_60/v1601992918/Exotic%20Explorers/triangles/triangles-grey-wide.svg")
+      no-repeat center;
     background-size: cover;
 
     figure.quote {

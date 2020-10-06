@@ -140,7 +140,7 @@
 .contact {
   grid-area: contact;
   position: relative;
-  background: url("../images/triangles/triangles-green-mobile.svg") no-repeat center;
+  background: url("https://res.cloudinary.com/mtreeves24/image/upload/q_60/v1601992915/Exotic%20Explorers/triangles/triangles-green-mobile.svg") no-repeat center;
   text-align: center;
   padding: 20px 0px 30px 0px;
   color: white;
@@ -156,6 +156,9 @@
   .contact .details a {
     text-decoration: none;
     color: #222; }
+  .contact .details .number-email {
+    text-decoration: none;
+    color: white; }
   .contact .details .hexagons {
     display: flex;
     margin: 0 auto;
@@ -217,9 +220,10 @@
   text-align: center;
   margin-bottom: 10px; }
 .form textarea {
-  width: 100%;
+  width: 90%;
   margin-top: 0.8em;
-  resize: none; }
+  resize: none;
+  padding: 10px 10px 0px 10px; }
 .form label {
   font-size: 25px; }
 .form .submit {
@@ -246,7 +250,7 @@
 
 @media only screen and (min-width: 700px) {
   .contact {
-    background: url("../images/triangles/triangles-green-wide.svg") center;
+    background: url("https://res.cloudinary.com/mtreeves24/image/upload/q_60/v1601992915/Exotic%20Explorers/triangles/triangles-green-wide.svg") center;
     background-size: cover; } }
 @media only screen and (min-width: 1200px) {
   .contact {
@@ -316,10 +320,10 @@ iframe {
   z-index: 300 !important; }
 
 .fb_dialog {
-  z-index: 301 !important; }
+  z-index: 299 !important; }
 
 .fb_dialog_advanced {
-  z-index: 301 !important; }
+  z-index: 299 !important; }
 
 .container {
   margin: 0;
