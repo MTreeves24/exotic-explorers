@@ -76,8 +76,8 @@
   top: 0em;
   right: 0em;
   cursor: pointer;
-  background: url("../images/triangles/triangles-green-wide.svg") no-repeat
-    center;
+  background: url("https://res.cloudinary.com/mtreeves24/image/upload/v1601992915/Exotic%20Explorers/triangles/triangles-green-wide.svg")
+    no-repeat center;
   border-radius: 0% 0% 0% 10%;
   z-index: 2;
 }
@@ -123,7 +123,8 @@
   .nav {
     display: block;
     border-bottom: 1px solid white;
-    background: url("../images/triangles/triangles-green-wide.svg") no-repeat;
+    background: url("https://res.cloudinary.com/mtreeves24/image/upload/v1601992915/Exotic%20Explorers/triangles/triangles-green-wide.svg")
+      no-repeat;
     background-size: 100%;
     background-position: center;
     // background: url("orange-cool-background.png") no-repeat;
@@ -155,7 +156,8 @@
       li {
         height: 40px;
         border: 1px solid white;
-        background: url("../images/triangles/triangles-green-wide.svg") center;
+        background: url("https://res.cloudinary.com/mtreeves24/image/upload/v1601992915/Exotic%20Explorers/triangles/triangles-green-wide.svg")
+          center;
         background-size: 300%;
       }
     }

@@ -1,3 +1,7 @@
 AddDefaultCharset UTF-8
 
+Header set Content-Security-Policy "script-src base-uri 'self' https://www.cloudinary.com https://res.cloudinary.com https://www.facebook.com"
 
+Header always set X-FRAME-OPTIONS "DENY"
+
+Header append Vary: Accept-Encoding
