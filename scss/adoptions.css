@@ -324,7 +324,7 @@ iframe {
   z-index: 299 !important; }
 
 .animals {
-  background: url("../images/triangles/triangles-green-wide.svg") no-repeat;
+  background: url("https://res.cloudinary.com/mtreeves24/image/upload/q_60/v1601992915/Exotic%20Explorers/triangles/triangles-green-wide.svg") no-repeat;
   background-size: cover;
   border-bottom: 3px solid white;
   color: white; }
@@ -390,7 +390,7 @@ iframe {
       font-weight: 700;
       font-size: 1.5em; }
   .service-prices-container .service-info {
-    background: url("../images/triangles/triangles-orange-wide.svg") no-repeat;
+    background: url("https://res.cloudinary.com/mtreeves24/image/upload/q_60/v1601992918/Exotic%20Explorers/triangles/triangles-orange-wide2.svg") no-repeat;
     background-size: cover;
     padding-top: 3%; }
 
@@ -443,7 +443,7 @@ iframe {
   padding: 0 10%; }
 
 .adoption-gallery {
-  background: url("../images/triangles/triangles-orange-mobile.svg") no-repeat; }
+  background: url("https://res.cloudinary.com/mtreeves24/image/upload/q_60/v1601992915/Exotic%20Explorers/triangles/triangles-orange-mobile.svg") no-repeat; }
 
 @media screen and (min-width: 700px) {
   .about-adoptions {
@@ -480,7 +480,7 @@ iframe {
     margin-bottom: 5%; }
 
   .adoption-gallery {
-    background: url("../images/triangles/triangles-orange-wide.svg") no-repeat;
+    background: url("https://res.cloudinary.com/mtreeves24/image/upload/q_60/v1601992918/Exotic%20Explorers/triangles/triangles-orange-wide2.svg") no-repeat;
     background-size: cover; }
 
   .my-gallery {

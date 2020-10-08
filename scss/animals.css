@@ -324,7 +324,7 @@ iframe {
   z-index: 299 !important; }
 
 .animals {
-  background: url("../images/triangles/triangles-green-mobile.svg") no-repeat;
+  background: url("https://res.cloudinary.com/mtreeves24/image/upload/f_auto,q_60/v1601992915/Exotic%20Explorers/triangles/triangles-green-mobile.svg") no-repeat;
   background-position: center;
   border-bottom: 3px solid white;
   color: white; }
@@ -382,17 +382,17 @@ iframe {
 .birdgallery,
 .mammalgallery,
 .amphibiansgallery {
-  background: url("../images/triangles/triangles-orange-mobile.svg") no-repeat;
+  background: url("https://res.cloudinary.com/mtreeves24/image/upload/q_60/v1601992915/Exotic%20Explorers/triangles/triangles-orange-mobile.svg") no-repeat;
   background-size: cover; }
 
 .reptilegallery,
 .invertsgallery {
-  background: url("../images/triangles/triangles-green-mobile.svg") no-repeat center;
+  background: url("https://res.cloudinary.com/mtreeves24/image/upload/f_auto,q_60/v1601992915/Exotic%20Explorers/triangles/triangles-green-mobile.svg") no-repeat center;
   background-size: cover; }
 
 @media screen and (min-width: 700px) {
   .animals {
-    background: url("../images/triangles/triangles-green-wide.svg") no-repeat;
+    background: url("https://res.cloudinary.com/mtreeves24/image/upload/q_60/v1601992915/Exotic%20Explorers/triangles/triangles-green-wide.svg") no-repeat;
     background-position: center;
     background-size: cover; }
     .animals .title {
@@ -409,12 +409,12 @@ iframe {
   .birdgallery,
   .mammalgallery,
   .amphibiansgallery {
-    background: url("../images/triangles/triangles-orange-wide.svg") no-repeat;
+    background: url("https://res.cloudinary.com/mtreeves24/image/upload/q_60/v1601992918/Exotic%20Explorers/triangles/triangles-orange-wide2.svg") no-repeat;
     background-size: cover; }
 
   .reptilegallery,
   .invertsgallery {
-    background: url("../images/triangles/triangles-green-wide.svg") no-repeat;
+    background: url("https://res.cloudinary.com/mtreeves24/image/upload/q_60/v1601992915/Exotic%20Explorers/triangles/triangles-green-wide.svg") no-repeat;
     background-size: cover; } }
 @media only screen and (min-width: 1200px) {
   .animals {

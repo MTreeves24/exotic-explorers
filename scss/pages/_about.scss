@@ -20,8 +20,8 @@
 }
 .about-us {
   grid-area: about-us;
-  background: url("../images/triangles/triangles-green-mobile.svg") no-repeat
-    center;
+  background: url("https://res.cloudinary.com/mtreeves24/image/upload/f_auto,q_60/v1601992915/Exotic%20Explorers/triangles/triangles-green-mobile.svg")
+    no-repeat center;
   background-size: cover;
   border-bottom: 3px solid white;
 }
@@ -30,13 +30,14 @@
   border-bottom: 3px solid white;
 
   &:nth-child(odd) {
-    background: url("../images/triangles/triangles-orange-mobile.svg") no-repeat;
+    background: url("https://res.cloudinary.com/mtreeves24/image/upload/q_60/v1601992915/Exotic%20Explorers/triangles/triangles-orange-mobile.svg")
+      no-repeat;
     background-position: center;
     background-size: cover;
   }
   &:nth-child(even) {
-    background: url("../images/triangles/triangles-green-mobile.svg") no-repeat
-      center;
+    background: url("https://res.cloudinary.com/mtreeves24/image/upload/q_60/v1601992915/Exotic%20Explorers/triangles/triangles-green-mobile.svg")
+      no-repeat center;
     background-size: cover;
   }
   img {
@@ -58,7 +59,8 @@
 }
 
 .volunteers {
-  background: url("../images/triangles/triangles-orange-wide2.svg") no-repeat;
+  background: url("https://res.cloudinary.com/mtreeves24/image/upload/q_60/v1601992915/Exotic%20Explorers/triangles/triangles-orange-mobile.svg")
+    no-repeat;
   background-position: center;
   background-size: cover;
   border-bottom: 3px solid white;
@@ -109,26 +111,28 @@
 
 @media screen and (min-width: 700px) {
   .about-us {
-    background: url("../images/triangles/triangles-green-wide.svg") no-repeat;
+    background: url("https://res.cloudinary.com/mtreeves24/image/upload/q_60/v1601992915/Exotic%20Explorers/triangles/triangles-green-wide.svg")
+      no-repeat;
     background-position: center;
     background-size: cover;
   }
 
   .profile {
     &:nth-child(odd) {
-      background: url("../images/triangles/triangles-orange-wide2.svg")
+      background: url("https://res.cloudinary.com/mtreeves24/image/upload/q_60/v1601992918/Exotic%20Explorers/triangles/triangles-orange-wide2.svg")
         no-repeat;
       background-position: center;
       background-size: cover;
     }
 
     &:nth-child(even) {
-      background: url("../images/triangles/triangles-green-wide.svg") no-repeat
-        center;
+      background: url("https://res.cloudinary.com/mtreeves24/image/upload/q_60/v1601992915/Exotic%20Explorers/triangles/triangles-green-wide.svg")
+        no-repeat center;
       background-size: cover;
     }
   }
   .volunteers {
+    background: url("https://res.cloudinary.com/mtreeves24/image/upload/q_60/v1601992918/Exotic%20Explorers/triangles/triangles-orange-wide2.svg");
     h1 {
       margin: 3%;
     }

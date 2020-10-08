@@ -349,13 +349,13 @@ iframe {
         border-radius: 5px; }
 
 .service-hero {
-  background: url("../images/triangles/triangles-green-mobile.svg") no-repeat;
+  background: url("https://res.cloudinary.com/mtreeves24/image/upload/f_auto,q_60/v1601992915/Exotic%20Explorers/triangles/triangles-green-mobile.svg") no-repeat;
   background-position: center;
   border-bottom: 3px solid white; }
 
 .service-info {
   border-bottom: 3px solid white;
-  background: url("../images/triangles/triangles-orange-mobile.svg") no-repeat;
+  background: url("https://res.cloudinary.com/mtreeves24/image/upload/q_60/v1601992915/Exotic%20Explorers/triangles/triangles-orange-mobile.svg") no-repeat;
   background-position: center;
   background-size: cover; }
   .service-info .prices {
@@ -378,7 +378,7 @@ iframe {
       color: #00a80e; }
 
 .info-green-bg {
-  background: url("../images/triangles/triangles-green-mobile.svg") no-repeat;
+  background: url("https://res.cloudinary.com/mtreeves24/image/upload/f_auto,q_60/v1601992915/Exotic%20Explorers/triangles/triangles-green-mobile.svg") no-repeat;
   background-position: center; }
 
 .weddings {
@@ -480,17 +480,17 @@ iframe {
       position: relative; }
 
   .service-hero {
-    background: url("../images/triangles/triangles-green-wide.svg") no-repeat;
+    background: url("https://res.cloudinary.com/mtreeves24/image/upload/q_60/v1601992915/Exotic%20Explorers/triangles/triangles-green-wide.svg") no-repeat;
     background-size: cover;
     background-position: left; }
 
   .service-info {
-    background: url("../images/triangles/triangles-orange-wide.svg") no-repeat;
+    background: url("https://res.cloudinary.com/mtreeves24/image/upload/q_60/v1601992918/Exotic%20Explorers/triangles/triangles-orange-wide2.svg") no-repeat;
     background-size: cover;
     background-position: left; }
 
   .info-green-bg {
-    background: url("../images/triangles/triangles-green-wide.svg") no-repeat;
+    background: url("https://res.cloudinary.com/mtreeves24/image/upload/q_60/v1601992915/Exotic%20Explorers/triangles/triangles-green-wide.svg") no-repeat;
     background-size: cover; } }
 @media screen and (min-width: 1100px) {
   .service-hero {
