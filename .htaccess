@@ -5,3 +5,9 @@ Header set Content-Security-Policy "script-src base-uri 'self' https://www.cloud
 Header always set X-FRAME-OPTIONS "DENY"
 
 Header append Vary: Accept-Encoding
+
+Header always set Strict-Transport-Security "max-age=63072000; includeSubDomains"
+
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^www\.exoticexplorers\.co.uk [NC]
+RewriteRule (.*) https://exoticexplorers.co.uk/$1 [R=301,L]
