@@ -4,7 +4,8 @@
   background-size: cover;
   border-bottom: 3px solid white;
   color: white;
-  h1 {
+  h1,
+  h2 {
     padding-top: 5%;
   }
   p {
@@ -77,7 +78,7 @@
     border: 0.5px solid white;
     position: relative;
     padding: 0px 10px;
-    h1 {
+    h2 {
       margin: 0;
     }
     ul {
@@ -108,7 +109,7 @@
   grid-area: gallery;
 
   border-bottom: 0.1rem solid white;
-  h1 {
+  h2 {
     padding-top: 5%;
   }
 }
@@ -136,10 +137,11 @@
     }
     .gallery-overlay {
       color: white;
-      h4 {
+      p {
         display: grid;
         padding: 0px 2%;
         height: 3em;
+        font-weight: 700;
         align-content: center;
         position: absolute;
         bottom: 0;

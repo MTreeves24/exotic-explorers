@@ -42,8 +42,6 @@
 
 .about {
   grid-area: about;
-  // background: rgb(0,168,29);
-  // background: linear-gradient(177deg, $color-green, rgba(0,210,36,0.7049020291710435) 35%, rgba(110,255,125,0.24271715522146353) 100%);
   background: url("https://res.cloudinary.com/mtreeves24/image/upload/f_auto,q_60/v1601992915/Exotic%20Explorers/triangles/triangles-green-mobile.svg")
     no-repeat center;
   border-bottom: 0.5em solid white;
@@ -55,7 +53,13 @@
     color: white;
     max-width: 800px;
     text-align: center;
-    padding: 0px 20px 60px 20px;
+    padding-bottom: 60px;
+    p {
+      a {
+        color: white;
+        padding: 0;
+      }
+    }
     h4 {
       padding-bottom: 20px;
     }
@@ -115,7 +119,7 @@
     display: flex;
     flex: 1;
     flex-direction: column;
-    h1 {
+    h2 {
       align-items: stretch;
       padding-top: 20px;
       font-size: 0.9em;
@@ -379,7 +383,7 @@
     border: 1px solid #ddd;
     border-radius: 0.25em;
   }
-  h1 {
+  p {
     padding: 0 4%;
   }
   .fb-link {
@@ -410,7 +414,7 @@
       min-height: 500px;
       width: 30vw;
       min-width: 30%;
-      h1 {
+      h2 {
         font-size: 2rem;
         align-items: stretch;
       }
@@ -454,6 +458,11 @@
 }
 
 @media only screen and (min-width: 1600px) {
+  .about {
+    .about-text {
+      padding: 0px 0px 0px 60px;
+    }
+  }
   .covid-news {
     background-position: 0px -250px;
     background-color: rgba(0, 0, 0, 0.4);

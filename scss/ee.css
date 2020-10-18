@@ -271,7 +271,7 @@
   align-items: center; }
   .hero img {
     padding-top: 1em; }
-  .hero h1 {
+  .hero p {
     font-weight: 100;
     color: #222;
     font-size: 1.2em;
@@ -361,7 +361,10 @@ iframe {
     color: white;
     max-width: 800px;
     text-align: center;
-    padding: 0px 20px 60px 20px; }
+    padding-bottom: 60px; }
+    .about .about-text p a {
+      color: white;
+      padding: 0; }
     .about .about-text h4 {
       padding-bottom: 20px; }
     .about .about-text a {
@@ -412,7 +415,7 @@ iframe {
     display: flex;
     flex: 1;
     flex-direction: column; }
-    .services .panel h1 {
+    .services .panel h2 {
       align-items: stretch;
       padding-top: 20px;
       font-size: 0.9em; }
@@ -605,7 +608,7 @@ iframe {
     line-height: 2;
     border: 1px solid #ddd;
     border-radius: 0.25em; }
-  .testimonials h1 {
+  .testimonials p {
     padding: 0 4%; }
   .testimonials .fb-link:hover {
     outline: 5px solid white; }
@@ -628,7 +631,7 @@ iframe {
       min-height: 500px;
       width: 30vw;
       min-width: 30%; }
-      .services .panel h1 {
+      .services .panel h2 {
         font-size: 2rem;
         align-items: stretch; }
       .services .panel .bouncing-finger {
@@ -657,6 +660,9 @@ iframe {
     .testimonials .more-quotes {
       display: block; } }
 @media only screen and (min-width: 1600px) {
+  .about .about-text {
+    padding: 0px 0px 0px 60px; }
+
   .covid-news {
     background-position: 0px -250px;
     background-color: rgba(0, 0, 0, 0.4); }

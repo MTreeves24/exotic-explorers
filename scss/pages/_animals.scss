@@ -16,7 +16,7 @@
   * {
     margin: 0;
   }
-  border-bottom: 0.5rem solid white;
+  border-bottom: 3px solid white;
   h1 {
     padding-top: 5%;
   }
@@ -48,10 +48,11 @@
     }
     .gallery-overlay {
       color: white;
-      h4 {
+      p {
         display: grid;
         padding: 0px 2%;
         height: 3.5em;
+        font-weight: 700;
         align-content: center;
         position: absolute;
         bottom: 0;
