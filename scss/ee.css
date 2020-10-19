@@ -272,6 +272,7 @@
   .hero img {
     padding-top: 1em; }
   .hero p {
+    margin: 0;
     font-weight: 100;
     color: #222;
     font-size: 1.2em;
@@ -353,6 +354,7 @@ iframe {
   grid-area: about;
   background: url("https://res.cloudinary.com/mtreeves24/image/upload/f_auto,q_60/v1601992915/Exotic%20Explorers/triangles/triangles-green-mobile.svg") no-repeat center;
   border-bottom: 0.5em solid white;
+  margin-top: 5%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -660,8 +662,10 @@ iframe {
     .testimonials .more-quotes {
       display: block; } }
 @media only screen and (min-width: 1600px) {
-  .about .about-text {
-    padding: 0px 0px 0px 60px; }
+  .about {
+    margin-top: 3%; }
+    .about .about-text {
+      padding: 0px 0px 0px 60px; }
 
   .covid-news {
     background-position: 0px -250px;
