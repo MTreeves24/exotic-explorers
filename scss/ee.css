@@ -363,7 +363,10 @@ iframe {
     color: white;
     max-width: 800px;
     text-align: center;
-    padding-bottom: 60px; }
+    padding-bottom: 60px;
+    margin: 0px 10px; }
+    .about .about-text h1 {
+      font-size: 1.5em; }
     .about .about-text p a {
       color: white;
       padding: 0; }
@@ -418,7 +421,7 @@ iframe {
     display: flex;
     flex: 1;
     flex-direction: column; }
-    .services .panel h2 {
+    .services .panel h3 {
       align-items: stretch;
       padding-top: 20px;
       font-size: 0.9em; }
@@ -634,7 +637,7 @@ iframe {
       min-height: 500px;
       width: 30vw;
       min-width: 30%; }
-      .services .panel h2 {
+      .services .panel h3 {
         font-size: 2rem;
         align-items: stretch; }
       .services .panel .bouncing-finger {

@@ -55,6 +55,10 @@
     max-width: 800px;
     text-align: center;
     padding-bottom: 60px;
+    margin: 0px 10px;
+    h1 {
+      font-size: 1.5em;
+    }
     p {
       a {
         color: white;
@@ -121,7 +125,7 @@
     display: flex;
     flex: 1;
     flex-direction: column;
-    h2 {
+    h3 {
       align-items: stretch;
       padding-top: 20px;
       font-size: 0.9em;
@@ -416,7 +420,7 @@
       min-height: 500px;
       width: 30vw;
       min-width: 30%;
-      h2 {
+      h3 {
         font-size: 2rem;
         align-items: stretch;
       }
