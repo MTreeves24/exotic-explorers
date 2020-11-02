@@ -361,7 +361,7 @@ iframe {
   align-items: center; }
   .about .about-text {
     color: white;
-    max-width: 800px;
+    max-width: 900px;
     text-align: center;
     padding-bottom: 60px;
     margin: 0px 10px; }
@@ -669,7 +669,7 @@ iframe {
   .about {
     margin-top: 3%; }
     .about .about-text {
-      padding: 0px 0px 0px 60px; }
+      padding: 0px 0px 60px 60px; }
 
   .covid-news {
     background-position: 0px -250px;
