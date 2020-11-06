@@ -339,16 +339,26 @@ iframe {
   justify-content: center;
   align-items: center;
   font-size: 1em;
-  color: #222; }
+  color: white; }
   .covid-news .covid-text {
     padding: 0px 20px 20px 20px; }
   .covid-news p {
     margin-top: 0;
-    color: white;
     text-align: center; }
     .covid-news p a {
+      font-weight: 700; }
+  .covid-news h4 {
+    margin-bottom: 0; }
+  .covid-news ul {
+    margin-top: 5px;
+    padding: 0px 20px 0px 20px; }
+    .covid-news ul li {
+      padding: 5px; }
+    .covid-news ul a {
       color: white;
       font-weight: 700; }
+      .covid-news ul a:hover {
+        outline: 1px solid white; }
 
 .about {
   grid-area: about;
