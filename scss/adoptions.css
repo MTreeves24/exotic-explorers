@@ -330,9 +330,9 @@ iframe {
   background-size: cover;
   border-bottom: 3px solid white;
   color: white; }
-  .animals h1,
-  .animals h2 {
-    padding-top: 5%; }
+  .animals h1 {
+    padding-top: 5%;
+    margin-bottom: 1%; }
   .animals p {
     padding: 1% 3%; }
 
@@ -382,8 +382,8 @@ iframe {
     border: 0.5px solid white;
     position: relative;
     padding: 0px 10px; }
-    .service-prices-container .prices h2 {
-      margin: 0; }
+    .service-prices-container .prices p {
+      margin: 1%; }
     .service-prices-container .prices ul {
       list-style-type: none;
       padding: 0; }
@@ -450,6 +450,9 @@ iframe {
   background: url("https://res.cloudinary.com/mtreeves24/image/upload/q_60/v1601992915/Exotic%20Explorers/triangles/triangles-orange-mobile.svg") no-repeat; }
 
 @media screen and (min-width: 700px) {
+  .animals h1 {
+    padding-top: 3%; }
+
   .about-adoptions {
     display: grid;
     justify-items: center; }
@@ -463,6 +466,8 @@ iframe {
     margin: 4%; }
     .service-prices-container .prices {
       margin: 2%; }
+      .service-prices-container .prices p {
+        margin: 20px; }
       .service-prices-container .prices .service-prices-list {
         list-style-type: disc;
         text-align: left;
@@ -476,7 +481,7 @@ iframe {
     .service-prices-container li {
       padding: 6% 2%; }
 
-  .gallery h1 {
+  .gallery p {
     padding: 2%; }
 
   .my-gallery {
