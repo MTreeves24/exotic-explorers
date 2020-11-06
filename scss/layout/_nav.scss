@@ -16,7 +16,7 @@
   ul.opening {
     display: block;
     text-align: center;
-    font-size: 38px;
+    font-size: 33px;
     font-weight: 700;
   }
   li {
@@ -49,10 +49,11 @@
   margin: 0;
   width: 100%;
   li {
+    display: grid;
     outline: 0.1px solid white;
     background-size: 300%;
-    font-size: 0.6em;
-    height: 40px;
+    font-size: 0.5em;
+    height: 35px;
   }
 }
 .dropdown-hide {
