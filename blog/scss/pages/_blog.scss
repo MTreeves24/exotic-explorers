@@ -1,0 +1,129 @@
+.blog-container {
+  margin-top: 5%;
+  padding-bottom: 5%;
+  border-bottom: 3px solid white;
+  background: url("https://res.cloudinary.com/mtreeves24/image/upload/q_60/v1601992915/Exotic%20Explorers/triangles/triangles-grey-wide.svg")
+    no-repeat;
+  background-size: cover;
+}
+
+html {
+  -webkit-font-smoothing: antialiased;
+}
+
+header {
+  width: 90%;
+  max-width: 1240px;
+  padding-top: 3%;
+  margin: 0 auto;
+}
+.band {
+  width: 90%;
+  max-width: 1240px;
+  margin: 0 auto;
+
+  display: grid;
+
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-gap: 20px;
+
+  @media (min-width: 30em) {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media (min-width: 60em) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.card {
+  background: white;
+  text-decoration: none;
+  color: #444;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+
+  // sets up hover state
+  position: relative;
+  top: 0;
+  transition: all 0.1s ease-in;
+
+  &:hover {
+    top: -2px;
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+  }
+
+  article {
+    padding: 20px;
+    flex: 1;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  h1 {
+    font-size: 20px;
+    margin: 0;
+    color: #333;
+  }
+
+  p {
+    flex: 1;
+    line-height: 1.4;
+  }
+
+  span {
+    font-size: 12px;
+    font-weight: bold;
+    color: #999;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin: 2em 0 0 0;
+  }
+
+  .thumb {
+    padding-bottom: 60%;
+    background-size: cover;
+    background-position: center center;
+  }
+}
+
+.item-1 {
+  @media (min-width: 60em) {
+    grid-column: 1 / span 2;
+
+    h1 {
+      font-size: 24px;
+    }
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .blog {
+    background: url("https://res.cloudinary.com/mtreeves24/image/upload/q_60/v1601992915/Exotic%20Explorers/triangles/triangles-green-wide.svg")
+      no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .blog-container {
+    margin-top: 3%;
+  }
+}
+
+.fb_customer_chat_bubble_animated_no_badge {
+  background: none !important;
+  border-radius: 50% !important;
+  bottom: 50pt !important;
+  display: inline !important;
+  padding: 0px !important;
+  position: fixed !important;
+  right: 8pt !important;
+  top: auto !important;
+}

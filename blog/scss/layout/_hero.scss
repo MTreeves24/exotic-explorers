@@ -1,0 +1,27 @@
+.hero {
+  grid-area: hero;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  img {
+    padding-top: 1em;
+  }
+  p {
+    margin: 0;
+    font-weight: 100;
+    color: #222;
+    //Below is code for text outline if needed
+    // text-shadow: 0 0 1px black, 0 0 1px black, 0 0 1px black, 0 0 1px black;
+
+    font-size: 1.2em;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .hero {
+    padding-top: 3em;
+  }
+}

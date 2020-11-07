@@ -354,7 +354,8 @@ iframe {
     margin-top: 5px;
     padding: 0px 20px 0px 20px; }
     .covid-news ul li {
-      padding: 5px; }
+      padding: 5px;
+      list-style-type: none; }
     .covid-news ul a {
       color: white;
       font-weight: 700; }
@@ -640,6 +641,8 @@ iframe {
     background-size: cover;
     background-color: rgba(0, 0, 0, 0.5);
     background-blend-mode: darken; }
+    .covid-news ul li {
+      list-style-type: disc; }
 
   .services {
     background: url("https://res.cloudinary.com/mtreeves24/image/upload/f_auto,q_70/v1601992918/Exotic%20Explorers/triangles/triangles-grey-wide.svg") no-repeat;

@@ -123,7 +123,7 @@
       .nav .dropdown-root:hover {
         text-decoration: underline; }
     .nav .dropdown {
-      grid-template-columns: repeat(7, 1fr);
+      grid-template-columns: repeat(8, 1fr);
       position: absolute;
       top: 100%;
       width: 100%;
@@ -402,7 +402,7 @@ iframe {
   border-bottom: 0.1rem solid white; }
   .gallery * {
     margin: 0; }
-  .gallery h2 {
+  .gallery p {
     padding-top: 5%; }
 
 .my-gallery {
