@@ -22,7 +22,7 @@
   //     no-repeat;
   //   background-size: cover;
   span {
-    color: darkslategrey;
+    color: #222;
   }
   a {
     color: darkgreen;
@@ -50,7 +50,7 @@
   margin: 0;
   font-size: max(2.8vw, 35px);
   padding: 0px 5px;
-  color: #111;
+  color: #000;
 }
 
 .subheading {
@@ -63,7 +63,7 @@
 }
 
 .paragraph {
-  color: #222;
+  color: #000;
   font-size: 1em;
   margin: 0;
   padding: 0.5em;

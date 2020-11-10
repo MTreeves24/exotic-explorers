@@ -332,7 +332,7 @@ iframe {
   padding-bottom: 3%;
   border-bottom: 5px solid white; }
   .blog-container span {
-    color: darkslategrey; }
+    color: #222; }
   .blog-container a {
     color: darkgreen; }
     .blog-container a:hover {
@@ -354,7 +354,7 @@ iframe {
   margin: 0;
   font-size: max(2.8vw, 35px);
   padding: 0px 5px;
-  color: #111; }
+  color: #000; }
 
 .subheading {
   margin-bottom: 15px; }
@@ -364,7 +364,7 @@ iframe {
   margin: 1em auto; }
 
 .paragraph {
-  color: #222;
+  color: #000;
   font-size: 1em;
   margin: 0;
   padding: 0.5em; }
