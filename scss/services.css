@@ -338,6 +338,10 @@ iframe {
   color: white;
   text-align: center;
   padding: 3%; }
+  .intro-container a {
+    color: white; }
+    .intro-container a:hover {
+      outline: 0.1px solid white; }
   .intro-container .misc-services-list {
     list-style-type: none;
     padding: 0;

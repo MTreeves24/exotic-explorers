@@ -11,6 +11,12 @@
   color: white;
   text-align: center;
   padding: 3%;
+  a {
+    color: white;
+    &:hover {
+      outline: 0.1px solid white;
+    }
+  }
   .misc-services-list {
     list-style-type: none;
     padding: 0;

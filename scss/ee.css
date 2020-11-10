@@ -123,7 +123,7 @@
       .nav .dropdown-root:hover {
         text-decoration: underline; }
     .nav .dropdown {
-      grid-template-columns: repeat(7, 1fr);
+      grid-template-columns: repeat(8, 1fr);
       position: absolute;
       top: 100%;
       width: 100%;
@@ -642,7 +642,8 @@ iframe {
     background-color: rgba(0, 0, 0, 0.5);
     background-blend-mode: darken; }
     .covid-news ul li {
-      list-style-type: disc; }
+      list-style-type: disc;
+      list-style-position: inside; }
 
   .services {
     background: url("https://res.cloudinary.com/mtreeves24/image/upload/f_auto,q_70/v1601992918/Exotic%20Explorers/triangles/triangles-grey-wide.svg") no-repeat;
