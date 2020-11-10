@@ -330,13 +330,7 @@ iframe {
   text-align: center;
   line-height: 1.5em;
   padding-bottom: 3%;
-  border-bottom: 5px solid white;
-  background: #abbaab;
-  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to bottom, #ffffff, #e4e4e4);
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to bottom, #ffffff, #e4e4e4);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ }
+  border-bottom: 5px solid white; }
   .blog-container span {
     color: darkslategrey; }
   .blog-container a {
@@ -386,8 +380,8 @@ blockquote {
   width: 70%;
   margin: 30px auto;
   font-style: italic;
-  color: #555555;
-  padding: 1em 10px 1em 75px;
+  color: #333;
+  padding: 1em 25px 1em 55px;
   border-left: 8px solid #006e4a;
   line-height: 1.6;
   position: relative;

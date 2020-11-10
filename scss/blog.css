@@ -328,13 +328,7 @@ iframe {
 .blog-container {
   margin-top: 5%;
   padding-bottom: 5%;
-  border-bottom: 3px solid white;
-  background: #abbaab;
-  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to bottom, #ffffff, #abbaab);
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to bottom, #ffffff, #abbaab);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ }
+  border-bottom: 3px solid white; }
 
 html {
   -webkit-font-smoothing: antialiased; }
@@ -366,7 +360,7 @@ header {
       grid-template-columns: repeat(4, 1fr); } }
 
 .card {
-  background: white;
+  background: #e8fbdd;
   text-decoration: none;
   color: #444;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);

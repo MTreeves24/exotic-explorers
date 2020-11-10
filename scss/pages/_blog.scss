@@ -5,17 +5,17 @@
   // background: url("https://res.cloudinary.com/mtreeves24/image/upload/q_60/v1601992915/Exotic%20Explorers/triangles/triangles-grey-wide.svg")
   //   no-repeat;
   // background-size: cover;
-  background: #abbaab; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to bottom,
-    #ffffff,
-    #abbaab
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to bottom,
-    #ffffff,
-    #abbaab
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  // background: #abbaab; /* fallback for old browsers */
+  // background: -webkit-linear-gradient(
+  //   to bottom,
+  //   #ffffff,
+  //   #abbaab
+  // ); /* Chrome 10-25, Safari 5.1-6 */
+  // background: linear-gradient(
+  //   to bottom,
+  //   #ffffff,
+  //   #abbaab
+  // ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 html {
@@ -55,7 +55,7 @@ header {
 }
 
 .card {
-  background: white;
+  background: rgb(232, 251, 221);
   text-decoration: none;
   color: #444;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
