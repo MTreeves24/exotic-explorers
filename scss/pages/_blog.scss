@@ -1,10 +1,14 @@
+.hero {
+  margin-bottom: 5%;
+}
+
 .blog-container {
   margin-top: 5%;
   padding-bottom: 5%;
   border-bottom: 3px solid white;
-  // background: url("https://res.cloudinary.com/mtreeves24/image/upload/q_60/v1601992915/Exotic%20Explorers/triangles/triangles-grey-wide.svg")
-  //   no-repeat;
-  // background-size: cover;
+  background: url("https://res.cloudinary.com/mtreeves24/image/upload/q_60/v1601992915/Exotic%20Explorers/triangles/triangles-green-wide.svg")
+    no-repeat;
+  background-size: cover;
   // background: #abbaab; /* fallback for old browsers */
   // background: -webkit-linear-gradient(
   //   to bottom,
@@ -23,24 +27,22 @@ html {
 }
 
 .blog-title {
-  margin-top: 0;
-  text-align: left;
-  font-size: 2em;
+  margin: 15px 15px 25px 15px;
+  text-align: center;
+  font-size: 7vw;
 }
 
 header {
   width: 90%;
   max-width: 1240px;
-  padding-top: 3%;
+  padding-top: 1%;
   margin: 0 auto;
 }
 .band {
   width: 90%;
   max-width: 1240px;
   margin: 0 auto;
-
   display: grid;
-
   grid-template-columns: 1fr;
   grid-template-rows: auto;
   grid-gap: 20px;
@@ -55,10 +57,21 @@ header {
 }
 
 .card {
-  background: rgb(232, 251, 221);
+  background: rgb(232, 251, 221); /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #e2e4d9,
+    rgb(232, 251, 221)
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #e2e4d9,
+    rgb(232, 251, 221)
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   text-decoration: none;
   color: #444;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border: 1px solid darkgreen;
+  box-shadow: 0 2px 5px rgba(37, 37, 37, 0.5);
   display: flex;
   flex-direction: column;
   min-height: 100%;
@@ -70,7 +83,7 @@ header {
 
   &:hover {
     top: -10px;
-    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 5px rgba(37, 37, 37, 0.7);
   }
 
   article {
@@ -129,8 +142,16 @@ header {
 }
 
 @media screen and (min-width: 1200px) {
+  .hero {
+    margin-bottom: 3%;
+  }
   .blog-container {
     margin-top: 0%;
+    .blog-title {
+      font-size: 3.5vw;
+      text-align: left;
+      margin-top: 15px;
+    }
   }
 }
 
