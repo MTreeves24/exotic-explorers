@@ -334,7 +334,8 @@ iframe {
   .blog-container span {
     color: #222; }
   .blog-container a {
-    color: darkgreen; }
+    color: darkgreen;
+    font-weight: bold; }
     .blog-container a:hover {
       outline: 1px solid darkgreen; }
 
@@ -381,7 +382,8 @@ blockquote {
   width: 70%;
   margin: 30px auto;
   font-style: italic;
-  color: #333;
+  color: #222;
+  font-weight: bold;
   padding: 1em 25px 1em 55px;
   border-left: 8px solid #006e4a;
   line-height: 1.6;
@@ -403,9 +405,9 @@ blockquote::after {
 
 blockquote span {
   display: block;
-  color: #333;
+  color: #222;
   font-style: normal;
-  font-weight: bold;
+  font-weight: normal;
   margin-top: 1em; }
 
 html {
@@ -424,7 +426,8 @@ html {
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-content: center;
-    align-items: center; } }
+    align-items: center;
+    font-weight: 500; } }
 .fb_customer_chat_bubble_animated_no_badge {
   background: none !important;
   border-radius: 50% !important;
