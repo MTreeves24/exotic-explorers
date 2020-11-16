@@ -79,6 +79,14 @@
   box-shadow: 20px 38px 34px -26px hsla(0, 0%, 0%, 0.2);
 }
 
+.blog-image-alt {
+  width: 95%;
+  margin: 0 auto;
+  // border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+  border: 4px solid #555;
+  box-shadow: 20px 38px 34px -26px hsla(0, 0%, 0%, 0.2);
+}
+
 blockquote {
   font-size: 0.9em;
   width: 70%;
@@ -136,6 +144,13 @@ html {
     justify-content: center;
     align-items: center;
     font-weight: 500;
+  }
+  .blog-image-alt {
+    width: 65%;
+    margin: 0 auto;
+    // border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+    border: 4px solid #555;
+    box-shadow: 20px 38px 34px -26px hsla(0, 0%, 0%, 0.2);
   }
 }
 
