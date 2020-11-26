@@ -325,212 +325,121 @@ iframe {
 .fb_dialog_advanced {
   z-index: 299 !important; }
 
-.services {
-  margin-top: 5%;
-  color: white;
+.container {
+  margin: 0;
   display: grid; }
 
 .image {
   width: 100%;
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22); }
 
-.intro-container {
-  color: white;
-  text-align: center;
-  padding: 3%; }
-  .intro-container a {
-    color: white; }
-    .intro-container a:hover {
-      outline: 0.1px solid white; }
-  .intro-container .misc-services-list {
-    list-style-type: none;
-    padding: 0;
-    font-size: 1.5em; }
-    .intro-container .misc-services-list li {
-      padding: 10px; }
-    .intro-container .misc-services-list a {
-      color: white;
-      padding: 10px; }
-      .intro-container .misc-services-list a:hover {
-        border: 0.1px solid white;
-        border-radius: 5px; }
+.about {
+  margin-top: 5%; }
+  .about .about-text {
+    color: white;
+    text-align: center;
+    padding: 1% 3%; }
+  .about .about-gifts {
+    background: url("https://res.cloudinary.com/mtreeves24/image/upload/f_auto,q_60/v1601992915/Exotic%20Explorers/triangles/triangles-green-wide.svg") no-repeat center;
+    background-size: cover;
+    border-bottom: 3px solid white; }
 
-.service-hero {
-  background: url("https://res.cloudinary.com/mtreeves24/image/upload/f_auto,q_60/v1601992915/Exotic%20Explorers/triangles/triangles-green-mobile.svg") no-repeat;
-  background-position: center;
+.button {
+  font-size: 30px;
+  margin-bottom: 1em; }
+
+.gift {
   border-bottom: 3px solid white; }
+  .gift .title {
+    margin-bottom: 2%; }
+  .gift:nth-child(odd) {
+    background: url("https://res.cloudinary.com/mtreeves24/image/upload/q_60/v1601992915/Exotic%20Explorers/triangles/triangles-orange-mobile.svg") no-repeat;
+    background-position: center;
+    background-size: cover; }
+  .gift:nth-child(even) {
+    background: url("https://res.cloudinary.com/mtreeves24/image/upload/q_60/v1601992915/Exotic%20Explorers/triangles/triangles-green-mobile.svg") no-repeat center;
+    background-size: cover; }
+  .gift img {
+    width: 100%; }
+  .gift .price {
+    font-style: italic;
+    margin: 0;
+    font-size: 1.3em;
+    font-weight: 700;
+    text-shadow: 0 0 4px rgba(0, 0, 0, 0.72), 0 0 14px rgba(0, 0, 0, 0.45); }
 
-.service-info {
-  border-bottom: 3px solid white;
+.volunteers {
   background: url("https://res.cloudinary.com/mtreeves24/image/upload/q_60/v1601992915/Exotic%20Explorers/triangles/triangles-orange-mobile.svg") no-repeat;
   background-position: center;
-  background-size: cover; }
-  .service-info .prices {
-    padding-bottom: 5px;
-    padding-top: 25px;
-    box-shadow: 0 28px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22); }
-    .service-info .prices ul {
-      list-style-type: none;
-      padding: 0;
-      font-size: 1.2em; }
-      .service-info .prices ul li {
-        padding: 1% 3%; }
-    .service-info .prices .extra-price-info {
-      padding: 0 3%; }
-  .service-info .price {
-    list-style-type: none;
-    padding: 4%;
-    font-weight: 700;
-    font-size: 1.5em; }
-  .service-info a {
-    color: white; }
-    .service-info a:hover {
-      color: #00a80e; }
+  background-size: cover;
+  border-bottom: 3px solid white; }
+  .volunteers .about-images {
+    height: auto;
+    position: relative; }
+    .volunteers .about-images img {
+      width: 36%; }
+  .volunteers h1 {
+    margin: 8%; }
 
-.laptop-break {
-  display: none; }
-
-.info-green-bg {
-  background: url("https://res.cloudinary.com/mtreeves24/image/upload/f_auto,q_60/v1601992915/Exotic%20Explorers/triangles/triangles-green-mobile.svg") no-repeat;
-  background-position: center; }
-
-.weddings {
-  height: 30vh; }
-
-.title {
-  margin: 0;
-  padding: 2%; }
-
-.platinum {
-  background: #8e9eab;
-  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to bottom, #b9baba, #8e9eab);
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to bottom, #b9baba, #8e9eab);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ }
-
-.gold {
-  background: #d4af37;
-  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to top, #181818, #d4af37);
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to top, #181818, #d4af37);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ }
-
-.silver {
-  background: #99a1ac;
-  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to top, #2c3e50, #99a1ac);
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to top, #2c3e50, #99a1ac);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ }
-
-.bronze {
-  background: #6d6027;
-  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to bottom, #cbb394, #6d6027);
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to bottom, #cbb394, #6d6027);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ }
-
-.my-gallery {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  margin-bottom: 8%;
-  justify-content: space-around; }
-  .my-gallery .gallery-item {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    position: relative;
-    overflow: hidden;
-    box-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4); }
-    .my-gallery .gallery-item img {
-      height: 100%;
-      width: 100%;
-      transition: transform 400ms ease-out; }
-      .my-gallery .gallery-item img:hover {
-        scale: 1.01;
-        transform: scale(1.15); }
-    .my-gallery .gallery-item figcaption {
-      display: none; }
+.fb_customer_chat_bubble_animated_no_badge {
+  background: none !important;
+  border-radius: 50% !important;
+  bottom: 50pt !important;
+  display: inline !important;
+  padding: 0px !important;
+  position: fixed !important;
+  right: 8pt !important;
+  top: auto !important; }
 
 @media screen and (min-width: 700px) {
-  .my-gallery {
-    grid-template-columns: repeat(6, 1fr);
-    margin-bottom: 2%; }
-
-  .service-prices-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    align-items: space-between;
-    padding: 0 5%; }
-    .service-prices-container .prices {
-      margin: 3%;
-      border: 0.5px solid white;
-      position: relative; }
-      .service-prices-container .prices h1 {
-        display: grid;
-        align-items: center;
-        height: 100px; }
-      .service-prices-container .prices ul {
-        list-style-type: none;
-        padding: 0; }
-        .service-prices-container .prices ul li {
-          height: 70px;
-          padding: 0 2%; }
-        .service-prices-container .prices ul .li-padding {
-          display: none; }
-
-  .service-prices-container-single {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    align-items: space-between;
-    padding: 0 5%; }
-    .service-prices-container-single .prices-single {
-      border: 0.5px solid white;
-      margin: 4%;
-      position: relative; }
-
-  .laptop-break {
-    display: unset; }
-
-  .service-hero {
-    background: url("https://res.cloudinary.com/mtreeves24/image/upload/q_60/v1601992915/Exotic%20Explorers/triangles/triangles-green-wide.svg") no-repeat;
-    background-size: cover;
-    background-position: left; }
-
-  .service-info {
-    background: url("https://res.cloudinary.com/mtreeves24/image/upload/q_60/v1601992918/Exotic%20Explorers/triangles/triangles-orange-wide2.svg") no-repeat;
-    background-size: cover;
-    background-position: left; }
-
-  .info-green-bg {
-    background: url("https://res.cloudinary.com/mtreeves24/image/upload/q_60/v1601992915/Exotic%20Explorers/triangles/triangles-green-wide.svg") no-repeat;
-    background-size: cover; } }
-@media screen and (min-width: 1100px) {
-  .intro-container {
-    padding: 3% 13%; }
-
-  .services {
-    margin-top: 2%; }
-
-  .service-hero {
+  .about-gifts {
+    background: url("https://res.cloudinary.com/mtreeves24/image/upload/q_60/v1601992915/Exotic%20Explorers/triangles/triangles-green-wide.svg") no-repeat center;
     background-size: cover; }
 
-  .service-prices-container {
-    grid-template-columns: repeat(4, 1fr); }
-    .service-prices-container .prices h1 {
-      height: 140px; }
-    .service-prices-container .prices .title {
-      padding-top: 6%; }
-    .service-prices-container .prices .service-prices-list {
-      padding-top: 5%;
-      align-items: center; }
-      .service-prices-container .prices .service-prices-list .li-padding {
-        display: block; }
-    .service-prices-container .service-prices-container-single {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr); } }
+  .gift:nth-child(odd) {
+    background: url("https://res.cloudinary.com/mtreeves24/image/upload/q_60/v1601992918/Exotic%20Explorers/triangles/triangles-orange-wide2.svg") no-repeat;
+    background-position: center;
+    background-size: cover; }
+  .gift:nth-child(even) {
+    background: url("https://res.cloudinary.com/mtreeves24/image/upload/q_60/v1601992915/Exotic%20Explorers/triangles/triangles-green-wide.svg") no-repeat center;
+    background-size: cover; }
 
-/*# sourceMappingURL=services.css.map */
+  .volunteers {
+    background: url("https://res.cloudinary.com/mtreeves24/image/upload/q_60/v1601992918/Exotic%20Explorers/triangles/triangles-orange-wide2.svg"); }
+    .volunteers h1 {
+      margin: 3%; } }
+@media screen and (min-width: 900px) {
+  .gift {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    padding: 2%; }
+    .gift:nth-child(odd) {
+      grid-template-columns: 2fr 1fr; }
+      .gift:nth-child(odd) picture {
+        order: 1; }
+
+  .image {
+    border: 3px solid white;
+    width: 100%;
+    max-width: 20rem;
+    margin-top: 1em; }
+
+  .about-images {
+    margin: 0 20%; }
+    .about-images .about-me-center-img {
+      max-width: 250px; }
+
+  .volunteer-about-text {
+    margin: 0 10%; }
+    .volunteer-about-text h1 {
+      margin: 2%; } }
+@media screen and (min-width: 1200px) {
+  .about {
+    margin-top: 3%; }
+    .about .about-images {
+      margin: 0 20%; }
+      .about .about-images .about-me-center-img {
+        max-width: 350px; } }
+
+/*# sourceMappingURL=gifts.css.map */

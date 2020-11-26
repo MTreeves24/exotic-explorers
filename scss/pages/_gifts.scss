@@ -1,0 +1,162 @@
+.container {
+  margin: 0;
+  display: grid;
+}
+.image {
+  width: 100%;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+.about {
+  margin-top: 5%;
+  .about-text {
+    color: white;
+    text-align: center;
+    padding: 1% 3%;
+  }
+  .about-gifts {
+    background: url("https://res.cloudinary.com/mtreeves24/image/upload/f_auto,q_60/v1601992915/Exotic%20Explorers/triangles/triangles-green-wide.svg")
+      no-repeat center;
+    background-size: cover;
+    border-bottom: 3px solid white;
+  }
+}
+
+.button {
+  font-size: 30px;
+  margin-bottom: 1em;
+}
+
+.gift {
+  .title {
+    margin-bottom: 2%;
+  }
+  border-bottom: 3px solid white;
+  &:nth-child(odd) {
+    background: url("https://res.cloudinary.com/mtreeves24/image/upload/q_60/v1601992915/Exotic%20Explorers/triangles/triangles-orange-mobile.svg")
+      no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  &:nth-child(even) {
+    background: url("https://res.cloudinary.com/mtreeves24/image/upload/q_60/v1601992915/Exotic%20Explorers/triangles/triangles-green-mobile.svg")
+      no-repeat center;
+    background-size: cover;
+  }
+  img {
+    width: 100%;
+  }
+  .price {
+    font-style: italic;
+    margin: 0;
+    font-size: 1.3em;
+    font-weight: 700;
+    text-shadow: 0 0 4px rgba(0, 0, 0, 0.72), 0 0 14px rgba(0, 0, 0, 0.45);
+  }
+}
+
+.volunteers {
+  background: url("https://res.cloudinary.com/mtreeves24/image/upload/q_60/v1601992915/Exotic%20Explorers/triangles/triangles-orange-mobile.svg")
+    no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-bottom: 3px solid white;
+  .about-images {
+    height: auto;
+    position: relative;
+    img {
+      width: 36%;
+    }
+  }
+  h1 {
+    margin: 8%;
+  }
+}
+
+.fb_customer_chat_bubble_animated_no_badge {
+  background: none !important;
+  border-radius: 50% !important;
+  bottom: 50pt !important;
+  display: inline !important;
+  padding: 0px !important;
+  position: fixed !important;
+  right: 8pt !important;
+  top: auto !important;
+}
+
+@media screen and (min-width: 700px) {
+  .about-gifts {
+    background: url("https://res.cloudinary.com/mtreeves24/image/upload/q_60/v1601992915/Exotic%20Explorers/triangles/triangles-green-wide.svg")
+      no-repeat center;
+    background-size: cover;
+  }
+
+  .gift {
+    &:nth-child(odd) {
+      background: url("https://res.cloudinary.com/mtreeves24/image/upload/q_60/v1601992918/Exotic%20Explorers/triangles/triangles-orange-wide2.svg")
+        no-repeat;
+      background-position: center;
+      background-size: cover;
+    }
+
+    &:nth-child(even) {
+      background: url("https://res.cloudinary.com/mtreeves24/image/upload/q_60/v1601992915/Exotic%20Explorers/triangles/triangles-green-wide.svg")
+        no-repeat center;
+      background-size: cover;
+    }
+  }
+  .volunteers {
+    background: url("https://res.cloudinary.com/mtreeves24/image/upload/q_60/v1601992918/Exotic%20Explorers/triangles/triangles-orange-wide2.svg");
+    h1 {
+      margin: 3%;
+    }
+  }
+}
+
+@mixin img-grid() {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
+  padding: 2%;
+}
+
+@media screen and (min-width: 900px) {
+  .gift {
+    @include img-grid();
+    &:nth-child(odd) {
+      grid-template-columns: 2fr 1fr;
+      picture {
+        order: 1;
+      }
+    }
+  }
+  .image {
+    border: 3px solid white;
+    width: 100%;
+    max-width: 20rem;
+    margin-top: 1em;
+  }
+  .about-images {
+    margin: 0 20%;
+    .about-me-center-img {
+      max-width: 250px;
+    }
+  }
+  .volunteer-about-text {
+    h1 {
+      margin: 2%;
+    }
+    margin: 0 10%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .about {
+    margin-top: 3%;
+    .about-images {
+      margin: 0 20%;
+      .about-me-center-img {
+        max-width: 350px;
+      }
+    }
+  }
+}

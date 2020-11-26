@@ -33,12 +33,14 @@ document.querySelectorAll("a").forEach((item) =>
 
 //////////ACTIVATE DROPDOWN ON CLICK//////////
 const dropdown = document.querySelector(".dropdown");
-const dropdownRoot = document.querySelector(".dropdown-root");
+const dropdownRoot = document.querySelectorAll(".dropdown-root");
 
-dropdownRoot.addEventListener("click", function () {
-  dropdown.classList.contains("dropdown-hide")
-    ? dropdown.classList.toggle("dropdown-show")
-    : null;
+dropdownRoot.forEach(function (x) {
+  x.addEventListener("click", function () {
+    dropdown.classList.contains("dropdown-hide")
+      ? dropdown.classList.toggle("dropdown-show")
+      : null;
+  });
 });
 
 //////////TESTIMONIAL SEE MORE BUTTON//////////
