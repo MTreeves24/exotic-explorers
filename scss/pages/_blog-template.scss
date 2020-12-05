@@ -27,6 +27,7 @@
   a {
     color: darkgreen;
     font-weight: bold;
+    font-size: 1.1em;
     &:hover {
       outline: 1px solid darkgreen;
     }
@@ -74,8 +75,8 @@
 .blog-image {
   width: 95%;
   margin: 0 auto;
-  // border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
-  border: 4px solid #555;
+  border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+  border: 8px solid #555;
   box-shadow: 20px 38px 34px -26px hsla(0, 0%, 0%, 0.2);
 }
 

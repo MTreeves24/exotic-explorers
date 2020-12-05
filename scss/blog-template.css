@@ -335,7 +335,8 @@ iframe {
     color: #222; }
   .blog-container a {
     color: darkgreen;
-    font-weight: bold; }
+    font-weight: bold;
+    font-size: 1.1em; }
     .blog-container a:hover {
       outline: 1px solid darkgreen; }
 
@@ -374,7 +375,8 @@ iframe {
 .blog-image {
   width: 95%;
   margin: 0 auto;
-  border: 4px solid #555;
+  border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+  border: 8px solid #555;
   box-shadow: 20px 38px 34px -26px rgba(0, 0, 0, 0.2); }
 
 .blog-image-alt {
