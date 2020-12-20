@@ -33,7 +33,11 @@
     margin-top: 0;
     text-align: center;
     a {
+      color: white;
       font-weight: 700;
+      &:hover {
+        outline: 1px solid white;
+      }
     }
   }
   h4 {

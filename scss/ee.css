@@ -347,7 +347,10 @@ iframe {
     margin-top: 0;
     text-align: center; }
     .covid-news p a {
+      color: white;
       font-weight: 700; }
+      .covid-news p a:hover {
+        outline: 1px solid white; }
   .covid-news h4 {
     margin-bottom: 0; }
   .covid-news ul {
