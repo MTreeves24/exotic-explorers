@@ -387,6 +387,10 @@ iframe {
     .service-info a:hover {
       color: #00a80e; }
 
+#Pet-Removals li {
+  list-style-type: disc;
+  list-style-position: inside; }
+
 .laptop-break {
   display: none; }
 
