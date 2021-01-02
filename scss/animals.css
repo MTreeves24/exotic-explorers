@@ -123,7 +123,7 @@
       .nav .dropdown-root:hover {
         text-decoration: underline; }
     .nav .dropdown {
-      grid-template-columns: repeat(8, 1fr);
+      grid-template-columns: repeat(4, 1fr);
       position: absolute;
       top: 100%;
       width: 100%;
@@ -308,7 +308,7 @@ body {
 
 .title {
   text-align: center;
-  font-size: max(3vw, 35px);
+  font-size: 35px;
   padding: 0px 5px;
   color: white;
   text-shadow: 0 0 4px rgba(0, 0, 0, 0.72), 0 0 14px rgba(0, 0, 0, 0.45); }
@@ -427,14 +427,14 @@ iframe {
     display: block; }
 
   .birds {
-    grid-template-columns: repeat(5, 1fr); }
-
-  .reptiles {
     grid-template-columns: repeat(6, 1fr); }
 
+  .reptiles {
+    grid-template-columns: repeat(7, 1fr); }
+
   .mammals {
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-areas: ". one two three four ." ". five six seven eight ."; }
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-areas: ". one two three four five ." ". six seven eight nine ten ."; }
     .mammals .ga-1 {
       grid-area: one; }
     .mammals .ga-2 {
@@ -451,6 +451,10 @@ iframe {
       grid-area: seven; }
     .mammals .ga-8 {
       grid-area: eight; }
+    .mammals .ga-9 {
+      grid-area: nine; }
+    .mammals .ga-10 {
+      grid-area: ten; }
 
   .inverts {
     grid-template-columns: repeat(6, 1fr); }

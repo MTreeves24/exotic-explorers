@@ -308,7 +308,7 @@ body {
 
 .title {
   text-align: center;
-  font-size: max(3vw, 35px);
+  font-size: 35px;
   padding: 0px 5px;
   color: white;
   text-shadow: 0 0 4px rgba(0, 0, 0, 0.72), 0 0 14px rgba(0, 0, 0, 0.45); }
@@ -504,7 +504,7 @@ iframe {
     grid-template-columns: repeat(6, 1fr); }
 
   .mammals {
-    grid-template-columns: repeat(7, 1fr); }
+    grid-template-columns: repeat(6, 1fr); }
 
   .reptiles {
     grid-template-columns: repeat(5, 1fr); } }
