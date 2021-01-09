@@ -22,7 +22,7 @@
   }
   .about-us {
     grid-area: about-us;
-    background: url("https://res.cloudinary.com/mtreeves24/image/upload/f_auto,q_60/v1601992915/Exotic%20Explorers/triangles/triangles-green-mobile.svg")
+    background: url("https://res.cloudinary.com/mtreeves24/image/upload/f_auto,q_60/v1601992915/Exotic%20Explorers/triangles/triangles-green-wide.svg")
       no-repeat center;
     background-size: cover;
     border-bottom: 3px solid white;
@@ -114,10 +114,10 @@
 @media screen and (min-width: 700px) {
   .about-us {
     background: url("https://res.cloudinary.com/mtreeves24/image/upload/q_60/v1601992915/Exotic%20Explorers/triangles/triangles-green-wide.svg")
-      no-repeat;
-    background-position: center;
+      no-repeat center;
     background-size: cover;
   }
+
 
   .profile {
     &:nth-child(odd) {
