@@ -308,7 +308,7 @@ body {
 
 .title {
   text-align: center;
-  font-size: max(3vw, 35px);
+  font-size: 35px;
   padding: 0px 5px;
   color: white;
   text-shadow: 0 0 4px rgba(0, 0, 0, 0.72), 0 0 14px rgba(0, 0, 0, 0.45); }
@@ -683,7 +683,7 @@ iframe {
       margin: 20px; }
     .testimonials .more-quotes {
       display: block; } }
-@media only screen and (min-width: 1600px) {
+@media only screen and (min-width: 1300px) {
   .about {
     margin-top: 3%; }
     .about .about-text {
