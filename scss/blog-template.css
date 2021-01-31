@@ -1,23 +1,458 @@
-/*
-Errno::ENOENT: No such file or directory @ rb_sysopen - blog.s-template.scss
+.nav {
+  width: 100%;
+  font-size: 16px;
+  position: fixed;
+  z-index: 10;
+  background: url("https://res.cloudinary.com/mtreeves24/image/upload/c_crop,f_auto,g_center,h_1600,q_60,w_1200/v1600105784/Exotic%20Explorers/triangles-darkgreen.svg") no-repeat center;
+  background-size: 1200px; }
+  .nav .nav-ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: none; }
+  .nav ul.opening {
+    display: block;
+    text-align: center;
+    font-size: 33px;
+    font-weight: 700; }
+  .nav li {
+    opacity: 0.95;
+    border-bottom: 1px solid #f6f4e2;
+    padding: 10px;
+    color: #eee; }
+  .nav a {
+    color: #eee;
+    display: block;
+    text-decoration: none; }
+  .nav li:hover,
+  .nav nav a:focus {
+    color: #ff8c1a; }
 
-Backtrace:
-/var/lib/gems/2.7.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:454:in `read'
-/var/lib/gems/2.7.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:454:in `update_stylesheet'
-/var/lib/gems/2.7.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-/var/lib/gems/2.7.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:209:in `each'
-/var/lib/gems/2.7.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-/var/lib/gems/2.7.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:294:in `watch'
-/var/lib/gems/2.7.0/gems/sass-3.7.4/lib/sass/plugin.rb:109:in `method_missing'
-/var/lib/gems/2.7.0/gems/sass-3.7.4/lib/sass/exec/sass_scss.rb:358:in `watch_or_update'
-/var/lib/gems/2.7.0/gems/sass-3.7.4/lib/sass/exec/sass_scss.rb:51:in `process_result'
-/var/lib/gems/2.7.0/gems/sass-3.7.4/lib/sass/exec/base.rb:50:in `parse'
-/var/lib/gems/2.7.0/gems/sass-3.7.4/lib/sass/exec/base.rb:18:in `parse!'
-/var/lib/gems/2.7.0/gems/sass-3.7.4/bin/sass:13:in `<top (required)>'
-/usr/local/bin/sass:23:in `load'
-/usr/local/bin/sass:23:in `<main>'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Errno::ENOENT: No such file or directory @ rb_sysopen - blog.s-template.scss"; }
+.dropdown-root {
+  cursor: pointer; }
+  .dropdown-root:hover {
+    color: #ff8c1a; }
+
+.dropdown {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  width: 100%; }
+  .dropdown li {
+    display: grid;
+    outline: 0.1px solid white;
+    background-size: 300%;
+    font-size: 0.5em;
+    height: 35px; }
+
+.dropdown-hide {
+  display: none; }
+
+.dropdown-show {
+  display: grid;
+  grid-template-columns: 1fr 1fr; }
+  .dropdown-show li {
+    display: grid;
+    justify-content: center;
+    align-items: center; }
+
+/* CSS MENU TOGGLE*/
+.menu-toggle {
+  position: fixed;
+  padding: 1.5em;
+  top: 0em;
+  right: 0em;
+  cursor: pointer;
+  background: url("https://res.cloudinary.com/mtreeves24/image/upload/q_60/v1601992915/Exotic%20Explorers/triangles/triangles-green-wide.svg") no-repeat center;
+  border-radius: 0% 0% 0% 10%;
+  z-index: 2; }
+
+.hamburger,
+.hamburger::before,
+.hamburger::after {
+  content: "";
+  display: block;
+  background: #222;
+  height: 3px;
+  width: 2em;
+  border-radius: 1px;
+  -webkit-transition: all ease-in-out 350ms;
+  transition: all ease-in-out 350ms; }
+
+.hamburger::before {
+  -webkit-transform: translateY(-7px);
+  transform: translateY(-7px); }
+
+.hamburger::after {
+  -webkit-transform: translateY(4px);
+  transform: translateY(4px); }
+
+.open .hamburger {
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg); }
+
+.open .hamburger::before {
+  display: none; }
+
+.open .hamburger::after {
+  -webkit-transform: translateY(-1px) rotate(-90deg);
+  transform: translateY(-1px) rotate(-90deg); }
+
+@media screen and (min-width: 700px) {
+  .menu-toggle {
+    display: none; }
+
+  .nav {
+    display: block;
+    border-bottom: 1px solid white;
+    background: url("https://res.cloudinary.com/mtreeves24/image/upload/q_60/v1601992915/Exotic%20Explorers/triangles/triangles-green-wide.svg") no-repeat;
+    background-size: 100%;
+    background-position: center;
+    padding: 2px; }
+    .nav .nav-ul {
+      display: flex;
+      justify-content: space-around; }
+      .nav .nav-ul li {
+        background: none;
+        color: white;
+        font-size: 1.5em;
+        text-shadow: 1px 1px black;
+        border: none; }
+    .nav .dropdown-root {
+      position: relative; }
+      .nav .dropdown-root:hover {
+        text-decoration: underline; }
+    .nav .dropdown {
+      grid-template-columns: repeat(4, 1fr);
+      position: absolute;
+      top: 100%;
+      width: 100%;
+      font-size: 0.8em;
+      font-weight: 700; }
+      .nav .dropdown li {
+        height: 40px;
+        border: 1px solid white;
+        background: url("https://res.cloudinary.com/mtreeves24/image/upload/q_60/v1601992915/Exotic%20Explorers/triangles/triangles-green-wide.svg") center;
+        background-size: 300%; }
+    .nav a:hover,
+    .nav nav a:focus {
+      color: white;
+      text-decoration: underline; } }
+.contact {
+  grid-area: contact;
+  position: relative;
+  background: url("https://res.cloudinary.com/mtreeves24/image/upload/q_60/v1601992915/Exotic%20Explorers/triangles/triangles-green-mobile.svg") no-repeat center;
+  text-align: center;
+  padding: 20px 0px 30px 0px;
+  color: white;
+  font-weight: 700;
+  text-shadow: 0 0 4px rgba(0, 0, 0, 0.72), 0 0 14px rgba(0, 0, 0, 0.45); }
+  .contact .details .logo {
+    height: 100px;
+    margin: 6px 6px 20px 6px;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22); }
+  .contact .details p {
+    margin-top: 0;
+    background: none; }
+  .contact .details a {
+    text-decoration: none;
+    color: #222; }
+  .contact .details .number-email {
+    text-decoration: none;
+    color: white; }
+  .contact .details .hexagons {
+    display: flex;
+    margin: 0 auto;
+    width: 300px; }
+  .contact .details .hexagon-wrapper {
+    margin: auto;
+    text-align: initial;
+    width: 100px;
+    height: 100px; }
+  .contact .details .hexagon {
+    position: relative;
+    width: 46%;
+    height: 80%;
+    margin: auto;
+    background: linear-gradient(-180deg, white, #ff8c1a);
+    transition: 0.5s; }
+    .contact .details .hexagon img {
+      position: absolute;
+      top: 20%;
+      left: 0;
+      z-index: 1;
+      margin: auto;
+      width: 100%;
+      -webkit-background-clip: text; }
+  .contact .details .hexagon:before,
+  .contact .details .hexagon:after {
+    position: absolute;
+    content: "";
+    background: inherit;
+    height: 100%;
+    width: 100%;
+    border-radius: 0;
+    transition: 0.5s;
+    transform-origin: center; }
+  .contact .details .hexagon:before {
+    transform: rotateZ(60deg); }
+  .contact .details .hexagon:after {
+    transform: rotateZ(-60deg); }
+  .contact .details .hexagon:hover {
+    border-radius: 50px;
+    transition: 0.5s; }
+  .contact .details .hexagon:hover:before {
+    border-radius: 50px;
+    transition: 0.5s; }
+  .contact .details .hexagon:hover:after {
+    border-radius: 50px;
+    transition: 0.5s; }
+
+.form fieldset {
+  width: 80vw;
+  margin: 20px auto;
+  border: 2px solid white; }
+  .form fieldset legend {
+    font-size: 40px;
+    font-weight: 500; }
+.form input {
+  height: 30px;
+  width: 250px;
+  text-align: center;
+  margin-bottom: 10px; }
+.form textarea {
+  width: 90%;
+  margin-top: 0.8em;
+  resize: none;
+  padding: 10px 10px 0px 10px; }
+.form label {
+  font-size: 25px; }
+.form .submit {
+  height: 3em;
+  font-weight: 700;
+  font-size: 1em;
+  cursor: pointer; }
+  .form .submit:focus {
+    outline: 0; }
+
+.copyright {
+  grid-area: copyright;
+  display: flex;
+  justify-content: space-around;
+  align-items: end;
+  background: #5e5d52;
+  padding: 5px 10px;
+  font-size: 10px;
+  color: white; }
+  .copyright p {
+    margin: 0px; }
+  .copyright a {
+    color: white; }
+
+@media only screen and (min-width: 700px) {
+  .contact {
+    background: url("https://res.cloudinary.com/mtreeves24/image/upload/q_60/v1601992915/Exotic%20Explorers/triangles/triangles-green-wide.svg") center;
+    background-size: cover; } }
+@media only screen and (min-width: 1200px) {
+  .contact {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    justify-content: center;
+    background-position: center;
+    background-size: inherit; }
+    .contact fieldset {
+      width: 85%; } }
+.hero {
+  grid-area: hero;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .hero img {
+    padding-top: 1em; }
+  .hero p {
+    margin: 0;
+    font-weight: 100;
+    color: #222;
+    font-size: 1.2em;
+    text-align: center; }
+
+@media screen and (min-width: 700px) {
+  .hero {
+    padding-top: 3em; } }
+html {
+  box-sizing: border-box;
+  font-family: "Arial", sans-serif;
+  font-size: 20px;
+  font-weight: 200; }
+
+body {
+  margin: 0;
+  text-align: center; }
+
+.button {
+  font-size: 0.8em;
+  background: rgba(111, 111, 111, 0);
+  padding: 0.6em 0.6em;
+  border: 0.1em solid #ffffff;
+  text-decoration: none;
+  color: #fff;
+  text-align: center;
+  transition: all 0.2s;
+  text-shadow: none; }
+  .button:hover {
+    color: #000;
+    background-color: #fff; }
+
+.title {
+  text-align: center;
+  font-size: 35px;
+  padding: 0px 5px;
+  color: white;
+  text-shadow: 0 0 4px rgba(0, 0, 0, 0.72), 0 0 14px rgba(0, 0, 0, 0.45); }
+
+@media screen and (min-width: 700px) {
+  .button-mobile {
+    visibility: hidden; } }
+iframe {
+  z-index: 300 !important; }
+
+.fb_dialog {
+  z-index: 299 !important; }
+
+.fb_dialog_advanced {
+  z-index: 299 !important; }
+
+.blog-container {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+  line-height: 1.5em;
+  padding-bottom: 3%;
+  border-bottom: 5px solid white; }
+  .blog-container span {
+    color: #222; }
+  .blog-container a {
+    color: darkgreen;
+    font-weight: bold;
+    font-size: 1.1em; }
+    .blog-container a:hover {
+      outline: 1px solid darkgreen; }
+
+.blog {
+  width: 90%;
+  max-width: 1400px;
+  margin: 0 auto; }
+
+.cover-photo {
+  margin-top: 1%;
+  width: 100%;
+  box-shadow: 20px 38px 34px -26px rgba(0, 0, 0, 0.4); }
+
+.heading {
+  line-height: 1.5em;
+  margin: 5% 1% 0 1%;
+  font-size: 35px;
+  padding: 0px 5px;
+  color: #000; }
+
+.subheading {
+  margin-top: 50px;
+  margin-bottom: 15px;
+  padding-bottom: 0; }
+
+.paragraph1 {
+  font-size: 1.2em;
+  margin: 1em 0.5em; }
+
+.paragraph {
+  color: #000;
+  font-size: 1em;
+  margin: 0;
+  padding: 0.5em; }
+
+.blog-image {
+  width: 95%;
+  margin: 0 auto;
+  border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+  border: 8px solid #555;
+  box-shadow: 20px 38px 34px -26px rgba(0, 0, 0, 0.2); }
+
+.blog-image-alt {
+  width: 95%;
+  margin: 0 auto;
+  border: 4px solid #555;
+  box-shadow: 20px 38px 34px -26px rgba(0, 0, 0, 0.2); }
+
+blockquote {
+  font-size: 0.9em;
+  width: 70%;
+  margin: 30px auto;
+  font-style: italic;
+  color: #222;
+  font-weight: bold;
+  padding: 1em 25px 1em 55px;
+  border-left: 8px solid #006e4a;
+  line-height: 1.6;
+  position: relative;
+  background: #eee;
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2); }
+
+blockquote::before {
+  font-family: Arial;
+  content: "\201C";
+  color: #006e4a;
+  font-size: 4em;
+  position: absolute;
+  left: 10px;
+  top: -10px; }
+
+blockquote::after {
+  content: ""; }
+
+blockquote span {
+  display: block;
+  color: #222;
+  font-style: normal;
+  font-weight: normal;
+  margin-top: 1em; }
+
+html {
+  -webkit-font-smoothing: antialiased; }
+
+.outtro {
+  font-size: 1.2em;
+  line-height: 1.4em;
+  margin: 5% 0 0 0; }
+
+@media screen and (min-width: 1200px) {
+  .heading {
+    margin: 2% 1% 0 1%; }
+
+  .blog-container {
+    margin-top: 0; }
+
+  .grid-text-photo-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500; }
+
+  .blog-image-alt {
+    width: 65%;
+    margin: 0 auto;
+    border: 4px solid #555;
+    box-shadow: 20px 38px 34px -26px rgba(0, 0, 0, 0.2); } }
+.fb_customer_chat_bubble_animated_no_badge {
+  background: none !important;
+  border-radius: 50% !important;
+  bottom: 50pt !important;
+  display: inline !important;
+  padding: 0px !important;
+  position: fixed !important;
+  right: 8pt !important;
+  top: auto !important; }
+
+/*# sourceMappingURL=blog-template.css.map */
