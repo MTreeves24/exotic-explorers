@@ -501,12 +501,12 @@ iframe {
       max-width: 800px; }
 
   .birds {
-    grid-template-columns: repeat(6, 1fr); }
+    grid-template-columns: repeat(5, 1fr); }
 
   .mammals {
-    grid-template-columns: repeat(6, 1fr); }
+    grid-template-columns: repeat(5, 1fr); }
 
   .reptiles {
     grid-template-columns: repeat(5, 1fr); } }
 
-/*# sourceMappingURL=adoptions.css.map */
+/*# sourceMappingURL=adopt.css.map */
